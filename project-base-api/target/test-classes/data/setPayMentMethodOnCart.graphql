@@ -1,0 +1,16 @@
+mutation {
+    setPaymentMethodOnCart(input: {
+        cart_id: "{{cart_id}}"
+        payment_method: {
+            code: "{{code}}"
+        }
+    }) {
+        cart {
+            selected_payment_method {
+                code
+                title
+            }
+        }
+        payment_session_id
+    }
+}

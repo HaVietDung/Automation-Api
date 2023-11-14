@@ -1,0 +1,15 @@
+mutation {
+    placeOrder(input: {
+        cart_id: "{{cart_id}}"
+        # primary_source_id: "{{primarySourceId}}"
+    }) {
+        order {
+            order_number,
+            access_code,
+            form_action_url,
+            shared_payment_url,
+            message
+        }
+        redirect_payment_gateway_url
+    }
+}

@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Demo</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">project-base-api</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="f9a083ec24a476a8a11f9e348bf4c0d6312d77638bf5c982351d687181d23a1d.html">Demo Customer place order with API</a>
+        > Demo
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 14-11-2023 10:12</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
+                                        <span class="story-header-title">Demo Customer Place Order With API </span>
+                                    </h3>
+
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                                <p class="tag">
+                                    <span class="badge tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;"
+                                                                      href="53d04480e4433fe58a10bc6e412a9fe3dd4c12271f874a8945e274ad5e445f0e.html">Customer
+                                    (tag)</a>
+                                </span>
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Demo
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- CAST MEMBERS -->
+            <div>&nbsp;</div>
+            <div>
+                <h3 class="discreet-story-header">
+                    <i class="fs-2 bi bi-people large-icon"></i>
+                    <span class="story-header-title">
+                        <a class="btn btn-primary" data-toggle="collapse" href="#castDetails"
+                           role="button" aria-expanded="true" aria-controls="castDetails">Cast</a>
+                    </span>
+                </h3>
+            </div>
+            <div class="collapse multi-collapse" id="castDetails">
+                <table class="cast">
+                    <tr>
+                            <td width="100%">
+                                <h4>
+                                    <i class="fs-2 bi bi-person"></i>&nbsp;
+                                    <span>
+                                        <a data-toggle="collapse" href="#abilities-Auto" aria-expanded="false" aria-controls="abilities">Auto</a>
+                                        
+                                    </span>
+                                </h4>
+                                <div class="collapse multi-collapse" id="abilities-Auto">
+                                    <div>
+                                        <span class="cast-description">Auto can:</span>
+                                        <ul>
+                                                <li>browse the web</li>
+                                                <li>call an API at https://stg2.shop.lg.com/</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </td>
+        </tr>
+        </table>
+    </div>
+    <!-- END CAST MEMBERS -->
+
+
+</div>
+</div>
+
+<div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario Outline</h3>
+
+        <div class="scenario">Given Auto generate customer token with email &lt;email&gt; and pass &lt;password&gt; in country &lt;country&gt;<br>When Auto create empty cart &lt;country&gt;<br>And Cart - Add product to cart with sku ="&lt;sku&gt;"<br>And Open view cart<br>And Get Available_payment_methods<br>And Set Shipping Address_Billing<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>dung</td><td>ha</td><td>sosc</td><td>[107 Sydney, Autralian Street]</td><td>abc</td><td>London</td><td>E1W 1BQ</td><td>GB</td><td>9526452222</td></tr></tbody></table><br>And Set Shipping Method On Cart<br><table class='embedded'><thead><th>carrier_code</th><th>method_code</th></thead><tbody><tr><td>freeshiping</td><td>freeshiping</td></tr></tbody></table><br>And Set Payment Method On Cart by "&lt;code&gt;"<br>And Place Oder</div>
+
+    </div>
+
+<div id="beforetable"></div>
+
+
+        <h3 class="story-header">Examples:&nbsp;</h3>
+            <div class="requirementNarrative"></div>
+
+
+            <p class="example-tag">
+            </p>
+
+        <div class="example-table test-report">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                        <th>Country</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Sku</th>
+                        <th>Code</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">uk</a>
+                            </td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">autotest@yopmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">admin123@</a>
+                            </td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">GBB61DSJEN.ADSQLGU.EEUK.UK</a>
+                            </td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">checkmo</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<div id="tablecontents">
+    <div>
+        <table class="step-table">
+            <tr class="step-titles">
+                <th width="65">
+                </th>
+                <th class="step-description-column greentext">
+                    Steps
+                </th>
+
+                <th width="130" class="greentext">Outcome</th>
+                <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
+            </tr>
+            <tr class="step-table-separator">
+                <td colspan="5"></td>
+            </tr>
+
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                1: demo ({country=uk, email=autotest@yopmail.com, password=admin123@, sku=GBB61DSJEN.ADSQLGU.EEUK.UK, code=checkmo})
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-cd352b12-09f4-435e-9770-43202b1685f8"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-1-0">
+                        Set session id: SCENARIO
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-1-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: SCENARIO
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>demo</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-460c54f1-2f3e-4cb7-a57f-48d454f2887c"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-1-1">
+                        Set session id: PATH_FEATURE
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-1-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: PATH_FEATURE
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>/C:/Users/dunghv1/Downloads/project-base-api/project-base-api/src/test/resources/features/CustomerPlaceOrder.feature</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-78f72890-f7ef-4ff7-86da-85e49e415c4a"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-1-2">
+                        Set session id: DIRECTORY_FEATURE
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-1-2" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: DIRECTORY_FEATURE
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>/C:/Users/dunghv1/Downloads/project-base-api/project-base-api/src/test/resources/features/CustomerPlaceOrder.feature</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">12s 601ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-0 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Given Auto generate customer token with email autotest@yopmail.com and pass admin123@ in country uk
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-5734066d-e465-422d-9ded-190cae6a5d2b"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-2-0">
+                        Set session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-2-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-e10ffd91-ac48-46d2-8823-7f7c59e6300e"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-2-1">
+                        Set session id: EMAIL
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-2-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: EMAIL
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>autotest@yopmail.com</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-5244cd40-9f07-424e-98fc-98cea0e4c947"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-2-2">
+                        Set session id: GROUP_CUSTOMER
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-2-2" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: GROUP_CUSTOMER
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>Auto</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3s 526ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-0-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-0-0 success-icon"
+                                   style="margin-left: 60px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Auto customer
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-1f589553-e319-4c85-a542-3394b3bce5f5"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-3-0">
+                        Graphql API: src\test\resources\data\generateCustomerToken.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-3-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\generateCustomerToken.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>    generateCustomerToken(email: &quot;autotest@yopmail.com&quot;, password: &quot;admin123@&quot;) {<br>        token<br>    }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-b70ee95b-4357-4697-93f0-75d7e8ce239b"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-3-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-3-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">3s 280ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-0-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="110" class="step-icon">
+                        <a name="0-0-0-0"></a>
+                            <span style="margin-left: 80px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-4">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer null<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    generateCustomerToken(email: \&quot;autotest@yopmail.com\&quot;, password: \&quot;admin123@\&quot;) {\n        token\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 208<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:00 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=5ff9515be9fcd7866498dfb2bd347e59; expires=Fri, 11-Nov-2033 03:13:00 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: form_key=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=stg2.shop.lg.com; SameSite=Lax<br>Set-Cookie: private_content_version=61309c01101d91a5b699655482d179f2; expires=Fri, 11-Nov-2033 03:13:00 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=e10810eeb1a6c753e320ef8152009115; expires=Fri, 11-Nov-2033 03:13:00 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec3ed64a94251e5ec2c1a193ce3-1bd5324495d9f137-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:00 GMT<br>X-Served-By: cache-dub4320-DUB, cache-qpg1274-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;generateCustomerToken&quot;: {<br>            &quot;token&quot;: &quot;eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo&quot;<br>        }<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=5ff9515be9fcd7866498dfb2bd347e59;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>form_key=deleted;Path=/;Domain=stg2.shop.lg.com;Max-Age=0;Expires=1/1/70 12:00 AM;SameSite=Lax<br>private_content_version=61309c01101d91a5b699655482d179f2;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=e10810eeb1a6c753e320ef8152009115;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="110" class="step-icon">
+                        <a name="0-0-0-1"></a>
+                            <span style="margin-left: 80px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-aa6a3adf-0f3a-44a0-9ad3-4d7657bce8d9"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-5-0">
+                        Set session id: TOKEN
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-5-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: TOKEN
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-1"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-1 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                When Auto create empty cart uk
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">893ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-1-0"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-0')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-1-0 success-icon"
+                                   style="margin-left: 60px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                Auto cart page
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-d82d7085-c5af-4e1d-85a9-18bc52e19935"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-7-0">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-7-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-039fe115-949f-48ea-be38-4d4469d762e8"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-7-1">
+                        Set session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-7-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Set session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">878ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-1-0" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="110" class="step-icon">
+                        <a name="0-1-0-0"></a>
+                            <span style="margin-left: 80px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-8">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;{\n    customerCart{\n        id\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 67<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:01 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=804b4c5e7ec347bd0ce3a969d4bbd163; expires=Fri, 11-Nov-2033 03:13:01 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=ec5a4c98fa7bf81651d292a96454b025; expires=Fri, 11-Nov-2033 03:13:01 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=3d0283e1f417b8f4a1893b741876a7db; expires=Fri, 11-Nov-2033 03:13:01 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec435085e833a40d4b60fbcb302-b010ad7af2e15853-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:01 GMT<br>X-Served-By: cache-dub4361-DUB, cache-qpg1268-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;customerCart&quot;: {<br>            &quot;id&quot;: &quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru&quot;<br>        }<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=804b4c5e7ec347bd0ce3a969d4bbd163;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=ec5a4c98fa7bf81651d292a96454b025;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=3d0283e1f417b8f4a1893b741876a7db;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="110" class="step-icon">
+                        <a name="0-1-0-1"></a>
+                            <span style="margin-left: 80px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-2"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-2 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-2')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Cart - Add product to cart with sku ="GBB61DSJEN.ADSQLGU.EEUK.UK"
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-d95ba215-09bd-4fb1-a358-5480c308c9b9"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-10-0">
+                        Graphql API: src\test\resources\data\atcProductPbp.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-10-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\atcProductPbp.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>  addProductsToCart(<br>    cartId: &quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru&quot;<br>    cartItems: [<br>      {<br>        quantity: 1<br>        sku: &quot;GBB61DSJEN.ADSQLGU.EEUK.UK&quot;<br>       }<br>    ]<br>  ) {<br>    cart {<br>      items {<br>        id<br>        product {<br>          id<br>          name<br>          sku<br>        }<br>        quantity<br>        prices {<br>        total_item_discount {<br>          value<br>        }<br>        price {<br>          value<br>        }<br>        discounts {<br>          label<br>          amount {<br>            value<br>          }<br>        }<br>      }<br>      }<br>    }<br>    user_errors {<br>      code<br>      message<br>    }<br>  }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-9be00a5c-7f35-4a11-b609-822cb34e14b3"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-10-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-10-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1s 848ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-2" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-2-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-11">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-11">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n  addProductsToCart(\n    cartId: \&quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru\&quot;\n    cartItems: [\n      {\n        quantity: 1\n        sku: \&quot;GBB61DSJEN.ADSQLGU.EEUK.UK\&quot;\n       }\n    ]\n  ) {\n    cart {\n      items {\n        id\n        product {\n          id\n          name\n          sku\n        }\n        quantity\n        prices {\n        total_item_discount {\n          value\n        }\n        price {\n          value\n        }\n        discounts {\n          label\n          amount {\n            value\n          }\n        }\n      }\n      }\n    }\n    user_errors {\n      code\n      message\n    }\n  }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 335<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:03 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=d3503c91c9f84683c18a7dced382151d; expires=Fri, 11-Nov-2033 03:13:02 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=0e20f6c907efd935bd97c52d82d6eb94; expires=Fri, 11-Nov-2033 03:13:03 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=2d4e8e09492ca615fc38a7fd554b087a; expires=Fri, 11-Nov-2033 03:13:03 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec482a73cbaa8f50cdfaaf96378-b392ccc663d3ff38-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:03 GMT<br>X-Served-By: cache-dub4343-DUB, cache-qpg1223-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;addProductsToCart&quot;: {<br>            &quot;cart&quot;: {<br>                &quot;items&quot;: [<br>                    {<br>                        &quot;id&quot;: &quot;620728&quot;,<br>                        &quot;product&quot;: {<br>                            &quot;id&quot;: 171392,<br>                            &quot;name&quot;: &quot;Total No Frost (Frost Free) | Tall Fridge Freezer | 341L | GBB61DSJEN | Dark Graphite&quot;,<br>                            &quot;sku&quot;: &quot;GBB61DSJEN.ADSQLGU.EEUK.UK&quot;<br>                        },<br>                        &quot;quantity&quot;: 2,<br>                        &quot;prices&quot;: {<br>                            &quot;total_item_discount&quot;: {<br>                                &quot;value&quot;: 0<br>                            },<br>                            &quot;price&quot;: {<br>                                &quot;value&quot;: 980<br>                            },<br>                            &quot;discounts&quot;: null<br>                        }<br>                    }<br>                ]<br>            },<br>            &quot;user_errors&quot;: [<br>                <br>            ]<br>        }<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=d3503c91c9f84683c18a7dced382151d;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=0e20f6c907efd935bd97c52d82d6eb94;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=2d4e8e09492ca615fc38a7fd554b087a;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-2-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-3"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-3 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Open view cart
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-d3454848-c975-4f6d-b40b-428e5bdd2b5b"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-13-0">
+                        Graphql API: src\test\resources\data\viewCart.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-13-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\viewCart.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>{<br>  cart(cart_id: &quot;{{CardID}}&quot;) {<br>    email<br>    billing_address {<br>      city<br>      country {<br>        code<br>        label<br>      }<br>      firstname<br>      lastname<br>      postcode<br>      region {<br>        code<br>        label<br>      }<br>      street<br>      telephone<br>    }<br>    shipping_addresses {<br>      firstname<br>      lastname<br>      street<br>      city<br>      region {<br>        code<br>        label<br>      }<br>      country {<br>        code<br>        label<br>      }<br>      telephone<br>      available_shipping_methods {<br>        amount {<br>          currency<br>          value<br>        }<br>        available<br>        carrier_code<br>        carrier_title<br>        error_message<br>        method_code<br>        method_title<br>        price_excl_tax {<br>          value<br>          currency<br>        }<br>        price_incl_tax {<br>          value<br>          currency<br>        }<br>      }<br>      selected_shipping_method {<br>        amount {<br>          value<br>          currency<br>        }<br>        carrier_code<br>        carrier_title<br>        method_code<br>        method_title<br>      }<br>    }<br>    items {<br>      id<br>      product {<br>        name<br>        sku<br>      }<br>      quantity<br>      errors {<br>        code<br>        message<br>      }<br>    }<br>    available_payment_methods {<br>      code<br>      title<br>    }<br>    selected_payment_method {<br>      code<br>      title<br>    }<br>    applied_coupons {<br>      code<br>    }<br>    prices {<br>      grand_total {<br>        value<br>        currency<br>      }<br>    }<br>  }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-5001b541-fa5c-4adc-a9c6-ba9edd164e6d"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-13-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-13-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">753ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-3" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-3-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-14">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-14">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;{\n  cart(cart_id: \&quot;{{CardID}}\&quot;) {\n    email\n    billing_address {\n      city\n      country {\n        code\n        label\n      }\n      firstname\n      lastname\n      postcode\n      region {\n        code\n        label\n      }\n      street\n      telephone\n    }\n    shipping_addresses {\n      firstname\n      lastname\n      street\n      city\n      region {\n        code\n        label\n      }\n      country {\n        code\n        label\n      }\n      telephone\n      available_shipping_methods {\n        amount {\n          currency\n          value\n        }\n        available\n        carrier_code\n        carrier_title\n        error_message\n        method_code\n        method_title\n        price_excl_tax {\n          value\n          currency\n        }\n        price_incl_tax {\n          value\n          currency\n        }\n      }\n      selected_shipping_method {\n        amount {\n          value\n          currency\n        }\n        carrier_code\n        carrier_title\n        method_code\n        method_title\n      }\n    }\n    items {\n      id\n      product {\n        name\n        sku\n      }\n      quantity\n      errors {\n        code\n        message\n      }\n    }\n    available_payment_methods {\n      code\n      title\n    }\n    selected_payment_method {\n      code\n      title\n    }\n    applied_coupons {\n      code\n    }\n    prices {\n      grand_total {\n        value\n        currency\n      }\n    }\n  }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 195<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:04 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=0e56a753e224fbba80ae5e87487d4239; expires=Fri, 11-Nov-2033 03:13:04 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=99b63bb5154e8663da52c20fae995b70; expires=Fri, 11-Nov-2033 03:13:04 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=89bf0143936a02a54ab7fd3c08172352; expires=Fri, 11-Nov-2033 03:13:04 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec4d83b41b68edab4e9179d4fe0-413c51271c8d8ed2-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:04 GMT<br>X-Served-By: cache-dub4361-DUB, cache-qpg1228-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{CardID}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 3<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;cart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;cart&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=0e56a753e224fbba80ae5e87487d4239;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=99b63bb5154e8663da52c20fae995b70;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=89bf0143936a02a54ab7fd3c08172352;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-3-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-4"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-4 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-4')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Get Available_payment_methods
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-fbe91e0e-cbcd-469d-bffb-60e3b54fb362"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-16-0">
+                        Graphql API: src\test\resources\data\viewCart.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-16-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\viewCart.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>{<br>  cart(cart_id: &quot;{{CardID}}&quot;) {<br>    email<br>    billing_address {<br>      city<br>      country {<br>        code<br>        label<br>      }<br>      firstname<br>      lastname<br>      postcode<br>      region {<br>        code<br>        label<br>      }<br>      street<br>      telephone<br>    }<br>    shipping_addresses {<br>      firstname<br>      lastname<br>      street<br>      city<br>      region {<br>        code<br>        label<br>      }<br>      country {<br>        code<br>        label<br>      }<br>      telephone<br>      available_shipping_methods {<br>        amount {<br>          currency<br>          value<br>        }<br>        available<br>        carrier_code<br>        carrier_title<br>        error_message<br>        method_code<br>        method_title<br>        price_excl_tax {<br>          value<br>          currency<br>        }<br>        price_incl_tax {<br>          value<br>          currency<br>        }<br>      }<br>      selected_shipping_method {<br>        amount {<br>          value<br>          currency<br>        }<br>        carrier_code<br>        carrier_title<br>        method_code<br>        method_title<br>      }<br>    }<br>    items {<br>      id<br>      product {<br>        name<br>        sku<br>      }<br>      quantity<br>      errors {<br>        code<br>        message<br>      }<br>    }<br>    available_payment_methods {<br>      code<br>      title<br>    }<br>    selected_payment_method {<br>      code<br>      title<br>    }<br>    applied_coupons {<br>      code<br>    }<br>    prices {<br>      grand_total {<br>        value<br>        currency<br>      }<br>    }<br>  }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-475cfa05-71e9-4640-a4ba-b764b25f43ca"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-16-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-16-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1s 088ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-4" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-4-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-17">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-17">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;{\n  cart(cart_id: \&quot;{{CardID}}\&quot;) {\n    email\n    billing_address {\n      city\n      country {\n        code\n        label\n      }\n      firstname\n      lastname\n      postcode\n      region {\n        code\n        label\n      }\n      street\n      telephone\n    }\n    shipping_addresses {\n      firstname\n      lastname\n      street\n      city\n      region {\n        code\n        label\n      }\n      country {\n        code\n        label\n      }\n      telephone\n      available_shipping_methods {\n        amount {\n          currency\n          value\n        }\n        available\n        carrier_code\n        carrier_title\n        error_message\n        method_code\n        method_title\n        price_excl_tax {\n          value\n          currency\n        }\n        price_incl_tax {\n          value\n          currency\n        }\n      }\n      selected_shipping_method {\n        amount {\n          value\n          currency\n        }\n        carrier_code\n        carrier_title\n        method_code\n        method_title\n      }\n    }\n    items {\n      id\n      product {\n        name\n        sku\n      }\n      quantity\n      errors {\n        code\n        message\n      }\n    }\n    available_payment_methods {\n      code\n      title\n    }\n    selected_payment_method {\n      code\n      title\n    }\n    applied_coupons {\n      code\n    }\n    prices {\n      grand_total {\n        value\n        currency\n      }\n    }\n  }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 195<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:05 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=ea5ad36d5a40aaf20f127bb6d58d3b32; expires=Fri, 11-Nov-2033 03:13:05 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=b744cd3477750892807c542877b3c881; expires=Fri, 11-Nov-2033 03:13:05 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=bebee804002366382530c266d120cb6f; expires=Fri, 11-Nov-2033 03:13:05 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec507aaf9728dd5d779ff39b2ac-eecfdb8263465541-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:05 GMT<br>X-Served-By: cache-dub4364-DUB, cache-qpg1226-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{CardID}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 3<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;cart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;cart&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=ea5ad36d5a40aaf20f127bb6d58d3b32;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=b744cd3477750892807c542877b3c881;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=bebee804002366382530c266d120cb6f;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-4-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-5"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-5 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-5')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Set Shipping Address_Billing<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>dung</td><td>ha</td><td>sosc</td><td>[107 Sydney, Autralian Street]</td><td>abc</td><td>London</td><td>E1W 1BQ</td><td>GB</td><td>9526452222</td></tr></tbody></table>
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-fb586514-d837-4b2c-a137-5687504bf03f"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-19-0">
+                        Graphql API: src\test\resources\data\setShipingAddress_Billing.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-19-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\setShipingAddress_Billing.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>    setShippingAddressesOnCart(<br>        input: {<br>            cart_id: &quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru&quot;<br>            shipping_addresses: [<br>                {<br>                    address:{<br>                        firstname: &quot;dung&quot;<br>                        lastname: &quot;ha&quot;<br>                        company: &quot;sosc&quot;<br>                        street: [<br>                            &quot;107 Sydney&quot;,<br>                            &quot;Australian Street&quot;<br>                        ]<br>                        city:&quot;abc&quot;<br>                        region:&quot;London&quot;<br>                        postcode: &quot;E1W 1BQ&quot;<br>                        country_code:&quot;GB&quot;<br>                        telephone: &quot;9526452222&quot;<br>                        save_in_address_book: false<br>                    }<br>                }<br>            ]<br>        }<br>    ) {<br>        cart {<br>            shipping_addresses {<br>                firstname<br>                lastname<br>                company<br>                street<br>                city<br>                region {<br>                    code<br>                    label<br>                }<br>                postcode<br>                telephone<br>                country {<br>                    code<br>                    label<br>                }<br>                available_shipping_methods{<br>                    carrier_code<br>                    carrier_title<br>                    method_code<br>                    method_title<br>                }<br>            }<br>        }<br>    }<br><br>    setBillingAddressOnCart(<br>        input: {<br>            cart_id: &quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru&quot;<br>            billing_address: {<br>                address:{<br>                    firstname: &quot;dung&quot;<br>                    lastname: &quot;ha&quot;<br>                    company: &quot;sosc&quot;<br>                    street: [<br>                        &quot;107 Sydney&quot;,<br>                        &quot;Australian Street&quot;<br>                    ]<br>                    city:&quot;abc&quot;<br>                    region:&quot;London&quot;<br>                    postcode: &quot;E1W 1BQ&quot;<br>                    country_code:&quot;GB&quot;<br>                    telephone: &quot;9526452222&quot;<br>                    save_in_address_book: false<br>                }<br>            }<br>        }<br>    ) {<br>        cart {<br>            billing_address {<br>                firstname<br>                lastname<br>                company<br>                street<br>                city<br>                region{<br>                    code<br>                    label<br>                }<br>                postcode<br>                telephone<br>                country {<br>                    code<br>                    label<br>                }<br>            }<br>        }<br>    }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-22693658-1331-4b9f-9ab7-72d1534b22c6"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-19-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-19-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1s 583ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-5" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-5-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-20">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-20">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setShippingAddressesOnCart(\n        input: {\n            cart_id: \&quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru\&quot;\n            shipping_addresses: [\n                {\n                    address:{\n                        firstname: \&quot;dung\&quot;\n                        lastname: \&quot;ha\&quot;\n                        company: \&quot;sosc\&quot;\n                        street: [\n                            \&quot;107 Sydney\&quot;,\n                            \&quot;Australian Street\&quot;\n                        ]\n                        city:\&quot;abc\&quot;\n                        region:\&quot;London\&quot;\n                        postcode: \&quot;E1W 1BQ\&quot;\n                        country_code:\&quot;GB\&quot;\n                        telephone: \&quot;9526452222\&quot;\n                        save_in_address_book: false\n                    }\n                }\n            ]\n        }\n    ) {\n        cart {\n            shipping_addresses {\n                firstname\n                lastname\n                company\n                street\n                city\n                region {\n                    code\n                    label\n                }\n                postcode\n                telephone\n                country {\n                    code\n                    label\n                }\n                available_shipping_methods{\n                    carrier_code\n                    carrier_title\n                    method_code\n                    method_title\n                }\n            }\n        }\n    }\n\n    setBillingAddressOnCart(\n        input: {\n            cart_id: \&quot;g3973AYuqA8CrN4yaGMEh5bi99SAQKru\&quot;\n            billing_address: {\n                address:{\n                    firstname: \&quot;dung\&quot;\n                    lastname: \&quot;ha\&quot;\n                    company: \&quot;sosc\&quot;\n                    street: [\n                        \&quot;107 Sydney\&quot;,\n                        \&quot;Australian Street\&quot;\n                    ]\n                    city:\&quot;abc\&quot;\n                    region:\&quot;London\&quot;\n                    postcode: \&quot;E1W 1BQ\&quot;\n                    country_code:\&quot;GB\&quot;\n                    telephone: \&quot;9526452222\&quot;\n                    save_in_address_book: false\n                }\n            }\n        }\n    ) {\n        cart {\n            billing_address {\n                firstname\n                lastname\n                company\n                street\n                city\n                region{\n                    code\n                    label\n                }\n                postcode\n                telephone\n                country {\n                    code\n                    label\n                }\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 888<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:06 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=a2b3e7a4d9325ccdc902a3a018c2e3fe; expires=Fri, 11-Nov-2033 03:13:05 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=b375cf02a3b28bc55119b535be64d768; expires=Fri, 11-Nov-2033 03:13:06 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=d9ed2a7e8ed881d5a61ef23a9700fb40; expires=Fri, 11-Nov-2033 03:13:06 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec5470c59f593c06bfa0408ea8f-b81929d7af7c7016-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:07 GMT<br>X-Served-By: cache-dub4343-DUB, cache-qpg1235-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;setShippingAddressesOnCart&quot;: {<br>            &quot;cart&quot;: {<br>                &quot;shipping_addresses&quot;: [<br>                    {<br>                        &quot;firstname&quot;: &quot;dung&quot;,<br>                        &quot;lastname&quot;: &quot;ha&quot;,<br>                        &quot;company&quot;: &quot;sosc&quot;,<br>                        &quot;street&quot;: [<br>                            &quot;107 Sydney&quot;,<br>                            &quot;Australian Street&quot;<br>                        ],<br>                        &quot;city&quot;: &quot;abc&quot;,<br>                        &quot;region&quot;: {<br>                            &quot;code&quot;: &quot;London&quot;,<br>                            &quot;label&quot;: &quot;London&quot;<br>                        },<br>                        &quot;postcode&quot;: &quot;E1W 1BQ&quot;,<br>                        &quot;telephone&quot;: &quot;9526452222&quot;,<br>                        &quot;country&quot;: {<br>                            &quot;code&quot;: &quot;GB&quot;,<br>                            &quot;label&quot;: &quot;GB&quot;<br>                        },<br>                        &quot;available_shipping_methods&quot;: [<br>                            {<br>                                &quot;carrier_code&quot;: &quot;freeshipping&quot;,<br>                                &quot;carrier_title&quot;: &quot;Free Shipping&quot;,<br>                                &quot;method_code&quot;: &quot;freeshipping&quot;,<br>                                &quot;method_title&quot;: &quot;Free&quot;<br>                            },<br>                            {<br>                                &quot;carrier_code&quot;: &quot;advance_shipping&quot;,<br>                                &quot;carrier_title&quot;: &quot;Advance Shipping&quot;,<br>                                &quot;method_code&quot;: &quot;advance_shipping&quot;,<br>                                &quot;method_title&quot;: &quot;Advance Shipping&quot;<br>                            }<br>                        ]<br>                    }<br>                ]<br>            }<br>        },<br>        &quot;setBillingAddressOnCart&quot;: {<br>            &quot;cart&quot;: {<br>                &quot;billing_address&quot;: {<br>                    &quot;firstname&quot;: &quot;dung&quot;,<br>                    &quot;lastname&quot;: &quot;ha&quot;,<br>                    &quot;company&quot;: &quot;sosc&quot;,<br>                    &quot;street&quot;: [<br>                        &quot;107 Sydney&quot;,<br>                        &quot;Australian Street&quot;<br>                    ],<br>                    &quot;city&quot;: &quot;abc&quot;,<br>                    &quot;region&quot;: {<br>                        &quot;code&quot;: &quot;London&quot;,<br>                        &quot;label&quot;: &quot;London&quot;<br>                    },<br>                    &quot;postcode&quot;: &quot;E1W 1BQ&quot;,<br>                    &quot;telephone&quot;: &quot;9526452222&quot;,<br>                    &quot;country&quot;: {<br>                        &quot;code&quot;: &quot;GB&quot;,<br>                        &quot;label&quot;: &quot;GB&quot;<br>                    }<br>                }<br>            }<br>        }<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=a2b3e7a4d9325ccdc902a3a018c2e3fe;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=b375cf02a3b28bc55119b535be64d768;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=d9ed2a7e8ed881d5a61ef23a9700fb40;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-5-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-6"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-6 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Set Shipping Method On Cart<br><table class='embedded'><thead><th>carrier_code</th><th>method_code</th></thead><tbody><tr><td>freeshiping</td><td>freeshiping</td></tr></tbody></table>
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-3aaf10d8-efca-4f83-a69f-9363cfd16dd7"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-22-0">
+                        Graphql API: src\test\resources\data\shippingMethodOnCart.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-22-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\shippingMethodOnCart.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>    setShippingMethodsOnCart(input: {<br>        cart_id: &quot;{{cart_id}}&quot;<br>        shipping_methods: [<br>            {<br>                carrier_code: &quot;freeshiping&quot;<br>                method_code: &quot;freeshiping&quot;<br>            }<br>        ]<br>    }) {<br>        cart {<br>            shipping_addresses {<br>                selected_shipping_method {<br>                    carrier_code<br>                    method_code<br>                    carrier_title<br>                    method_title<br>                }<br>            }<br>        }<br>    }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-b6e7de3c-50fb-4886-8646-bae6e5cb0f8a"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-22-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-22-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">970ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-6" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-6-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-23">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-23">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setShippingMethodsOnCart(input: {\n        cart_id: \&quot;{{cart_id}}\&quot;\n        shipping_methods: [\n            {\n                carrier_code: \&quot;freeshiping\&quot;\n                method_code: \&quot;freeshiping\&quot;\n            }\n        ]\n    }) {\n        cart {\n            shipping_addresses {\n                selected_shipping_method {\n                    carrier_code\n                    method_code\n                    carrier_title\n                    method_title\n                }\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 236<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:07 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=09f210bd46c32ff7cac3236edca5e9aa; expires=Fri, 11-Nov-2033 03:13:07 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=98d9c7014db6f80132589063ea6dc0ea; expires=Fri, 11-Nov-2033 03:13:07 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=71d14647a5f4a524f1caf03fb74fd665; expires=Fri, 11-Nov-2033 03:13:07 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec5a5eed0c1fcbc35e63495e244-398f2e24d1771664-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:08 GMT<br>X-Served-By: cache-dub4322-DUB, cache-qpg1265-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{cart_id}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;setShippingMethodsOnCart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;setShippingMethodsOnCart&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=09f210bd46c32ff7cac3236edca5e9aa;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=98d9c7014db6f80132589063ea6dc0ea;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=71d14647a5f4a524f1caf03fb74fd665;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-6-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-7"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-7 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Set Payment Method On Cart by "checkmo"
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-f7c42df4-1898-4c50-93f8-002827c22502"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-25-0">
+                        Graphql API: src\test\resources\data\shippingMethodOnCart.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-25-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\shippingMethodOnCart.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>    setShippingMethodsOnCart(input: {<br>        cart_id: &quot;{{cart_id}}&quot;<br>        shipping_methods: [<br>            {<br>                carrier_code: &quot;{{carrier_code}}&quot;<br>                method_code: &quot;{{method_code}}&quot;<br>            }<br>        ]<br>    }) {<br>        cart {<br>            shipping_addresses {<br>                selected_shipping_method {<br>                    carrier_code<br>                    method_code<br>                    carrier_title<br>                    method_title<br>                }<br>            }<br>        }<br>    }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-0815ef47-5f9d-4ade-a946-8633d850c2be"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-25-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-25-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">702ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-7" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-7-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-26">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-26">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setShippingMethodsOnCart(input: {\n        cart_id: \&quot;{{cart_id}}\&quot;\n        shipping_methods: [\n            {\n                carrier_code: \&quot;{{carrier_code}}\&quot;\n                method_code: \&quot;{{method_code}}\&quot;\n            }\n        ]\n    }) {\n        cart {\n            shipping_addresses {\n                selected_shipping_method {\n                    carrier_code\n                    method_code\n                    carrier_title\n                    method_title\n                }\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 236<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:08 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=a8b3b0480631618c5ce592bd63cf1ac6; expires=Fri, 11-Nov-2033 03:13:08 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=d20ff8b3953a490024753a16e3047131; expires=Fri, 11-Nov-2033 03:13:08 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=0059c91522534936d7f9ba6a70cb8cae; expires=Fri, 11-Nov-2033 03:13:08 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec5dd83ac58b2e89d96a09a0d99-6eaa94107fb864a9-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:08 GMT<br>X-Served-By: cache-dub4350-DUB, cache-qpg1278-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{cart_id}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;setShippingMethodsOnCart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;setShippingMethodsOnCart&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=a8b3b0480631618c5ce592bd63cf1ac6;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=d20ff8b3953a490024753a16e3047131;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=0059c91522534936d7f9ba6a70cb8cae;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-7-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-8"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-8')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-8 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-8')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Place Oder
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-b1bddbad-6bf7-47ca-b046-f1b63c5b9a71"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-28-0">
+                        Graphql API: src\test\resources\data\placeOder.graphql
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-28-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Graphql API: src\test\resources\data\placeOder.graphql
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>mutation {<br>    placeOrder(input: {<br>        cart_id: &quot;{{cart_id}}&quot;<br>        # primary_source_id: &quot;{{primarySourceId}}&quot;<br>    }) {<br>        order {<br>            order_number,<br>            access_code,<br>            form_action_url,<br>            shared_payment_url,<br>            message<br>        }<br>        redirect_payment_gateway_url<br>    }<br>}<br></pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                        <span class="piece-of-evidence">
+                <a name="report-data-c4908e31-7c5b-40f1-ab69-efe27e0c5b2b"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-28-1">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-28-1" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>uk</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1s 134ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-8" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-8-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-29">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-29">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEzNDIxMjc1LCJ1dHlwaWQiOjMsImlhdCI6MTY5OTkzMTU4MCwiZXhwIjoxNjk5OTM1MTgwfQ.rY7iRYQfEiMMCTNQtKz0ksgo1-OzmkpcM_499uFPENo<br>store=uk<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    placeOrder(input: {\n        cart_id: \&quot;{{cart_id}}\&quot;\n        # primary_source_id: \&quot;{{primarySourceId}}\&quot;\n    }) {\n        order {\n            order_number,\n            access_code,\n            form_action_url,\n            shared_payment_url,\n            message\n        }\n        redirect_payment_gateway_url\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 208<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Mon, 14 Nov 2022 03:13:09 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=9c74a4205225b666497bad5149287773; expires=Fri, 11-Nov-2033 03:13:09 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=cf60998060477408a8b16a60ab965474; expires=Fri, 11-Nov-2033 03:13:09 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=56138597e61a2ec5042375ab96da5364; expires=Fri, 11-Nov-2033 03:13:09 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17975ec609e09945dd96f349c2afa558-b1b947b6853722f2-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 4c000e55d2cf0080b5a99cfa20d9831544d3b638f64e768630a78d5005614e23<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Tue, 14 Nov 2023 03:13:09 GMT<br>X-Served-By: cache-dub4359-DUB, cache-qpg1280-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{cart_id}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;placeOrder&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;placeOrder&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=9c74a4205225b666497bad5149287773;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=cf60998060477408a8b16a60ab965474;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax<br>private_content_version=56138597e61a2ec5042375ab96da5364;Path=/;Max-Age=315360000;Secure;Expires=11/11/33 3:13 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-8-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Auto should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+            <tr class="test-SUCCESS">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>12.72s</em></span></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="beforefooter"></div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.2.0</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var imgsrc = $(".img" + divId).attr('src');
+        if (imgsrc == 'images/plus.png') {
+            $(".img" + divId).attr("src", function () {
+                return "images/minus.png";
+            });
+
+        } else {
+            $(".img" + divId).attr("src", function () {
+                return "images/plus.png";
+            });
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(document).ready(function () {
+        $('img.screenshot').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    });
+
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</div>
+</body>
+</html>

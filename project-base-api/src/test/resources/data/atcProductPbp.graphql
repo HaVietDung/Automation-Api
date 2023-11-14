@@ -1,0 +1,41 @@
+mutation {
+  addProductsToCart(
+    cartId: "{{CartID}}"
+    cartItems: [
+      {
+        quantity: 1
+        sku: "{{sku}}"
+       }
+    ]
+  ) {
+    cart {
+      items {
+        id
+        product {
+          id
+          name
+          sku
+        }
+        quantity
+        prices {
+        total_item_discount {
+          value
+        }
+        price {
+          value
+        }
+        discounts {
+          label
+          amount {
+            value
+          }
+        }
+      }
+      }
+    }
+    user_errors {
+      code
+      message
+    }
+  }
+}

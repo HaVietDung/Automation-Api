@@ -1,0 +1,22 @@
+mutation {
+    setShippingMethodsOnCart(input: {
+        cart_id: "{{cart_id}}"
+        shipping_methods: [
+            {
+                carrier_code: "{{carrier_code}}"
+                method_code: "{{method_code}}"
+            }
+        ]
+    }) {
+        cart {
+            shipping_addresses {
+                selected_shipping_method {
+                    carrier_code
+                    method_code
+                    carrier_title
+                    method_title
+                }
+            }
+        }
+    }
+}

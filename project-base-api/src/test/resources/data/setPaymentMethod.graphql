@@ -1,0 +1,8 @@
+query {
+  cart(cart_id: "{{cart_id}}") {
+    available_payment_methods {
+      code
+      title
+    }
+  }
+}
