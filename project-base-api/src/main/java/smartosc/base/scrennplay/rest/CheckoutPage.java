@@ -58,7 +58,7 @@ public class CheckoutPage implements Task {
         Map<String, String> input = new HashMap<>();
         input.put("email", email);
 
-        String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "setShipingAddress_Billing.graphql", input);
+        String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "setGuestEmailOnCart.graphql", input);
         Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);
         response.prettyPrint();
     }
@@ -106,8 +106,8 @@ public class CheckoutPage implements Task {
         } else {
             graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "createEmptyCartCustomer.graphql");
         }
-
         Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);
+
         if (typeAcc.equals("guest")) {
             cartId = guestCartId = response.getBody().jsonPath().getString("data.createEmptyCart");
             Serenity.setSessionVariable(CommonConstant.GUEST_CART_ID).to(guestCartId);

@@ -36,5 +36,4 @@ public class CartStep {
         CartPage.paymentMEthod();
     }
 
-
 }

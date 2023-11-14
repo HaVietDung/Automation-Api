@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project-base-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GMS-Shipping" target="1.8" />
       <module name="gp-one-automation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
