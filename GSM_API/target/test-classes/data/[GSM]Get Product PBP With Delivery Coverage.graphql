@@ -1,0 +1,110 @@
+query {
+    getPbpProduct(
+        product_id: "Auto7966073.OMD.ACCA.CA"
+        qty: 1
+        delivery_coverage_check: {address_level_4: "K0E 0B2"}
+    ) {
+        product {
+            id
+            name
+            sku
+            url_key
+            new_from_date
+            new_to_date
+            special_price
+            special_from_date
+            special_to_date
+            special_price
+            stock_status
+            pre_order {
+                delivery_start_date
+                enable_flag
+                end_date
+                pre_purchase_label
+                salable_pre_quantity
+                total_pre_quantity
+                start_date
+            }
+            price_range {
+                minimum_price {
+                    regular_price {
+                        value
+                        currency
+                    }
+                    final_price {
+                        value
+                        currency
+                    }
+                    discount {
+                        amount_off
+                        percent_off
+                    }
+                }
+            }
+            special_price
+            membership_price
+            msrp_price
+        }
+        global_shipping_rules {
+            items {
+                item_id
+                delivery_coverage {
+                    status
+                    message
+                }
+                rules {
+                    rule_type
+                    rule_code
+                    carrier_name
+                    rule_name
+                    rule_id
+                    delivery_fee
+                    carrier_code
+                    delivery_dates
+                    rule_description
+                    show_delivery_lead_time
+                    show_calendar
+                    delivery_lead_time_min
+                    delivery_lead_time_max
+                    delivery_disclaimer
+                    position
+                    installation_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                    haulaway_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                }
+            }
+        }
+        total_segments {
+            code
+            title
+            value
+            items {
+                title
+                value
+            }
+        }
+        paymentsImage {
+            payments_maketing_text
+            payments_image
+        }
+    }
+}

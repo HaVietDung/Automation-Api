@@ -1,0 +1,108 @@
+query {
+    getPbpProduct(
+        product_id: "49NANO867NA.AEUD.EEDG.DE"
+        qty: 1
+    ) {
+        product {
+            id
+            name
+            sku
+            url_key
+            new_from_date
+            new_to_date
+            special_price
+            special_from_date
+            special_to_date
+            short_description {
+                html
+            }
+            description {
+                html
+            }
+            image {
+                url
+                label
+            }
+            small_image {
+                url
+                label
+            }
+            thumbnail {
+                url
+                label
+            }
+            swatch_image
+            media_gallery {
+                url
+                label
+            }
+            special_price
+            price_range {
+                minimum_price {
+                    regular_price {
+                        value
+                        currency
+                    }
+                    final_price {
+                        value
+                        currency
+                    }
+                    discount {
+                        amount_off
+                        percent_off
+                    }
+                }
+            }
+            special_price
+            # membership_price
+            msrp_price
+        }
+        global_shipping_rules {
+            items {
+                item_id
+                rules {
+                    rule_name
+                    rule_id
+                    rule_type
+                    rule_code
+                    carrier_name
+                    delivery_fee
+                    carrier_code
+                    delivery_dates
+                    rule_description
+                    show_delivery_lead_time
+                    show_calendar
+                    delivery_lead_time_min
+                    delivery_lead_time_max
+                    delivery_disclaimer
+                    position
+                    installation_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                    haulaway_services {
+                        select_type
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                }
+            }
+        }
+        paymentsImage {
+            payments_maketing_text
+            payments_image
+        }
+    }
+}

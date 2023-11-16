@@ -1,0 +1,170 @@
+{
+    cart(cart_id: "{{CartID}}") {
+        email
+        # get available shipping rule
+        available_global_shipping_rules {
+            items {
+                item_id
+                delivery_coverage {
+                    status
+                    message
+                }
+                rules {
+                    rule_id
+                    rule_name
+                    rule_type
+                    rule_code
+                    delivery_fee
+                    rule_description
+                    carrier_name
+                    carrier_code
+                    delivery_dates
+                    show_calendar
+                    show_delivery_lead_time
+                    delivery_lead_time_min
+                    delivery_lead_time_max
+                    delivery_disclaimer
+                    position
+                    installation_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                    haulaway_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                }
+            }
+        }
+        # get shipping rule selected
+        global_shipping_rule_selected {
+            delivery_coverage {
+                status
+                message
+            }
+            delivery_date
+            item_id
+            rule_id
+            rule_name
+            delivery_fee
+            installation_services {
+                service_id
+                service_code
+                service_fee
+                service_name
+                service_description
+            }
+            haulaway_services {
+                service_id
+                service_code
+                service_fee
+                service_name
+                service_description
+            }
+        }
+        billing_address {
+            city
+            country {
+                code
+                label
+            }
+            firstname
+            lastname
+            postcode
+            region {
+                code
+                label
+            }
+            street
+            telephone
+        }
+        shipping_addresses {
+            firstname
+            lastname
+            street
+            city
+            region {
+                code
+                label
+            }
+            country {
+                code
+                label
+            }
+            telephone
+            available_shipping_methods {
+                amount {
+                    currency
+                    value
+                }
+                available
+                carrier_code
+                carrier_title
+                error_message
+                method_code
+                method_title
+                price_excl_tax {
+                    value
+                    currency
+                }
+                price_incl_tax {
+                    value
+                    currency
+                }
+            }
+            selected_shipping_method {
+                amount {
+                    value
+                    currency
+                }
+                base_amount {
+                    value
+                    currency
+                }
+                carrier_code
+                carrier_title
+                method_code
+                method_title
+            }
+        }
+        items {
+            id
+            product {
+                name
+                sku
+            }
+            quantity
+        }
+        available_payment_methods {
+            code
+            title
+        }
+        selected_payment_method {
+            code
+            title
+        }
+        applied_coupons {
+            code
+        }
+        prices {
+            grand_total {
+                value
+                currency
+            }
+        }
+    }
+}

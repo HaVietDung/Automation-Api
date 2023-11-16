@@ -1,0 +1,10 @@
+mutation {
+    setGuestEmailOnCart(input: {
+        cart_id: "{{CartID}}"
+        email: "anhntv1@smartosc.com"
+    }) {
+        cart {
+            email
+        }
+    }
+}

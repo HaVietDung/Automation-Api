@@ -1,0 +1,239 @@
+query {
+    getPbpProduct(
+        product_id: "Auto7966073.OMD.ACCA.CA"
+        qty: 1
+        delivery_coverage_check: { address_level_4: "T7P 0T6" }
+        selected_items: {
+            global_shipping: {
+                shipping_methods: [
+                    { carrier_code: "global_shipping", method_code: "global_shipping" }
+                ]
+                global_shipping_rule_items: [
+                    {
+                        rule_id: 59
+                        delivery_date: "2023-06-19"
+                        installation_services: [8]
+                        haulaway_services: [14]
+                    }
+                ]
+            }
+        }
+    ) {
+        product {
+            id
+            name
+            sku
+            url_key
+            new_from_date
+            new_to_date
+            special_price
+            special_from_date
+            special_to_date
+            special_price
+            stock_status
+            pre_order {
+                delivery_start_date
+                enable_flag
+                end_date
+                pre_purchase_label
+                salable_pre_quantity
+                total_pre_quantity
+                start_date
+            }
+            price_range {
+                minimum_price {
+                    regular_price {
+                        value
+                        currency
+                    }
+                    final_price {
+                        value
+                        currency
+                    }
+                    discount {
+                        amount_off
+                        percent_off
+                    }
+                }
+            }
+            special_price
+            membership_price
+            msrp_price
+        }
+        # extended_warranty {
+        #   ew_notice
+        #   ew_label
+        #   ew_sub_label
+        #   ew_popup_info
+        #   ew_items {
+        #     ew_item {
+        #       id
+        #       name
+        #       sku
+        #       description_title
+        #       description
+        #       ew_benefit
+        #       price
+        #       enable_show_discount
+        #       price_discount
+        #       ew_type
+        #       image {
+        #         img_default
+        #         img_premium
+        #         year_text
+        #       }
+        #       ew_popup_two
+        #       ew_popup_three
+        #       ew_popup_four
+        #       disable_wishlist_for_ew
+        #     }
+        #   }
+        # }
+        # crosssell_products {
+        #   id
+        #   sku
+        #   stock_status
+        #   short_description {
+        #     html
+        #   }
+        #   url_key
+        #   name
+        #   special_price
+        #   price_range {
+        #     minimum_price {
+        #       regular_price {
+        #         value
+        #         currency
+        #       }
+        #       final_price {
+        #         value
+        #         currency
+        #       }
+        #       discount {
+        #         amount_off
+        #         percent_off
+        #       }
+        #     }
+        #   }
+        #   special_price
+        #   membership_price
+        #   msrp_price
+        #   installment {
+        #     intro_text
+        #     disclaimer_text
+        #   }
+        # }
+        # list_related_package_product {
+        #   package_id
+        #   product_sku
+        #   website_id
+        #   descriptions
+        #   is_display_promotion_text
+        #   promotion_text
+        #   display_type
+        #   normal_price
+        #   original_price
+        #   discount_rate
+        #   package_price
+        #   discount_amount
+        #   is_split
+        #   is_active
+        #   discount_main_product
+        #   main_discount_rate
+        #   discount_related_product
+        #   stock_status
+        # }
+        # delivery_installation {
+        #   items {
+        #     item_id
+        #     can_select_delivery_time
+        #     rules {
+        #       rule_id
+        #       carrier
+        #       delivery_dates
+        #       description
+        #       group_extra_services {
+        #         group_type
+        #         group_name
+        #         services {
+        #           service_id
+        #           service_code
+        #           service_fee
+        #           service_name
+        #         }
+        #       }
+        #       rule_fee
+        #       rule_id
+        #       rule_name
+        #       service_partner
+        #       show_delivery_lead_time_on_cart_page
+        #       enable_delivery_lead_time
+        #       delivery_lead_time_min
+        #       delivery_lead_time_max
+        #     }
+        #   }
+        # }
+
+        global_shipping_rules {
+            items {
+                item_id
+                delivery_coverage {
+                    status
+                    message
+                }
+                rules {
+                    rule_type
+                    rule_code
+                    carrier_name
+                    rule_name
+                    rule_id
+                    delivery_fee
+                    carrier_code
+                    delivery_dates
+                    rule_description
+                    show_delivery_lead_time
+                    show_calendar
+                    delivery_lead_time_min
+                    delivery_lead_time_max
+                    delivery_disclaimer
+                    position
+                    installation_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                    haulaway_services {
+                        select_type
+                        is_required
+                        services {
+                            service_id
+                            service_code
+                            service_fee
+                            service_name
+                            service_description
+                        }
+                    }
+                }
+            }
+        }
+        total_segments {
+            code
+            title
+            value
+            items {
+                title
+                value
+            }
+        }
+        paymentsImage {
+            payments_maketing_text
+            payments_image
+        }
+    }
+}

@@ -1,0 +1,14 @@
+mutation {
+    setPaymentMethodOnCart(input: {
+        cart_id: "{{CartID}}"
+        payment_method: {
+            code: "cashondelivery"
+        }
+    }) {
+        cart {
+            selected_payment_method {
+                code
+            }
+        }
+    }
+}

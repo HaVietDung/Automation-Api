@@ -1,0 +1,5 @@
+mutation {
+    generateCustomerToken(email: "{{email}}", password: "{{pass}}") {
+        token
+    }
+}

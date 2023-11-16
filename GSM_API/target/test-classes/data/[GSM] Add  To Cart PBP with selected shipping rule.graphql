@@ -1,0 +1,50 @@
+mutation {
+    addToCartPbp(
+        cart_id: "{{CartID}}"
+        product_id: "Auto7966073.OMD.ACCA.CA"
+        qty: 1
+        buy_now: false
+        delivery_coverage_check: {
+            address_level_4: "T7P 0T6"
+        }
+        selected_items: {
+            global_shipping: {
+                shipping_methods: [
+                    { carrier_code: "global_shipping", method_code: "global_shipping" }
+                ]
+                global_shipping_rule_items: [
+                    {
+                        rule_id: 59
+                        delivery_date: "2023-06-19"
+                        installation_services: [8]
+                        haulaway_services: [14]
+                    }
+                ]
+            }
+        }
+    ) {
+        items {
+            id
+            quantity
+            is_ready_checkout
+            product {
+                name
+                sku
+            }
+            prices {
+                price {
+                    value
+                }
+            }
+        }
+        total_segments {
+            code
+            title
+            value
+            items {
+                title
+                value
+            }
+        }
+    }
+}
