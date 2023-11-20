@@ -1,7 +1,7 @@
 mutation {
     setGuestEmailOnCart(input: {
         cart_id: "{{CartID}}"
-        email: "anhntv1@smartosc.com"
+        email: "{{Email}}"
     }) {
         cart {
             email

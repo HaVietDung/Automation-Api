@@ -34,7 +34,7 @@ public class CartPageGSM implements Task {
         theActorInTheSpotlight().whoCan(CallAnApi.at(Start.getBaseUri()));
         Map<String, String> input = new HashMap<>();
         input.put("CartID", Serenity.sessionVariableCalled(CommonConstant.CART_ID));
-        input.put("email", email);
+        input.put("Email", email);
 
         String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "setGuestEmailOnCart.graphql", input);
         Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);

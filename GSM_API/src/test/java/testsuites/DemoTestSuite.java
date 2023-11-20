@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = "pretty",
         features = "src/test/resources/features",
-        glue = {"hook", "stepdefinitions"}
-//        tags = "@gsm"
+        glue = {"hook", "stepdefinitions"},
+        tags = "@global-shipping-method"
 )
 public class DemoTestSuite {
 

@@ -1,6 +1,6 @@
 query {
     getPbpProduct(
-        product_id: "49NANO867NA.AEUD.EEDG.DE"
+        product_id: "{{Product_id}}"
         qty: 1
     ) {
         product {

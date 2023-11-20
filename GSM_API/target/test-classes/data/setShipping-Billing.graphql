@@ -1,7 +1,7 @@
 mutation {
     setShippingAddressesOnCart(
         input: {
-            cart_id: "{{cart_id}}"
+            cart_id: "{{Cart_id}}"
             shipping_addresses: [
                 {
                     address:{
@@ -51,7 +51,7 @@ mutation {
     }
     setBillingAddressOnCart(
         input: {
-            cart_id: "{{cart_id}}"
+            cart_id: "{{Cart_id}}"
             billing_address: {
                 address:{
                     firstname: "{{firstname}}"

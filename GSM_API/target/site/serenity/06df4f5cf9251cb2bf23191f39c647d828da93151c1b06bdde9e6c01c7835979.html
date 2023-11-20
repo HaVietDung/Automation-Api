@@ -143,7 +143,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 15-11-2023 17:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-11-2023 15:43</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -180,9 +180,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="success-color">
                                     Demo
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -245,7 +245,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given Guest create empty cart &lt;country&gt;<br>When Set Guest "&lt;email&gt;" on cart<br>And Get Product by "&lt;productID&gt;"<br>And Add To Cart With Rule<br><table class='embedded'><thead><th>product_id</th><th>carrier_code</th><th>method_code</th><th>rule_id</th><th>delivery_date</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td>global_shipping</td><td>global_shipping</td><td>1078</td><td>2023-06-19</td></tr></tbody></table><br>And Set Shipping Address<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>US</td><td>9526452222</td></tr></tbody></table><br>And Set Billing<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>US</td><td>9526452222</td></tr></tbody></table><br>And Set Payment Method</div>
+        <div class="scenario">Given Guest create empty cart &lt;country&gt;<br>When Set Guest "&lt;email&gt;" on cart<br>And Get Product by "&lt;productID&gt;"<br>And Add To Cart With Rule and Level Country<br><table class='embedded'><thead><th>product_id</th><th>address_level_4</th><th>carrier_code</th><th>method_code</th><th>rule_id</th><th>delivery_date</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td><td>global_shipping</td><td>global_shipping</td><td>1078</td><td></td></tr></tbody></table><br>And Set Shipping Address<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>US</td><td>9526452222</td></tr></tbody></table><br>And Set Billing<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>US</td><td>9526452222</td></tr></tbody></table><br>And Set Payment Method "&lt;code&gt;"<br>And Place Oder</div>
 
     </div>
 
@@ -267,19 +267,23 @@
                         <th>Country</th>
                         <th>Email</th>
                         <th>Productid</th>
+                        <th>Code</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-PENDING"><a href="#0">1</a></td>
-                            <td class="test-PENDING"><a
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a
                                         href="#0">de</a>
                             </td>
-                            <td class="test-PENDING"><a
+                            <td class="test-SUCCESS"><a
                                         href="#0">anhntv1@smartosc.com</a>
                             </td>
-                            <td class="test-PENDING"><a
+                            <td class="test-SUCCESS"><a
                                         href="#0">49NANO867NA.AEUD.EEDG.DE</a>
+                            </td>
+                            <td class="test-SUCCESS"><a
+                                        href="#0">cashondelivery</a>
                             </td>
                     </tr>
                 </tbody>
@@ -303,13 +307,13 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-IGNORED">
+                <tr class="test-SUCCESS">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0 ignored-icon"
+                                <i class="bi bi-plus-square imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -319,12 +323,12 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                1: demo ({country=de, email=anhntv1@smartosc.com, productID=49NANO867NA.AEUD.EEDG.DE})
+                                                1: demo ({country=de, email=anhntv1@smartosc.com, productID=49NANO867NA.AEUD.EEDG.DE, code=cashondelivery})
                                         </span>
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-5f98d3f9-4ef3-4bc3-a6cf-e2181ddfa134"></a>
+                <a name="report-data-b4a8ef1b-6d4f-44ea-b9be-7390132aa6ce"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-0">
@@ -344,7 +348,7 @@
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-589835b6-d9f1-4e6c-a386-0469ab426918"></a>
+                <a name="report-data-4f1193ac-c54b-4b47-9ad2-4c4cfbd4059a"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-1">
@@ -359,12 +363,12 @@
                                 Set session id: PATH_FEATURE
                             </h4>
                         </div>
-                        <div class="card-body"><pre>/C:/Users/dunghv1/Downloads/Global-Shipping-Method/project-base-api/src/test/resources/features/GlobalShippingMethod.feature</pre></div>
+                        <div class="card-body"><pre>/D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature</pre></div>
                     </div>
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-88d13c71-44eb-4239-b98d-8c996aaeb2d2"></a>
+                <a name="report-data-0cccd95c-992e-4149-bb2e-3442f84a192d"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-2">
@@ -379,7 +383,7 @@
                                 Set session id: DIRECTORY_FEATURE
                             </h4>
                         </div>
-                        <div class="card-body"><pre>/C:/Users/dunghv1/Downloads/Global-Shipping-Method/project-base-api/src/test/resources/features/GlobalShippingMethod.feature</pre></div>
+                        <div class="card-body"><pre>/D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature</pre></div>
                     </div>
                 </div>
                                             </span>
@@ -387,8 +391,8 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">IGNORED</span></td>
-                    <td width="100"><span class="top-level-step">8s 741ms</span></td>
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">10s 144ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -418,7 +422,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">3s 656ms</span></td>
+                    <td width="100"><span class="nested-step">3s 390ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -444,7 +448,7 @@
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-29b45742-186c-4506-a4c7-3d29b79f1d63"></a>
+                <a name="report-data-9632583d-4f5f-453c-90f6-c0d71036c5cf"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-3-0">
@@ -464,7 +468,7 @@
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-4e39c5c5-71f6-41b6-b57b-1e2e1c8045dd"></a>
+                <a name="report-data-b6159ab3-b26e-4742-98af-33c377e192b3"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-3-1">
@@ -488,7 +492,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">3s 418ms</span></td>
+                    <td width="100"><span class="nested-step">3s 140ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -529,11 +533,11 @@
                                     <h4>Content Body</h4>
                                     <pre>{<br>    &quot;query&quot;: &quot;mutation {\n  createEmptyCart\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Content-Length: 63<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:46 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=89338cf71f914585b3bf443d9e01ae34; expires=Sat, 12-Nov-2033 10:45:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=31266ea71f1b7480a3c8519bc466d469; expires=Sat, 12-Nov-2033 10:45:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=23d4f27eeb8a9d6bbb18d052999c7980; expires=Sat, 12-Nov-2033 10:45:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60d93ab75b8d20e9993cf966c76-4931406f7e29f7d8-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:46 GMT<br>X-Served-By: cache-dub4338-DUB, cache-qpg1233-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 63<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:29 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=08381735ead18ccc586c69fc18232e37; expires=Sun, 13-Nov-2033 08:43:28 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=e3dee1a1dbcaf975b892b6ca8407a810; expires=Sun, 13-Nov-2033 08:43:29 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=40c6ae20086991ecdf0fe64bc7c9e60a; expires=Sun, 13-Nov-2033 08:43:29 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df5d7101b0b8825ccbe8dccfaad-65e511de050791e4-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:29 GMT<br>X-Served-By: cache-dub4362-DUB, cache-qpg1249-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;createEmptyCart&quot;: &quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;createEmptyCart&quot;: &quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj&quot;<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=89338cf71f914585b3bf443d9e01ae34;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=31266ea71f1b7480a3c8519bc466d469;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=23d4f27eeb8a9d6bbb18d052999c7980;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=08381735ead18ccc586c69fc18232e37;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=e3dee1a1dbcaf975b892b6ca8407a810;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=40c6ae20086991ecdf0fe64bc7c9e60a;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -566,7 +570,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">004ms</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
 
                             </table>
@@ -597,7 +601,7 @@
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-13561b04-068d-4504-b267-5f528af27604"></a>
+                <a name="report-data-af330060-5ae0-4686-a012-f061e8c472c9"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-6-0">
@@ -612,12 +616,12 @@
                                 Graphql API: src\test\resources\data\setGuestEmailOnCart.graphql
                             </h4>
                         </div>
-                        <div class="card-body"><pre>mutation {<br>    setGuestEmailOnCart(input: {<br>        cart_id: &quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl&quot;<br>        email: &quot;anhntv1@smartosc.com&quot;<br>    }) {<br>        cart {<br>            email<br>        }<br>    }<br>}<br></pre></div>
+                        <div class="card-body"><pre>mutation {<br>    setGuestEmailOnCart(input: {<br>        cart_id: &quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj&quot;<br>        email: &quot;anhntv1@smartosc.com&quot;<br>    }) {<br>        cart {<br>            email<br>        }<br>    }<br>}<br></pre></div>
                     </div>
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-7e1daa74-a599-4feb-87b9-413330451ffc"></a>
+                <a name="report-data-7ec111c2-235b-40b6-b4d6-bf9e35993234"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-6-1">
@@ -641,7 +645,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">1s 177ms</span></td>
+                    <td width="100"><span class="nested-step">816ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -680,13 +684,13 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setGuestEmailOnCart(input: {\n        cart_id: \&quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl\&quot;\n        email: \&quot;anhntv1@smartosc.com\&quot;\n    }) {\n        cart {\n            email\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setGuestEmailOnCart(input: {\n        cart_id: \&quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj\&quot;\n        email: \&quot;anhntv1@smartosc.com\&quot;\n    }) {\n        cart {\n            email\n        }\n    }\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Content-Length: 74<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:48 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=838679c32134a64aa020117dab8f7593; expires=Sat, 12-Nov-2033 10:45:47 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=92d58a94bfab21f41166fd2027cd3b87; expires=Sat, 12-Nov-2033 10:45:48 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=2892c30174a1f8bb1337750872d6f74c; expires=Sat, 12-Nov-2033 10:45:48 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60dfb21b1d333fd209ee155cd39-4e2820037b50fb91-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:48 GMT<br>X-Served-By: cache-dub4343-DUB, cache-qpg1248-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 74<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:30 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=90ffa66e18c6aa3b32eb52172a682354; expires=Sun, 13-Nov-2033 08:43:30 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=3876f03ee1451063645e736b465e37ad; expires=Sun, 13-Nov-2033 08:43:30 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=f83bc6a96d396bb2c9be9a3e58d7016d; expires=Sun, 13-Nov-2033 08:43:30 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df6265771fbb3988792a9b9942f-1d7026407f21dc35-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:30 GMT<br>X-Served-By: cache-dub4320-DUB, cache-qpg1263-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
                                     <pre>{<br>    &quot;data&quot;: {<br>        &quot;setGuestEmailOnCart&quot;: {<br>            &quot;cart&quot;: {<br>                &quot;email&quot;: &quot;anhntv1@smartosc.com&quot;<br>            }<br>        }<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=838679c32134a64aa020117dab8f7593;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=92d58a94bfab21f41166fd2027cd3b87;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=2892c30174a1f8bb1337750872d6f74c;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=90ffa66e18c6aa3b32eb52172a682354;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=3876f03ee1451063645e736b465e37ad;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=f83bc6a96d396bb2c9be9a3e58d7016d;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -697,7 +701,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -746,7 +750,7 @@
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-94a4f3fa-e0c0-4999-a7cd-463ba0555717"></a>
+                <a name="report-data-3d7a4f45-3e1a-499a-aac6-0297bead6d5d"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-9-0">
@@ -766,7 +770,7 @@
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-de27b0be-51ae-4130-8c09-7e60c492c2c1"></a>
+                <a name="report-data-4a6cf7e5-6ef7-4885-8c9b-cbf15643e975"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-9-1">
@@ -790,7 +794,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">1s 194ms</span></td>
+                    <td width="100"><span class="nested-step">1s 359ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -831,11 +835,11 @@
                                     <h4>Content Body</h4>
                                     <pre>{<br>    &quot;query&quot;: &quot;query {\n    getPbpProduct(\n        product_id: \&quot;49NANO867NA.AEUD.EEDG.DE\&quot;\n        qty: 1\n    ) {\n        product {\n            id\n            name\n            sku\n            url_key\n            new_from_date\n            new_to_date\n            special_price\n            special_from_date\n            special_to_date\n            short_description {\n                html\n            }\n            description {\n                html\n            }\n            image {\n                url\n                label\n            }\n            small_image {\n                url\n                label\n            }\n            thumbnail {\n                url\n                label\n            }\n            swatch_image\n            media_gallery {\n                url\n                label\n            }\n            special_price\n            price_range {\n                minimum_price {\n                    regular_price {\n                        value\n                        currency\n                    }\n                    final_price {\n                        value\n                        currency\n                    }\n                    discount {\n                        amount_off\n                        percent_off\n                    }\n                }\n            }\n            special_price\n            # membership_price\n            msrp_price\n        }\n        global_shipping_rules {\n            items {\n                item_id\n                rules {\n                    rule_name\n                    rule_id\n                    rule_type\n                    rule_code\n                    carrier_name\n                    delivery_fee\n                    carrier_code\n                    delivery_dates\n                    rule_description\n                    show_delivery_lead_time\n                    show_calendar\n                    delivery_lead_time_min\n                    delivery_lead_time_max\n                    delivery_disclaimer\n                    position\n                    installation_services {\n                        select_type\n                        is_required\n                        services {\n                            service_id\n                            service_code\n                            service_fee\n                            service_name\n                            service_description\n                        }\n                    }\n                    haulaway_services {\n                        select_type\n                        services {\n                            service_id\n                            service_code\n                            service_fee\n                            service_name\n                            service_description\n                        }\n                    }\n                }\n            }\n        }\n        paymentsImage {\n            payments_maketing_text\n            payments_image\n        }\n    }\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:49 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=fa7e32248734ee527a9cc0b2738def72; expires=Sat, 12-Nov-2033 10:45:48 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=a809be957bd5a15570e03a5314606f27; expires=Sat, 12-Nov-2033 10:45:49 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=f52af81301051cdb6d89ed39d23b1d68; expires=Sat, 12-Nov-2033 10:45:49 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60e2c1ed4dc0de85fca3eb23a10-5931ef7f3d65d134-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:49 GMT<br>X-Served-By: cache-dub4339-DUB, cache-qpg1269-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600<br>transfer-encoding: chunked</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 1387<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:31 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=d50d04b830b4c2da6251ff6b5ca07278; expires=Sun, 13-Nov-2033 08:43:31 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=ec991185ebba70003f81b86f41f1513c; expires=Sun, 13-Nov-2033 08:43:31 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=3a142093a4ea84c31fb984d753e1d0c6; expires=Sun, 13-Nov-2033 08:43:31 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df6597d48179a46d28c38ea4701-4e2cb13c1307ae56-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:32 GMT<br>X-Served-By: cache-dub4359-DUB, cache-qpg1228-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;getPbpProduct&quot;: {<br>            &quot;product&quot;: {<br>                &quot;id&quot;: 22,<br>                &quot;name&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;,<br>                &quot;sku&quot;: &quot;49NANO867NA.AEUD.EEDG.DE&quot;,<br>                &quot;url_key&quot;: &quot;49nano867na-aeud&quot;,<br>                &quot;new_from_date&quot;: null,<br>                &quot;new_to_date&quot;: null,<br>                &quot;special_price&quot;: null,<br>                &quot;special_from_date&quot;: null,<br>                &quot;special_to_date&quot;: null,<br>                &quot;short_description&quot;: {<br>                    &quot;html&quot;: &quot;LED LCD TV 49 (UD)&quot;<br>                },<br>                &quot;description&quot;: {<br>                    &quot;html&quot;: &quot;&quot;<br>                },<br>                &quot;image&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700044895/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/image.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;small_image&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700044895/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/small_image.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;thumbnail&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700044895/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/thumbnail.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;swatch_image&quot;: null,<br>                &quot;media_gallery&quot;: [<br>                    <br>                ],<br>                &quot;price_range&quot;: {<br>                    &quot;minimum_price&quot;: {<br>                        &quot;regular_price&quot;: {<br>                            &quot;value&quot;: 595,<br>                            &quot;currency&quot;: &quot;EUR&quot;<br>                        },<br>                        &quot;final_price&quot;: {<br>                            &quot;value&quot;: 595,<br>                            &quot;currency&quot;: &quot;EUR&quot;<br>                        },<br>                        &quot;discount&quot;: {<br>                            &quot;amount_off&quot;: 0,<br>                            &quot;percent_off&quot;: 0<br>                        }<br>                    }<br>                },<br>                &quot;msrp_price&quot;: 861.21<br>            },<br>            &quot;global_shipping_rules&quot;: {<br>                &quot;items&quot;: [<br>                    {<br>                        &quot;item_id&quot;: 0,<br>                        &quot;rules&quot;: [<br>                            {<br>                                &quot;rule_name&quot;: &quot;Giang test GSM DE&quot;,<br>                                &quot;rule_id&quot;: 1078,<br>                                &quot;rule_type&quot;: &quot;homedelivery&quot;,<br>                                &quot;rule_code&quot;: &quot;GSM&quot;,<br>                                &quot;carrier_name&quot;: &quot;UAT - Rhenus&quot;,<br>                                &quot;delivery_fee&quot;: &quot;100&quot;,<br>                                &quot;carrier_code&quot;: &quot;Rhenus&quot;,<br>                                &quot;delivery_dates&quot;: [<br>                                    <br>                                ],<br>                                &quot;rule_description&quot;: &quot;&quot;,<br>                                &quot;show_delivery_lead_time&quot;: false,<br>                                &quot;show_calendar&quot;: false,<br>                                &quot;delivery_lead_time_min&quot;: &quot;3&quot;,<br>                                &quot;delivery_lead_time_max&quot;: &quot;5&quot;,<br>                                &quot;delivery_disclaimer&quot;: &quot;Die Lieferung von Großgeräten wie z.B. TVs, Kühlschränke oder Waschmaschinen übernimmt Rhenus Home Delivery. Liefertermin nach Absprache.&quot;,<br>                                &quot;position&quot;: 0,<br>                                &quot;installation_services&quot;: {<br>                                    &quot;select_type&quot;: &quot;multiple&quot;,<br>                                    &quot;is_required&quot;: false,<br>                                    &quot;services&quot;: [<br>                                        {<br>                                            &quot;service_id&quot;: 902,<br>                                            &quot;service_code&quot;: &quot;Installation&quot;,<br>                                            &quot;service_fee&quot;: &quot;50&quot;,<br>                                            &quot;service_name&quot;: &quot;Installation &quot;,<br>                                            &quot;service_description&quot;: &quot;&quot;<br>                                        }<br>                                    ]<br>                                },<br>                                &quot;haulaway_services&quot;: {<br>                                    &quot;select_type&quot;: &quot;multiple&quot;,<br>                                    &quot;services&quot;: [<br>                                        {<br>                                            &quot;service_id&quot;: 1258,<br>                                            &quot;service_code&quot;: &quot;H2&quot;,<br>                                            &quot;service_fee&quot;: &quot;30&quot;,<br>                                            &quot;service_name&quot;: &quot;haulaway&quot;,<br>                                            &quot;service_description&quot;: &quot;&quot;<br>                                        }<br>                                    ]<br>                                }<br>                            }<br>                        ]<br>                    }<br>                ]<br>            },<br>            &quot;paymentsImage&quot;: {<br>                &quot;payments_maketing_text&quot;: &quot;You can pay with&quot;,<br>                &quot;payments_image&quot;: &quot;https://stg2.shop.lg.com/media/payments/logo/websites/11/pay_de_d_logo.png&quot;<br>            }<br>        }<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;getPbpProduct&quot;: {<br>            &quot;product&quot;: {<br>                &quot;id&quot;: 22,<br>                &quot;name&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;,<br>                &quot;sku&quot;: &quot;49NANO867NA.AEUD.EEDG.DE&quot;,<br>                &quot;url_key&quot;: &quot;49nano867na-aeud&quot;,<br>                &quot;new_from_date&quot;: null,<br>                &quot;new_to_date&quot;: null,<br>                &quot;special_price&quot;: null,<br>                &quot;special_from_date&quot;: null,<br>                &quot;special_to_date&quot;: null,<br>                &quot;short_description&quot;: {<br>                    &quot;html&quot;: &quot;LED LCD TV 49 (UD)&quot;<br>                },<br>                &quot;description&quot;: {<br>                    &quot;html&quot;: &quot;&quot;<br>                },<br>                &quot;image&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700122913/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/image.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;small_image&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700122913/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/small_image.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;thumbnail&quot;: {<br>                    &quot;url&quot;: &quot;https://stg2.shop.lg.com/static/version1700122913/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/thumbnail.jpg&quot;,<br>                    &quot;label&quot;: &quot;49\&quot; LG 4K NanoCell TV&quot;<br>                },<br>                &quot;swatch_image&quot;: null,<br>                &quot;media_gallery&quot;: [<br>                    <br>                ],<br>                &quot;price_range&quot;: {<br>                    &quot;minimum_price&quot;: {<br>                        &quot;regular_price&quot;: {<br>                            &quot;value&quot;: 595,<br>                            &quot;currency&quot;: &quot;EUR&quot;<br>                        },<br>                        &quot;final_price&quot;: {<br>                            &quot;value&quot;: 1024.84,<br>                            &quot;currency&quot;: &quot;EUR&quot;<br>                        },<br>                        &quot;discount&quot;: {<br>                            &quot;amount_off&quot;: 0,<br>                            &quot;percent_off&quot;: 0<br>                        }<br>                    }<br>                },<br>                &quot;msrp_price&quot;: 861.21<br>            },<br>            &quot;global_shipping_rules&quot;: {<br>                &quot;items&quot;: [<br>                    {<br>                        &quot;item_id&quot;: 0,<br>                        &quot;rules&quot;: [<br>                            <br>                        ]<br>                    }<br>                ]<br>            },<br>            &quot;paymentsImage&quot;: {<br>                &quot;payments_maketing_text&quot;: &quot;You can pay with&quot;,<br>                &quot;payments_image&quot;: &quot;https://stg2.shop.lg.com/media/payments/logo/websites/11/pay_de_d_logo.png&quot;<br>            }<br>        }<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=fa7e32248734ee527a9cc0b2738def72;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=a809be957bd5a15570e03a5314606f27;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=f52af81301051cdb6d89ed39d23b1d68;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=d50d04b830b4c2da6251ff6b5ca07278;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=ec991185ebba70003f81b86f41f1513c;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=3a142093a4ea84c31fb984d753e1d0c6;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -890,12 +894,12 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-3')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                And Add To Cart With Rule<br><table class='embedded'><thead><th>product_id</th><th>carrier_code</th><th>method_code</th><th>rule_id</th><th>delivery_date</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td>global_shipping</td><td>global_shipping</td><td>1078</td><td>2023-06-19</td></tr></tbody></table>
+                                                And Add To Cart With Rule and Level Country<br><table class='embedded'><thead><th>product_id</th><th>address_level_4</th><th>carrier_code</th><th>method_code</th><th>rule_id</th><th>delivery_date</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td><td>global_shipping</td><td>global_shipping</td><td>1078</td><td></td></tr></tbody></table>
                                         </span>
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-735b49ca-301a-4fae-aa75-6078ece01a9d"></a>
+                <a name="report-data-2b2473ba-bcbf-412e-85d7-13a27275d702"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-12-0">
@@ -910,12 +914,12 @@
                                 Graphql API: src\test\resources\data\[GSM] Add  To Cart PBP with selected shipping rule.graphql
                             </h4>
                         </div>
-                        <div class="card-body"><pre>mutation {<br>    addToCartPbp(<br>        cart_id: &quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl&quot;<br>        product_id: &quot;Auto7966073.OMD.ACCA.CA&quot;<br>        qty: 1<br>        buy_now: false<br>        delivery_coverage_check: {<br>            address_level_4: &quot;T7P 0T6&quot;<br>        }<br>        selected_items: {<br>            global_shipping: {<br>                shipping_methods: [<br>                    { carrier_code: &quot;global_shipping&quot;, method_code: &quot;global_shipping&quot; }<br>                ]<br>                global_shipping_rule_items: [<br>                    {<br>                        rule_id: 59<br>                        delivery_date: &quot;2023-06-19&quot;<br>                        installation_services: [8]<br>                        haulaway_services: [14]<br>                    }<br>                ]<br>            }<br>        }<br>    ) {<br>        items {<br>            id<br>            quantity<br>            is_ready_checkout<br>            product {<br>                name<br>                sku<br>            }<br>            prices {<br>                price {<br>                    value<br>                }<br>            }<br>        }<br>        total_segments {<br>            code<br>            title<br>            value<br>            items {<br>                title<br>                value<br>            }<br>        }<br>    }<br>}<br></pre></div>
+                        <div class="card-body"><pre>mutation {<br>    addToCartPbp(<br>        cart_id: &quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj&quot;<br>        product_id: &quot;49NANO867NA.AEUD.EEDG.DE&quot;<br>        qty: 1<br>        buy_now: false<br>        delivery_coverage_check: {<br>            address_level_4: &quot;&quot;<br>        }<br>        selected_items: {<br>            global_shipping: {<br>                shipping_methods: [<br>                    { carrier_code: &quot;global_shipping&quot;, method_code: &quot;global_shipping&quot; }<br>                ]<br>                global_shipping_rule_items: [<br>                    {<br>                        rule_id: &quot;1078&quot;<br>                        delivery_date: &quot;&quot;<br>                        installation_services: [8]<br>                        haulaway_services: [14]<br>                    }<br>                ]<br>            }<br>        }<br>    ) {<br>        items {<br>            id<br>            quantity<br>            is_ready_checkout<br>            product {<br>                name<br>                sku<br>            }<br>            prices {<br>                price {<br>                    value<br>                }<br>            }<br>        }<br>        total_segments {<br>            code<br>            title<br>            value<br>            items {<br>                title<br>                value<br>            }<br>        }<br>    }<br>}<br></pre></div>
                     </div>
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-1dc81806-4e62-4f73-9782-7815b3566847"></a>
+                <a name="report-data-f6925509-734a-4113-a86c-f72dd0d18294"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-12-1">
@@ -939,7 +943,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">978ms</span></td>
+                    <td width="100"><span class="nested-step">1s 366ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -978,13 +982,13 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    addToCartPbp(\n        cart_id: \&quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl\&quot;\n        product_id: \&quot;Auto7966073.OMD.ACCA.CA\&quot;\n        qty: 1\n        buy_now: false\n        delivery_coverage_check: {\n            address_level_4: \&quot;T7P 0T6\&quot;\n        }\n        selected_items: {\n            global_shipping: {\n                shipping_methods: [\n                    { carrier_code: \&quot;global_shipping\&quot;, method_code: \&quot;global_shipping\&quot; }\n                ]\n                global_shipping_rule_items: [\n                    {\n                        rule_id: 59\n                        delivery_date: \&quot;2023-06-19\&quot;\n                        installation_services: [8]\n                        haulaway_services: [14]\n                    }\n                ]\n            }\n        }\n    ) {\n        items {\n            id\n            quantity\n            is_ready_checkout\n            product {\n                name\n                sku\n            }\n            prices {\n                price {\n                    value\n                }\n            }\n        }\n        total_segments {\n            code\n            title\n            value\n            items {\n                title\n                value\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    addToCartPbp(\n        cart_id: \&quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj\&quot;\n        product_id: \&quot;49NANO867NA.AEUD.EEDG.DE\&quot;\n        qty: 1\n        buy_now: false\n        delivery_coverage_check: {\n            address_level_4: \&quot;\&quot;\n        }\n        selected_items: {\n            global_shipping: {\n                shipping_methods: [\n                    { carrier_code: \&quot;global_shipping\&quot;, method_code: \&quot;global_shipping\&quot; }\n                ]\n                global_shipping_rule_items: [\n                    {\n                        rule_id: \&quot;1078\&quot;\n                        delivery_date: \&quot;\&quot;\n                        installation_services: [8]\n                        haulaway_services: [14]\n                    }\n                ]\n            }\n        }\n    ) {\n        items {\n            id\n            quantity\n            is_ready_checkout\n            product {\n                name\n                sku\n            }\n            prices {\n                price {\n                    value\n                }\n            }\n        }\n        total_segments {\n            code\n            title\n            value\n            items {\n                title\n                value\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Content-Length: 246<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:50 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=e074665d24d5e1c6d0761d6030cbf1d8; expires=Sat, 12-Nov-2033 10:45:49 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=5f94a8be67c8eaf0aefb2fb05656194e; expires=Sat, 12-Nov-2033 10:45:50 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=639feec5c1d3e1be6d86d22023a52eb6; expires=Sat, 12-Nov-2033 10:45:50 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60e745b182bccdca898c6fb57dc-daf8c2f56d6409be-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:50 GMT<br>X-Served-By: cache-dub4342-DUB, cache-qpg1252-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 194<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:33 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=72265f7b18a393d42b51b9cef7d080bd; expires=Sun, 13-Nov-2033 08:43:32 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=02c70e3eea3b30afcb7b5c624846e2cd; expires=Sun, 13-Nov-2033 08:43:33 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=f210c9b81af7d8ad4f0b46adde4c0b5e; expires=Sun, 13-Nov-2033 08:43:33 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df6a987e269d84bbfe52431eb5b-3a717aa4a8c9086d-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:33 GMT<br>X-Served-By: cache-dub4328-DUB, cache-qpg1248-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;The product that was requested doesn't exist. Verify the product and try again.&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;addToCartPbp&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;addToCartPbp&quot;: null<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Rule for item id 625507 is not valid&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-input&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;addToCartPbp&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;addToCartPbp&quot;: null<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=e074665d24d5e1c6d0761d6030cbf1d8;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=5f94a8be67c8eaf0aefb2fb05656194e;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=639feec5c1d3e1be6d86d22023a52eb6;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=72265f7b18a393d42b51b9cef7d080bd;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=02c70e3eea3b30afcb7b5c624846e2cd;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=f210c9b81af7d8ad4f0b46adde4c0b5e;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -1044,7 +1048,7 @@
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-c4ba6eb3-8613-40f7-aef9-3b49a83065a7"></a>
+                <a name="report-data-35860dad-d9ca-40a4-9b08-10c9f4cc1f54"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-15-0">
@@ -1059,12 +1063,12 @@
                                 Graphql API: src\test\resources\data\setShippingAddress.graphql
                             </h4>
                         </div>
-                        <div class="card-body"><pre>mutation{<br>  setShippingAddressesOnCart(input: {<br>    cart_id: &quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl&quot;<br>    shipping_addresses: [<br>      {<br>        address: {<br>          firstname: &quot;John&quot;<br>          lastname: &quot;Doe&quot;<br>          company: &quot;Company Name&quot;<br>          street: [<br>            &quot;Handico Tower&quot;,<br>            &quot;smartosc&quot;<br>          ]<br>          city: &quot;Minnetonka&quot;<br>          region: &quot;MS&quot;<br>          postcode: &quot;T7P 0T6&quot;<br>          country_code: &quot;US&quot;<br>          telephone: &quot;9526452222&quot;<br>          save_in_address_book: false<br>        }<br>      }<br>    ]<br>  }){<br>    cart {<br>          shipping_addresses {<br>            firstname<br>            lastname<br>            company<br>            street<br>            city<br>            region {<br>              code<br>              label<br>            }<br>            postcode<br>            telephone<br>            country {<br>              code<br>              label<br>            }<br>            available_shipping_methods{<br>              carrier_code<br>              carrier_title<br>              method_code<br>              method_title<br>            }<br>          }<br>        }<br>  }<br>}<br></pre></div>
+                        <div class="card-body"><pre>mutation{<br>  setShippingAddressesOnCart(input: {<br>    cart_id: &quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj&quot;<br>    shipping_addresses: [<br>      {<br>        address: {<br>          firstname: &quot;John&quot;<br>          lastname: &quot;Doe&quot;<br>          company: &quot;Company Name&quot;<br>          street: [<br>            &quot;Handico Tower&quot;,<br>            &quot;smartosc&quot;<br>          ]<br>          city: &quot;Minnetonka&quot;<br>          region: &quot;MS&quot;<br>          postcode: &quot;T7P 0T6&quot;<br>          country_code: &quot;US&quot;<br>          telephone: &quot;9526452222&quot;<br>          save_in_address_book: false<br>        }<br>      }<br>    ]<br>  }){<br>    cart {<br>          shipping_addresses {<br>            firstname<br>            lastname<br>            company<br>            street<br>            city<br>            region {<br>              code<br>              label<br>            }<br>            postcode<br>            telephone<br>            country {<br>              code<br>              label<br>            }<br>            available_shipping_methods{<br>              carrier_code<br>              carrier_title<br>              method_code<br>              method_title<br>            }<br>          }<br>        }<br>  }<br>}<br></pre></div>
                     </div>
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-9971c1e3-9698-4f07-ac69-8b2b98b774a4"></a>
+                <a name="report-data-25399013-4580-40ea-84b2-0f0f20be4fcc"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-15-1">
@@ -1088,7 +1092,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">802ms</span></td>
+                    <td width="100"><span class="nested-step">867ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -1127,13 +1131,13 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;query&quot;: &quot;mutation{\n  setShippingAddressesOnCart(input: {\n    cart_id: \&quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl\&quot;\n    shipping_addresses: [\n      {\n        address: {\n          firstname: \&quot;John\&quot;\n          lastname: \&quot;Doe\&quot;\n          company: \&quot;Company Name\&quot;\n          street: [\n            \&quot;Handico Tower\&quot;,\n            \&quot;smartosc\&quot;\n          ]\n          city: \&quot;Minnetonka\&quot;\n          region: \&quot;MS\&quot;\n          postcode: \&quot;T7P 0T6\&quot;\n          country_code: \&quot;US\&quot;\n          telephone: \&quot;9526452222\&quot;\n          save_in_address_book: false\n        }\n      }\n    ]\n  }){\n    cart {\n          shipping_addresses {\n            firstname\n            lastname\n            company\n            street\n            city\n            region {\n              code\n              label\n            }\n            postcode\n            telephone\n            country {\n              code\n              label\n            }\n            available_shipping_methods{\n              carrier_code\n              carrier_title\n              method_code\n              method_title\n            }\n          }\n        }\n  }\n}\n&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation{\n  setShippingAddressesOnCart(input: {\n    cart_id: \&quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj\&quot;\n    shipping_addresses: [\n      {\n        address: {\n          firstname: \&quot;John\&quot;\n          lastname: \&quot;Doe\&quot;\n          company: \&quot;Company Name\&quot;\n          street: [\n            \&quot;Handico Tower\&quot;,\n            \&quot;smartosc\&quot;\n          ]\n          city: \&quot;Minnetonka\&quot;\n          region: \&quot;MS\&quot;\n          postcode: \&quot;T7P 0T6\&quot;\n          country_code: \&quot;US\&quot;\n          telephone: \&quot;9526452222\&quot;\n          save_in_address_book: false\n        }\n      }\n    ]\n  }){\n    cart {\n          shipping_addresses {\n            firstname\n            lastname\n            company\n            street\n            city\n            region {\n              code\n              label\n            }\n            postcode\n            telephone\n            country {\n              code\n              label\n            }\n            available_shipping_methods{\n              carrier_code\n              carrier_title\n              method_code\n              method_title\n            }\n          }\n        }\n  }\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Content-Length: 210<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:51 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=4a6337d8cd2d4e78bd460945a8c86ea3; expires=Sat, 12-Nov-2033 10:45:50 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=13678b8050a20638c710b2c7a3ece3d2; expires=Sat, 12-Nov-2033 10:45:51 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=fca30a272cdf5feaf0f3d9e90d694322; expires=Sat, 12-Nov-2033 10:45:51 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60ead0cece165167e2da3c3f55e-1e6717bc373935db-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:51 GMT<br>X-Served-By: cache-dub4339-DUB, cache-qpg1255-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 210<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:34 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=f274f70c4e426d2f02eb1e91bd5dc2e4; expires=Sun, 13-Nov-2033 08:43:33 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=76e1364c9139369560dc30093bd0ca20; expires=Sun, 13-Nov-2033 08:43:34 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=1e9e917312ee2e1ffea68c8df5365792; expires=Sun, 13-Nov-2033 08:43:34 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df6fa367c6c02a007fbd46fd1cd-6df9a8b84d01df9e-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:34 GMT<br>X-Served-By: cache-dub4357-DUB, cache-qpg1258-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
                                     <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Country is not available&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-input&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 3<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;setShippingAddressesOnCart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;setShippingAddressesOnCart&quot;: null<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=4a6337d8cd2d4e78bd460945a8c86ea3;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=13678b8050a20638c710b2c7a3ece3d2;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=fca30a272cdf5feaf0f3d9e90d694322;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=f274f70c4e426d2f02eb1e91bd5dc2e4;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=76e1364c9139369560dc30093bd0ca20;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=1e9e917312ee2e1ffea68c8df5365792;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -1193,7 +1197,7 @@
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-391fd185-1e26-40e6-be6c-7060006d907f"></a>
+                <a name="report-data-42b96d23-6817-4b60-a250-e6b8857b5d6c"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-18-0">
@@ -1208,12 +1212,12 @@
                                 Graphql API: src\test\resources\data\setBillingAddress.graphql
                             </h4>
                         </div>
-                        <div class="card-body"><pre>mutation{<br>  setBillingAddressOnCart(input: {<br>    cart_id: &quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl&quot;<br>    billing_address:<br>      {<br>        address: {<br>          firstname: &quot;John&quot;<br>          lastname: &quot;Doe&quot;<br>          company: &quot;Company Name&quot;<br>          street: [<br>            &quot;Handico Tower&quot;,<br>            &quot;smartosc&quot;<br>          ]<br>          city: &quot;Minnetonka&quot;<br>          region: &quot;MS&quot;<br>          postcode: &quot;T7P 0T6&quot;<br>          country_code: &quot;US&quot;<br>          telephone: &quot;9526452222&quot;<br>          save_in_address_book: false<br>        }<br>        same_as_shipping: true<br>      }<br>  }){<br>    cart{<br>      billing_address{<br>        firstname<br>        lastname<br>        company<br>        street<br>        city<br>        region{<br>          code<br>          label<br>        }<br>        postcode<br>        telephone<br>        country{<br>          code<br>          label<br>        }<br>      }<br>    }<br>  }<br>}<br></pre></div>
+                        <div class="card-body"><pre>mutation{<br>  setBillingAddressOnCart(input: {<br>    cart_id: &quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj&quot;<br>    billing_address:<br>      {<br>        address: {<br>          firstname: &quot;John&quot;<br>          lastname: &quot;Doe&quot;<br>          company: &quot;Company Name&quot;<br>          street: [<br>            &quot;Handico Tower&quot;,<br>            &quot;smartosc&quot;<br>          ]<br>          city: &quot;Minnetonka&quot;<br>          region: &quot;MS&quot;<br>          postcode: &quot;T7P 0T6&quot;<br>          country_code: &quot;US&quot;<br>          telephone: &quot;9526452222&quot;<br>          save_in_address_book: false<br>        }<br>        same_as_shipping: true<br>      }<br>  }){<br>    cart{<br>      billing_address{<br>        firstname<br>        lastname<br>        company<br>        street<br>        city<br>        region{<br>          code<br>          label<br>        }<br>        postcode<br>        telephone<br>        country{<br>          code<br>          label<br>        }<br>      }<br>    }<br>  }<br>}<br></pre></div>
                     </div>
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-fd0b28fd-f27f-4ce0-ae6a-e20ae9712293"></a>
+                <a name="report-data-f893b5be-313b-49c7-b9df-44f6ca45af32"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-18-1">
@@ -1237,7 +1241,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">832ms</span></td>
+                    <td width="100"><span class="nested-step">894ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -1276,13 +1280,13 @@
                                     <h4>Request Headers</h4>
                                     <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
-                                    <pre>{<br>    &quot;query&quot;: &quot;mutation{\n  setBillingAddressOnCart(input: {\n    cart_id: \&quot;EtpPunRtBe548vasaRHzId6qjGY7nSfl\&quot;\n    billing_address:\n      {\n        address: {\n          firstname: \&quot;John\&quot;\n          lastname: \&quot;Doe\&quot;\n          company: \&quot;Company Name\&quot;\n          street: [\n            \&quot;Handico Tower\&quot;,\n            \&quot;smartosc\&quot;\n          ]\n          city: \&quot;Minnetonka\&quot;\n          region: \&quot;MS\&quot;\n          postcode: \&quot;T7P 0T6\&quot;\n          country_code: \&quot;US\&quot;\n          telephone: \&quot;9526452222\&quot;\n          save_in_address_book: false\n        }\n        same_as_shipping: true\n      }\n  }){\n    cart{\n      billing_address{\n        firstname\n        lastname\n        company\n        street\n        city\n        region{\n          code\n          label\n        }\n        postcode\n        telephone\n        country{\n          code\n          label\n        }\n      }\n    }\n  }\n}\n&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation{\n  setBillingAddressOnCart(input: {\n    cart_id: \&quot;8mz4ICptCtzZQ5deCHy7imEL38tJv0Kj\&quot;\n    billing_address:\n      {\n        address: {\n          firstname: \&quot;John\&quot;\n          lastname: \&quot;Doe\&quot;\n          company: \&quot;Company Name\&quot;\n          street: [\n            \&quot;Handico Tower\&quot;,\n            \&quot;smartosc\&quot;\n          ]\n          city: \&quot;Minnetonka\&quot;\n          region: \&quot;MS\&quot;\n          postcode: \&quot;T7P 0T6\&quot;\n          country_code: \&quot;US\&quot;\n          telephone: \&quot;9526452222\&quot;\n          save_in_address_book: false\n        }\n        same_as_shipping: true\n      }\n  }){\n    cart{\n      billing_address{\n        firstname\n        lastname\n        company\n        street\n        city\n        region{\n          code\n          label\n        }\n        postcode\n        telephone\n        country{\n          code\n          label\n        }\n      }\n    }\n  }\n}\n&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Connection: keep-alive<br>Content-Length: 233<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Tue, 15 Nov 2022 10:45:51 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=5c149cac1c0aefe63ea4fec8b040c2c5; expires=Sat, 12-Nov-2033 10:45:51 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=7286ae2b1b7b9b00ae254e22bc991b25; expires=Sat, 12-Nov-2033 10:45:51 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=c77a84440db77cfa796f6a37d3525208; expires=Sat, 12-Nov-2033 10:45:51 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-1797c60ee1c319a9fc1912c7397d36b9-dd7b53c629fc7ece-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Wed, 15 Nov 2023 10:45:52 GMT<br>X-Served-By: cache-dub4324-DUB, cache-qpg1262-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                    <pre>Connection: keep-alive<br>Content-Length: 285<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:35 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=6cef33920514e8f93517ff3e74d6ec94; expires=Sun, 13-Nov-2033 08:43:34 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=e57674bf2c0d05407ed505971f289958; expires=Sun, 13-Nov-2033 08:43:35 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=64896de58e97272c4771523819feb58c; expires=Sun, 13-Nov-2033 08:43:35 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df72db09ce23daa81000e27f89a-e5e8d8c1c199eef5-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-00a32ff025597d728<br>X-Platform-Server: i-00a32ff025597d728<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:35 GMT<br>X-Served-By: cache-dub4358-DUB, cache-qpg1257-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Something went wrong, please contact our Admin for support&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;internal&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 3<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;setBillingAddressOnCart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;setBillingAddressOnCart&quot;: null<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;setBillingAddressOnCart&quot;: {<br>            &quot;cart&quot;: {<br>                &quot;billing_address&quot;: {<br>                    &quot;firstname&quot;: &quot;LGE&quot;,<br>                    &quot;lastname&quot;: &quot;UK Sub&quot;,<br>                    &quot;company&quot;: null,<br>                    &quot;street&quot;: [<br>                        &quot;10115 Berlin&quot;<br>                    ],<br>                    &quot;city&quot;: &quot;Berlin&quot;,<br>                    &quot;region&quot;: {<br>                        &quot;code&quot;: &quot;BER&quot;,<br>                        &quot;label&quot;: &quot;Berlin&quot;<br>                    },<br>                    &quot;postcode&quot;: &quot;10115&quot;,<br>                    &quot;telephone&quot;: &quot;07088699566&quot;,<br>                    &quot;country&quot;: {<br>                        &quot;code&quot;: &quot;DE&quot;,<br>                        &quot;label&quot;: &quot;DE&quot;<br>                    }<br>                }<br>            }<br>        }<br>    }<br>}</pre>
                                     <h4>Response Cookies</h4>
-                                    <pre>private_content_version=5c149cac1c0aefe63ea4fec8b040c2c5;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=7286ae2b1b7b9b00ae254e22bc991b25;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax<br>private_content_version=c77a84440db77cfa796f6a37d3525208;Path=/;Max-Age=315360000;Secure;Expires=11/12/33 10:45 AM;SameSite=Lax</pre>
+                                    <pre>private_content_version=6cef33920514e8f93517ff3e74d6ec94;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=e57674bf2c0d05407ed505971f289958;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=64896de58e97272c4771523819feb58c;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
                             </div>
                         </div>
                     </div>
@@ -1315,42 +1319,278 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">016ms</span></td>
                 </tr>
 
                             </table>
                         </td>
                     </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
 
                     <td width="70" class="step-icon">
                         <a name="0-6"></a>
-                            <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon ' title='PENDING'></i></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-6 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-6')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Set Payment Method "cashondelivery"
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-bedd3bcb-c354-40ad-b431-fc32133f8b1c"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-21-0">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-21-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>de</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">652ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-6" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-6-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                And Set Payment Method
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-22">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-22">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    setPaymentMethodOnCart(input: {\n        cart_id: \&quot;{{CartID}}\&quot;\n        payment_method: {\n            code: \&quot;cashondelivery\&quot;\n        }\n    }) {\n        cart {\n            selected_payment_method {\n                code\n            }\n        }\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 231<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:35 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=f941b7e6dd1d125b8fe4113a9907ef31; expires=Sun, 13-Nov-2033 08:43:35 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=e587ad6bee8cc547efc785862f9eeb48; expires=Sun, 13-Nov-2033 08:43:35 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=ef96f4e460a8e371c98c8822543f1ccb; expires=Sun, 13-Nov-2033 08:43:35 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df763404b684692439fda6d7761-1a19f6127c4d9a1e-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Platform-Server: i-09f065d1ff2903c6d<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:35 GMT<br>X-Served-By: cache-dub4358-DUB, cache-qpg1237-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{CartID}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;setPaymentMethodOnCart&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;setPaymentMethodOnCart&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=f941b7e6dd1d125b8fe4113a9907ef31;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=e587ad6bee8cc547efc785862f9eeb48;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=ef96f4e460a8e371c98c8822543f1ccb;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-6-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Guest should see a value that is equal to: &lt;200&gt;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
 
                             </table>
                         </td>
                     </tr>
-            <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="0-7"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection0-7 success-icon"
+                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-7')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                                And Place Oder
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-1cdb09bb-7dc4-4a6f-84f0-f7734e1442e1"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-24-0">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-24-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>de</pre></div>
+                    </div>
+                </div>
+                                            </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">705ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection0-7" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-7-0"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-25">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-25">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=de<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n    placeOrder(input: {cart_id: \&quot;{{CartID}}\&quot;}) {\n        order {\n            order_number\n            #   access_code,\n            #   form_action_url,\n            #   shared_payment_url,\n            #   message,\n            #   cart_id\n        }\n        redirect_payment_gateway_url\n    }\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 207<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 16 Nov 2022 08:43:36 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=d3cf8ec79064edf73b5b6753505f05c3; expires=Sun, 13-Nov-2033 08:43:36 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=21d37065e3adec29f6c54fb17643919e; expires=Sun, 13-Nov-2033 08:43:36 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=7365d6b3a5f38697ddd4ff0bfbd61cb1; expires=Sun, 13-Nov-2033 08:43:36 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-17980df78aba3e63797dd9067e5b034b-07e2d90d9242f068-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: 7b4558df76efd2524b19d02442ce47b1f40dff760dc03e28b4f8ef1fcfe7ca9f<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Platform-Server: i-0d21a80b1925285ae<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 16 Nov 2023 08:43:36 GMT<br>X-Served-By: cache-dub4364-DUB, cache-qpg1256-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Could not find a cart with ID \&quot;{{CartID}}\&quot;&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-no-such-entity&quot;<br>            },<br>            &quot;locations&quot;: [<br>                {<br>                    &quot;line&quot;: 2,<br>                    &quot;column&quot;: 5<br>                }<br>            ],<br>            &quot;path&quot;: [<br>                &quot;placeOrder&quot;<br>            ]<br>        }<br>    ],<br>    &quot;data&quot;: {<br>        &quot;placeOrder&quot;: null<br>    }<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=d3cf8ec79064edf73b5b6753505f05c3;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=21d37065e3adec29f6c54fb17643919e;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax<br>private_content_version=7365d6b3a5f38697ddd4ff0bfbd61cb1;Path=/;Max-Age=315360000;Secure;Expires=11/13/33 8:43 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="90" class="step-icon">
+                        <a name="0-7-1"></a>
+                            <span style="margin-left: 60px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Guest should see a value that is equal to: &lt;200&gt;
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+            <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                <td width="130"><span class="top-level-step"><em>PENDING</em></span></td>
-                <td width="100"><span class="top-level-step"><em>8.83s</em></span></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>10.24s</em></span></td>
             </tr>
 
         </table>

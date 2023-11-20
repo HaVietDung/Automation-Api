@@ -1,0 +1,51 @@
+mutation {
+    addToCartPbp(
+        cart_id: "{{CartID}}"
+        product_id: "{{Product_id}}"
+        qty: 1
+        buy_now: false
+#        delivery_coverage_check: {
+#            address_level_4: "{{Address_level_4}}"
+#        }
+        selected_items: {
+            global_shipping: {
+                shipping_methods: [
+                    { carrier_code: "global_shipping", method_code: "global_shipping" }
+                ]
+                global_shipping_rule_items: [
+                    {
+                        rule_id: "{{Rule_id}}"
+                        delivery_date: "{{Relivery_date}}"
+#                        delivery_date: ""
+                        installation_services: ["{{Count_Installation}}"]
+                        haulaway_services: ["{{Count_haulaway}}"]
+                    }
+                ]
+            }
+        }
+    ) {
+        items {
+            id
+            quantity
+            is_ready_checkout
+            product {
+                name
+                sku
+            }
+            prices {
+                price {
+                    value
+                }
+            }
+        }
+        total_segments {
+            code
+            title
+            value
+            items {
+                title
+                value
+            }
+        }
+    }
+}

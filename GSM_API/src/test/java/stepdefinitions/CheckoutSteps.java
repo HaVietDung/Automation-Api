@@ -16,12 +16,15 @@ public class CheckoutSteps {
     public void setShippingAddress(DataTable dataTable){
         CheckoutPage.setShippingAddress(dataTable);
     }
-
     @And("Set Billing")
     public void setBilling(DataTable dataTable){
         CheckoutPage.setBillingAddress(dataTable);
     }
 
+    @And("Set Shipping Address And Billing")
+    public void setShippngAddressAndBilling(DataTable dataTable){
+        CheckoutPage.setShippingAddressAndBilling(dataTable);
+    }
     @And("Get Cart with Selected Shipping Rule")
     public void getCartwithSelectedShippingRule(){
         CheckoutPage.getCartWithSelectShippingRule();

@@ -1,11 +1,11 @@
 mutation {
     addToCartPbp(
         cart_id: "{{CartID}}"
-        product_id: "Auto7966073.OMD.ACCA.CA"
+        product_id: "{{Product_id}}"
         qty: 1
         buy_now: false
         delivery_coverage_check: {
-            address_level_4: "T7P 0T6"
+            address_level_4: "{{Address_level_4}}"
         }
         selected_items: {
             global_shipping: {
@@ -14,10 +14,10 @@ mutation {
                 ]
                 global_shipping_rule_items: [
                     {
-                        rule_id: 59
-                        delivery_date: "2023-06-19"
-                        installation_services: [8]
-                        haulaway_services: [14]
+                        rule_id: "{{Rule_id}}"
+                        delivery_date: "{{Relivery_date}}"
+                        installation_services: ["{{Count_Installation}}"]
+                        haulaway_services: ["{{Count_haulaway}}"]
                     }
                 ]
             }

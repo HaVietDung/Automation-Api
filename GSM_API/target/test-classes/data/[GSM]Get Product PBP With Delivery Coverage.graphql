@@ -1,8 +1,8 @@
 query {
     getPbpProduct(
-        product_id: "Auto7966073.OMD.ACCA.CA"
+        product_id: "{{Product_id}}"
         qty: 1
-        delivery_coverage_check: {address_level_4: "K0E 0B2"}
+        delivery_coverage_check: {address_level_4: "{{Address_level_4}}"}
     ) {
         product {
             id

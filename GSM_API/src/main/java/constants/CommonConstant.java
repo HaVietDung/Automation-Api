@@ -13,4 +13,8 @@ public class CommonConstant {
 
     public static final String PRODUCT_ID = "Product-ID";
     public static final String PAYMENT_SHIPPING = "Payment-Shipping";
+    public static final String RULE_ID = "Rule-ID";
+
+    public static final String COUNT_INSTALLATION = "Count_Installation";
+    public static final String COUNT_HAULAWAY = "Count_haulaway";
 }
