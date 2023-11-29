@@ -1,5 +1,6 @@
 package smartosc.base.scrennplay.rest;
 
+import constants.CommonConstant;
 import constants.SessionVariable;
 import io.restassured.response.Response;
 import net.serenitybdd.core.Serenity;
@@ -8,7 +9,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import smartosc.base.scrennplay.tasks.Start;
 import utils.CommonUtils;
-import constants.CommonConstant;
 
 import java.io.File;
 import java.util.HashMap;

@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Demo Guest place order with API" skipped="0" tests="1" time="11.57" timestamp="2023-11-20 06:07:39"><testcase name="global shipping method"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Demo Guest place order with API" skipped="0" tests="1" time="75.07" timestamp="2023-11-29 06:22:07"><testcase name="global shipping method"><error message="No match found" type="java.lang.IllegalStateException">No match found</error><system-err>No match found&#13;
+utils.CommonUtils.getOrderUid(CommonUtils.java:95)&#13;
+stepdefinitions.OderStep.viewOrder(OderStep.java:40)&#13;
+✽.Go To Order And View Order(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:31)&#13;
+</system-err></testcase></testsuite>

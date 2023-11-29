@@ -1,7 +1,6 @@
 package stepdefinitions;
 
 import constants.SessionVariable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;

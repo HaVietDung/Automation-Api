@@ -1,0 +1,80 @@
+# support for both customer logged-in and guest
+# src/vendor/magento/module-rma-graph-ql/etc/schema.graphqls:5
+mutation {
+    # base64 => must be base64_encode
+    requestReturn(
+        input: {
+            order_uid: "{{ORDER_UID}}" #base64 #4
+            contact_email: "dunghv1@smartosc.com"
+            comment_text: "I want to return."
+            items: [
+                {
+                    order_item_uid: "{{ORDER_ITEM_ID}}" #base64 - 4
+                    quantity_to_return: 1
+                    #    image:
+                    #      {
+                    #      name: "anhtestreturn.png",
+                    #      base64_encoded_file: "{{encode_image}}"
+                    #      }
+                    selected_custom_attributes: [
+                        #   {
+                        #    attribute_code: "reason_for_omd"
+                        #    value: "MzY4" #base64
+                        #  }
+                        {
+                            attribute_code: "reason_for_omv"
+                            value: "{{REASON_OMV}}" #base64
+                        }
+                        {
+                            attribute_code: "return_type"
+                            value: "{{RETURN_TYPE}}" #base64
+                        }
+                        {
+                            attribute_code: "condition"
+                            value: "{{CONDITION}}" #base64
+                        }
+                        {
+                            attribute_code: "resolution"
+                            value: "{{RESOLUTION}}" #base64
+                        }
+                    ]
+                    #   entered_custom_attributes: [
+                    #     { attribute_code: "delivery_fee", value: 100 }
+                    #   ]
+                }
+            ]
+        }
+    ) {
+        return {
+            uid
+            items {
+                uid
+                status
+                request_quantity
+                quantity
+                order_item {
+                    id
+                    eligible_for_return
+                    product_sku
+                    product_sku
+                    product_type
+                    quantity_returned
+                    status
+                }
+            }
+            number
+            status
+            comments {
+                uid
+                author_name
+                text
+                created_at
+            }
+            customer {
+                firstname
+                lastname
+                email
+            }
+        }
+    }
+}

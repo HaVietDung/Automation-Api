@@ -1,0 +1,37 @@
+{
+    customAttributeMetadata(
+        attributes: [
+            {
+                attribute_code: "return_type"
+                entity_type: "rma_item"
+            }
+            {
+                attribute_code: "reason_for_omd"
+                entity_type: "rma_item"
+            }
+            {
+                attribute_code: "reason_for_omv"
+                entity_type: "rma_item"
+            }
+            {
+                attribute_code: "resolution"
+                entity_type: "rma_item"
+            }
+            {
+                attribute_code: "condition"
+                entity_type: "rma_item"
+            }
+        ]
+    ) {
+        items {
+            attribute_code
+            attribute_type
+            entity_type
+            input_type
+            attribute_options {
+                value
+                label
+            }
+        }
+    }
+}

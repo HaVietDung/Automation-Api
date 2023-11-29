@@ -19,7 +19,7 @@ public class CheckoutPage {
     private final String country;
     public static final String GRAPHQL_CART = CommonConstant.FilePath.DATA_TEST + File.separator;
 
-    public CheckoutPage(String typeAcc, String country) {
+    public CheckoutPage(String country) {
         this.country = country;
     }
 
@@ -100,6 +100,7 @@ public class CheckoutPage {
         theActorInTheSpotlight().whoCan(CallAnApi.at(Start.getBaseUri()));
 
         Map<String, String> input = new HashMap<>();
+
         input.put("CartID", Serenity.sessionVariableCalled(CommonConstant.CART_ID));
         input.put("code", code);
 
@@ -115,6 +116,8 @@ public class CheckoutPage {
 
         String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "placeOrder.graphql", input);
         Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);
+        String orderNumber = response.getBody().jsonPath().getString("data.placeOrder.order.order_number");
+        Serenity.setSessionVariable(CommonConstant.ORDER_NUMBER).to(orderNumber);
         response.prettyPrint();
     }
 
