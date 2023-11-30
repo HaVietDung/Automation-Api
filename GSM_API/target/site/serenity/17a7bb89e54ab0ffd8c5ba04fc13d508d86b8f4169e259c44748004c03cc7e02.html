@@ -143,7 +143,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-11-2023 13:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-11-2023 13:38</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="failing-color">
                                     Test
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -205,15 +205,16 @@
                                 <h4>
                                     <i class="fs-2 bi bi-person"></i>&nbsp;
                                     <span>
-                                        <a data-toggle="collapse" href="#abilities-Auto" aria-expanded="false" aria-controls="abilities">Auto</a>
+                                        <a data-toggle="collapse" href="#abilities-Guest" aria-expanded="false" aria-controls="abilities">Guest</a>
                                         
                                     </span>
                                 </h4>
-                                <div class="collapse multi-collapse" id="abilities-Auto">
+                                <div class="collapse multi-collapse" id="abilities-Guest">
                                     <div>
-                                        <span class="cast-description">Auto can:</span>
+                                        <span class="cast-description">Guest can:</span>
                                         <ul>
                                                 <li>browse the web</li>
+                                                <li>call an API at https://stg2.shop.lg.com/</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -237,7 +238,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given Auto open url &lt;url&gt;<br>When Login Admin OBS</div>
+        <div class="scenario">Given Guest create empty cart &lt;country&gt;<br>When Create Return Request With Order Number</div>
 
     </div>
 
@@ -261,9 +262,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a
-                                        href="#0">https://stg2.shop.lg.com/admin</a>
+                        <td class="test-FAILURE"><a href="#0">1</a></td>
+                            <td class="test-FAILURE"><a
+                                        href="#0">https://stg2.shop.lg.com/admin/sales/order_invoice/new/order_id/13081384/key/bff0bee44312fed88266e5d9fa49ba4bbd9df9282b51a27cdc32e1994b739baf/</a>
                             </td>
                     </tr>
                 </tbody>
@@ -280,7 +281,6 @@
                     Steps
                 </th>
 
-                    <th width="150" class="greentext">Screenshots</th>
                 <th width="130" class="greentext">Outcome</th>
                 <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
             </tr>
@@ -288,13 +288,13 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0 success-icon"
+                                <i class="bi bi-plus-square imgstepSection0 failure-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -304,12 +304,12 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                1: test ({url=https://stg2.shop.lg.com/admin})
+                                                1: test ({url=https://stg2.shop.lg.com/admin/sales/order_invoice/new/order_id/13081384/key/bff0bee44312fed88266e5d9fa49ba4bbd9df9282b51a27cdc32e1994b739baf/})
                                         </span>
                             </a>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
-                <a name="report-data-e992c749-51d0-4d6e-8ae9-9760526157fe"></a>
+                <a name="report-data-5d2b8927-c9f0-44c3-aa3a-3750f6661f0d"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-0">
@@ -329,7 +329,7 @@
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-4a230caa-8112-462c-a157-6a4f0c271424"></a>
+                <a name="report-data-606edbdf-0cdd-4acb-a73c-f6c4cdcd84c3"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-1">
@@ -349,7 +349,7 @@
                 </div>
                                             </span>
                                         <span class="piece-of-evidence">
-                <a name="report-data-f1d4f20c-2126-42c1-a45d-0fa81adf27b9"></a>
+                <a name="report-data-796d8482-2d01-48d4-bbef-51f915ef77c7"></a>
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
                             data-target="#reportData-EVIDENCE-1-2">
@@ -372,35 +372,19 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=0">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="bi bi-arrow-right"></i>
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=13">
-                                    <img src="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         href="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">23s 012ms</span></td>
+                    <td width="130"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">2s 809ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection0" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="70" class="step-icon">
                         <a name="0-0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0-0 success-icon"
+                                <i class="bi bi-plus-square imgstepSection0-0 failure-icon"
                                    style="margin-left: 40px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -410,7 +394,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                Given Auto open url https://stg2.shop.lg.com/admin
+                                                Given Guest create empty cart &lt;country&gt;
                                         </span>
                             </a>
                             <span class="evidence">
@@ -418,28 +402,19 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=5">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">8s 163ms</span></td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">2s 723ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
                             <table id="stepSection0-0" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
 
                     <td width="90" class="step-icon">
                         <a name="0-0-0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
                                style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0-0-0 success-icon"
+                                <i class="bi bi-plus-square imgstepSection0-0-0 failure-icon"
                                    style="margin-left: 60px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -449,25 +424,36 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                Auto open url by href:  https://stg2.shop.lg.com/admin
+                                                Guest cart page gsm
                                         </span>
                             </a>
                             <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <a name="report-data-9e476063-76e1-49a8-bc1b-edf1c5452f22"></a>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#reportData-EVIDENCE-3-0">
+                        Get session id: COUNTRY
+                    </button>
+                </span>
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="reportData-EVIDENCE-3-0" tabindex="-1" role="dialog"
+                         aria-labelledby="restModalLabel" aria-hidden="true">
+                        <div class="card">
+                            <h4 class="card-header" id="restModalLabel">
+                                Get session id: COUNTRY
+                            </h4>
+                        </div>
+                        <div class="card-body"><pre>&lt;country&gt;</pre></div>
+                    </div>
+                </div>
+                                            </span>
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=4">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">7s 813ms</span></td>
+                    <td width="130"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">2s 491ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -484,25 +470,111 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                Auto opens the https://stg2.shop.lg.com/admin
+                                                POST https://stg2.shop.lg.com/graphql
+                                        </span>
+                            <span class="evidence">
+                                        <span class="piece-of-evidence">
+                <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-4">
+                            REST Query
+                        </button>
+                    </span>
+                <!-- Modal -->
+                <div class="rest-query-details">
+                    <div class="collapse multi-collapse" id="restModal-REST-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Response</h4>
+                                    <p>URL: https://stg2.shop.lg.com/graphql</p>
+                                    <p>Status code: 500</p>
+                                    <p>Content Type: application/json</p>
+                                    <h4>Request Headers</h4>
+                                    <pre>Accept=application/json, application/javascript, text/javascript, text/json<br>Authorization=<br>store=&lt;country&gt;<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;query&quot;: &quot;mutation {\n  createEmptyCart\n}\n&quot;<br>}</pre>
+                                    <h4>Response Headers</h4>
+                                    <pre>Connection: keep-alive<br>Content-Length: 109<br>Cache-Control: max-age=0, must-revalidate, no-cache, no-store, stale-if-error=86400, stale-while-revalidate=86400<br>Content-Type: application/json<br>Expires: Wed, 30 Nov 2022 06:38:46 GMT<br>Pragma: no-cache<br>Set-Cookie: private_content_version=f24cd86e8e8c8e104ba824eaee2f5739; expires=Sun, 27-Nov-2033 06:38:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=733689da2bb2fb12b8ce1c9519b45b23; expires=Sun, 27-Nov-2033 06:38:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Set-Cookie: private_content_version=535749a463275beb383902e3b7804f64; expires=Sun, 27-Nov-2033 06:38:46 GMT; Max-Age=315360000; path=/; secure; SameSite=Lax<br>Traceresponse: 00-179c53479a21da64511b1bb0b57bfdf0-0596236ec0b51545-01<br>X-Content-Type-Options: nosniff<br>X-Debug-Info: eyJyZXRyaWVzIjowfQ==<br>X-Frame-Options: SAMEORIGIN<br>X-Magento-Cache-Id: ae0b3e30aa26a8593e3a41ce2fd4089700df00b4c310d08b62520c6a3eb48f17<br>X-Xss-Protection: 1; mode=block<br>Accept-Ranges: bytes<br>Date: Thu, 30 Nov 2023 06:38:46 GMT<br>X-Served-By: cache-dub4346-DUB, cache-qpg1221-QPG<br>X-Cache: MISS, MISS<br>X-Cache-Hits: 0, 0<br>Vary: Accept-Encoding<br>Strict-Transport-Security: max-age=31557600</pre>
+                                <h4>Response Body</h4>
+                                    <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;message&quot;: &quot;Requested store is not found (&lt;country&gt;)&quot;,<br>            &quot;extensions&quot;: {<br>                &quot;category&quot;: &quot;graphql-input&quot;<br>            }<br>        }<br>    ]<br>}</pre>
+                                    <h4>Response Cookies</h4>
+                                    <pre>private_content_version=f24cd86e8e8c8e104ba824eaee2f5739;Path=/;Max-Age=315360000;Secure;Expires=11/27/33 6:38 AM;SameSite=Lax<br>private_content_version=733689da2bb2fb12b8ce1c9519b45b23;Path=/;Max-Age=315360000;Secure;Expires=11/27/33 6:38 AM;SameSite=Lax<br>private_content_version=535749a463275beb383902e3b7804f64;Path=/;Max-Age=315360000;Secure;Expires=11/27/33 6:38 AM;SameSite=Lax</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        </span>
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+
+                    <td width="110" class="step-icon">
+                        <a name="0-0-0-1"></a>
+                            <span style="margin-left: 80px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                Guest should see a value that is equal to: &lt;200&gt;
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=3">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">7s 793ms</span></td>
+                    <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">037ms</span></td>
                 </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: <br>Expecting a value that is equal to: &lt;200&gt;<br>But got...........................: &lt;500&gt;</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>smartosc.base.scrennplay.rest.RestAssuredCommon.getResponse(RestAssuredCommon.java:46)<br />smartosc.base.scrennplay.rest.RestAssuredCommon.getResponseGraphql(RestAssuredCommon.java:21)<br />smartosc.base.scrennplay.rest.CartPageGSM.performAs(CartPageGSM.java:54)<br />stepdefinitions.CartStepGSM.createEmptyCart(CartStepGSM.java:16)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+
+                            </table>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
@@ -511,219 +583,32 @@
                             </table>
                         </td>
                     </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
-                    <td width="70" class="step-icon">
-                        <a name="0-1"></a>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                               style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0-1 success-icon"
-                                   style="margin-left: 40px; float:left; padding-right:5px"></i>
-                            </a>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                               style="display:block;">
-                                <span class="nested-step">
-                                                When Login Admin OBS
-                                        </span>
-                            </a>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                        <td width="160" class="SUCCESS-text">
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=6">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                                <i class="bi bi-arrow-right"></i>
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=12">
-                                    <img src="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         href="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">14s 758ms</span></td>
-                </tr>
-                    <tr>
-                        <td colspan="5">
-                            <table id="stepSection0-1" class="step-table-nested" style="display:none;">
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-0"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                    <td width="50" class="step-icon">
+                        <a name="1"></a>
+                            <span style="margin-left: 20px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
                     <td class="step-description-column">
                         <div class="step-description">
-                                <span class="nested-group-step">
-                                                Auto clears field //input[@id='username']
+                                <span class="top-level-step">
+                                                When Create Return Request With Order Number
                                         </span>
                             <span class="evidence">
                                 </span>
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=7">
-                                    <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         href="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">198ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">005ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-1"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Auto enters 'longnv3' into //input[@id='username']
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=8">
-                                    <img src="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png"
-                                         href="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">236ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-2"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Auto clears field //input[@id='login']
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=9">
-                                    <img src="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png"
-                                         href="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">164ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-3"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Auto enters 'admin@123' into //input[@id='login']
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=10">
-                                    <img src="d91049d20aee5c95a4327be80922e7a224be473293aa29987f0afb894c9f54e8.png"
-                                         href="d91049d20aee5c95a4327be80922e7a224be473293aa29987f0afb894c9f54e8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">271ms</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-
-                    <td width="90" class="step-icon">
-                        <a name="0-1-4"></a>
-                            <span style="margin-left: 60px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                    </td>
-
-                    <td class="step-description-column">
-                        <div class="step-description">
-                                <span class="nested-group-step">
-                                                Auto clicks on //button[@class='action-login action-primary']
-                                        </span>
-                            <span class="evidence">
-                                </span>
-                        </div>
-                    </td>
-
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="17a7bb89e54ab0ffd8c5ba04fc13d508d86b8f4169e259c44748004c03cc7e02_screenshots.html#screenshots?screenshot=11">
-                                    <img src="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         href="b63864c6ee1762a367f5e75c0d2a608e8b5767126c626a840523670d3d5113e8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">13s 655ms</span></td>
-                </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-
-                            </table>
-                        </td>
-                    </tr>
-            <tr class="test-SUCCESS">
-                    <td colspan="3"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>23.91s</em></span></td>
+            <tr class="test-FAILURE">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
+                <td width="100"><span class="top-level-step"><em>3.02s</em></span></td>
             </tr>
 
         </table>

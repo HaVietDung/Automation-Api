@@ -13,4 +13,5 @@ public class OrderComponent {
     public static final Target SUBMIT_INVOICE = Target.the("SubmitInvoice").locatedBy("//button[@title='Submit Invoice']");
     public static final Target ORDER_STATUS = Target.the("OrderStatus").locatedBy("//span[@id='order_status']");
     public static final Target ITEM_ID = Target.the("ItemID").locatedBy("(//td[@class='col-status'])[2]");
+    public static final Target PRODUCT_TYPE = Target.the("ProductType").locatedBy("(//td[@class='col-status'])[5]");
 }

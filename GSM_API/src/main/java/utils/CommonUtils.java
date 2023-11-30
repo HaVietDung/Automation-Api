@@ -83,17 +83,17 @@ public class CommonUtils {
         return new String(encodedBytes);
     }
 
-    public static String getCurrentURL() {
-        WebDriver driver = getDriver();
-        return driver.getCurrentUrl();
-    }
-
     public static String getOrderUid(String url) {
-        String regex = "/order_id/(\\\\d+)/";
+        String regex = "/order_id/(\\d+)/";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(url);
-        String orderUid = matcher.group(1);
-        System.out.println("Extracted Order ID: " + orderUid);
-        return orderUid;
+        if (matcher.find()){
+            String orderUid = matcher.group(1);
+            System.out.println("orderUID " + orderUid);
+            return orderUid;
+        } else {
+            System.out.println("fail");
+        }
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package smartosc.base.scrennplay.pageObject;
+package smartosc.base.scrennplay.rest;
 
 import constants.CommonConstant;
 import constants.SessionVariable;

@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: testsuites.DemoTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 77.07 s <<< FAILURE! - in testsuites.DemoTestSuite
-Demo Guest place order with API.global shipping method  Time elapsed: 74.456 s  <<< ERROR!
-java.lang.IllegalStateException: No match found
-	at java.util.regex.Matcher.group(Matcher.java:536)
-	at utils.CommonUtils.getOrderUid(CommonUtils.java:95)
-	at stepdefinitions.OderStep.viewOrder(OderStep.java:40)
-	at ✽.Go To Order And View Order(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:31)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 330.429 s <<< FAILURE! - in testsuites.DemoTestSuite
+Demo Guest place order with API.global shipping method  Time elapsed: 327.526 s  <<< ERROR!
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at smartosc.base.scrennplay.rest.ReturnPage.getAttributeMetaData(ReturnPage.java:47)
+	at stepdefinitions.ReturnStep.createReturnRequest(ReturnStep.java:12)
+	at ✽.Create Return Request With Order Number(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:38)
 

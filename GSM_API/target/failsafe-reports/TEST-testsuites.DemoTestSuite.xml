@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="testsuites.DemoTestSuite" time="77.07" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="testsuites.DemoTestSuite" time="330.429" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\dunghv1\AppData\Local\Temp\surefire8820357379301227886\surefirebooter-20231129182205461_3.jar C:\Users\dunghv1\AppData\Local\Temp\surefire8820357379301227886 2023-11-29T18-22-05_217-jvmRun1 surefire-20231129182205461_1tmp surefire_0-20231129182205461_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\dunghv1\AppData\Local\Temp\surefire6859577563452794595\surefirebooter-20231130174100321_3.jar C:\Users\dunghv1\AppData\Local\Temp\surefire6859577563452794595 2023-11-30T17-41-00_028-jvmRun1 surefire-20231130174100321_1tmp surefire_0-20231130174100321_2tmp"/>
     <property name="surefire.test.class.path" value="D:\Automation-Api\GSM_API\target\test-classes;D:\Automation-Api\GSM_API\target\project-base-api-1.0-SNAPSHOT.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.2\selenium-java-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.2\selenium-api-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.2\selenium-chrome-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\dunghv1\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\dunghv1\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\dunghv1\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\dunghv1\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\dunghv1\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\dunghv1\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\dunghv1\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\dunghv1\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\dunghv1\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.2\selenium-chromium-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.2\selenium-json-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.2\selenium-devtools-v85-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.2\selenium-devtools-v95-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.2\selenium-devtools-v96-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v97\4.1.2\selenium-devtools-v97-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.2\selenium-edge-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.2\selenium-firefox-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.2\selenium-firefox-xpi-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.2\selenium-ie-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.2\selenium-opera-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.2\selenium-remote-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-buffer\4.1.73.Final\netty-buffer-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-codec-http\4.1.73.Final\netty-codec-http-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-codec\4.1.73.Final\netty-codec-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-handler\4.1.73.Final\netty-handler-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-tcnative-classes\2.0.46.Final\netty-tcnative-classes-2.0.46.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-common\4.1.73.Final\netty-common-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.73.Final\netty-transport-classes-epoll-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.73.Final\netty-transport-classes-kqueue-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-native-epoll\4.1.73.Final\netty-transport-native-epoll-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.73.Final\netty-transport-native-kqueue-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.73.Final\netty-transport-native-unix-common-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport\4.1.73.Final\netty-transport-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-resolver\4.1.73.Final\netty-resolver-4.1.73.Final.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-api\1.10.1\opentelemetry-api-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-context\1.10.1\opentelemetry-context-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.10.1\opentelemetry-exporter-logging-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.10.1-alpha\opentelemetry-sdk-metrics-1.10.1-alpha.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.10.1-alpha\opentelemetry-sdk-logs-1.10.1-alpha.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.10.1\opentelemetry-sdk-common-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.10.1\opentelemetry-sdk-extension-autoconfigure-spi-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.10.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.10.1-alpha.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.10.1\opentelemetry-sdk-trace-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.10.1\opentelemetry-sdk-1.10.1.jar;C:\Users\dunghv1\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.10.1-alpha\opentelemetry-semconv-1.10.1-alpha.jar;C:\Users\dunghv1\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\dunghv1\.m2\repository\net\bytebuddy\byte-buddy\1.12.7\byte-buddy-1.12.7.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\dunghv1\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\dunghv1\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\dunghv1\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\dunghv1\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\dunghv1\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.2\selenium-http-4.1.2.jar;C:\Users\dunghv1\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.2\selenium-safari-driver-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.2\selenium-support-4.1.2.jar;C:\Users\dunghv1\.m2\repository\org\slf4j\slf4j-simple\2.0.6\slf4j-simple-2.0.6.jar;C:\Users\dunghv1\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-core\3.2.0\serenity-core-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-model\3.2.0\serenity-model-3.2.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\dunghv1\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\dunghv1\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\dunghv1\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\dunghv1\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\dunghv1\.m2\repository\com\thoughtworks\xstream\xstream\1.4.19\xstream-1.4.19.jar;C:\Users\dunghv1\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\dunghv1\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\dunghv1\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\dunghv1\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\dunghv1\.m2\repository\org\awaitility\awaitility\4.1.0\awaitility-4.1.0.jar;C:\Users\dunghv1\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\dunghv1\.m2\repository\io\github\classgraph\classgraph\4.8.138\classgraph-4.8.138.jar;C:\Users\dunghv1\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\dunghv1\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.3\byte-buddy-agent-1.12.3.jar;C:\Users\dunghv1\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-reports\3.2.0\serenity-reports-3.2.0.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\dunghv1\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\dunghv1\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\dunghv1\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\dunghv1\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\dunghv1\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\dunghv1\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\dunghv1\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\dunghv1\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\dunghv1\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\dunghv1\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\dunghv1\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-report-resources\3.2.0\serenity-report-resources-3.2.0.jar;C:\Users\dunghv1\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\dunghv1\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\dunghv1\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\dunghv1\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\dunghv1\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\dunghv1\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\dunghv1\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\dunghv1\.m2\repository\io\appium\java-client\8.0.0-beta2\java-client-8.0.0-beta2.jar;C:\Users\dunghv1\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\dunghv1\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\dunghv1\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\dunghv1\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\dunghv1\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\dunghv1\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\dunghv1\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\dunghv1\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\dunghv1\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\dunghv1\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\dunghv1\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\dunghv1\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\dunghv1\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\dunghv1\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\dunghv1\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\dunghv1\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\dunghv1\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\dunghv1\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\dunghv1\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\dunghv1\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\dunghv1\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\dunghv1\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\dunghv1\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\dunghv1\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\dunghv1\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\dunghv1\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\dunghv1\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\dunghv1\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\dunghv1\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\dunghv1\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\dunghv1\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\dunghv1\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\dunghv1\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-cucumber\3.2.0\serenity-cucumber-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\3.2.0\serenity-screenplay-webdriver-3.2.0.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\dunghv1\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\dunghv1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-rest-assured\3.2.0\serenity-rest-assured-3.2.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\dunghv1\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\dunghv1\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dunghv1\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\dunghv1\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\dunghv1\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\dunghv1\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\dunghv1\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\dunghv1\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-screenplay\3.2.0\serenity-screenplay-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\3.2.0\serenity-screenplay-rest-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-ensure\3.2.0\serenity-ensure-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-junit\3.2.0\serenity-junit-3.2.0.jar;C:\Users\dunghv1\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.0\kotlin-stdlib-1.6.0.jar;C:\Users\dunghv1\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\dunghv1\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.6.0\kotlin-stdlib-common-1.6.0.jar;C:\Users\dunghv1\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\dunghv1\.m2\repository\org\apache\poi\poi\4.1.1\poi-4.1.1.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\dunghv1\.m2\repository\org\apache\poi\poi-ooxml\4.1.1\poi-ooxml-4.1.1.jar;C:\Users\dunghv1\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\dunghv1\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\dunghv1\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.1\poi-ooxml-schemas-4.1.1.jar;C:\Users\dunghv1\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\dunghv1\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\dunghv1\.m2\repository\org\json\json\20220924\json-20220924.jar;C:\Users\dunghv1\.m2\repository\com\jcraft\jsch\0.1.55\jsch-0.1.55.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-shutterbug1x\3.1.15\serenity-shutterbug1x-3.1.15.jar;C:\Users\dunghv1\.m2\repository\com\assertthat\selenium-shutterbug\1.5\selenium-shutterbug-1.5.jar;C:\Users\dunghv1\.m2\repository\com\github\zafarkhaja\java-semver\0.9.0\java-semver-0.9.0.jar;C:\Users\dunghv1\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\dunghv1\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\dunghv1\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\dunghv1\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-single-page-report\3.2.0\serenity-single-page-report-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-stats\3.2.0\serenity-stats-3.2.0.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-reports-configuration\3.2.0\serenity-reports-configuration-3.2.0.jar;C:\Users\dunghv1\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\dunghv1\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\dunghv1\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\dunghv1\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\dunghv1\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\dunghv1\.m2\repository\org\knowm\xchart\xchart\3.5.2\xchart-3.5.2.jar;C:\Users\dunghv1\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\dunghv1\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.4.RELEASE\thymeleaf-extras-java8time-3.0.4.RELEASE.jar;C:\Users\dunghv1\.m2\repository\net\serenity-bdd\serenity-navigator-report\3.1.10\serenity-navigator-report-3.1.10.jar;C:\Users\dunghv1\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.6.0\kotlin-stdlib-jdk8-1.6.0.jar;C:\Users\dunghv1\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.6.0\kotlin-stdlib-jdk7-1.6.0.jar;C:\Users\dunghv1\.m2\repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;C:\Users\dunghv1\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\plugins\maven-failsafe-plugin\3.0.0-M9\maven-failsafe-plugin-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M9\maven-surefire-common-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M9\surefire-api-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M9\surefire-logger-api-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M9\surefire-extensions-api-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M9\surefire-booter-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M9\surefire-extensions-spi-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.1.1\maven-common-artifact-filters-3.1.1.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-artifact\3.1.0\maven-artifact-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-core\3.1.0\maven-core-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-settings\3.1.0\maven-settings-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-settings-builder\3.1.0\maven-settings-builder-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-repository-metadata\3.1.0\maven-repository-metadata-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-model-builder\3.1.0\maven-model-builder-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-aether-provider\3.1.0\maven-aether-provider-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\aether\aether-spi\0.9.0.M2\aether-spi-0.9.0.M2.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\aether\aether-impl\0.9.0.M2\aether-impl-0.9.0.M2.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\aether\aether-api\0.9.0.M2\aether-api-0.9.0.M2.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.0.0.M2a\org.eclipse.sisu.plexus-0.0.0.M2a.jar;C:\Users\dunghv1\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\dunghv1\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\dunghv1\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\dunghv1\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.0.0.M2a\org.eclipse.sisu.inject-0.0.0.M2a.jar;C:\Users\dunghv1\.m2\repository\asm\asm\3.3.1\asm-3.3.1.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.16\plexus-interpolation-1.16.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4.2\plexus-classworlds-2.4.2.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\dunghv1\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\dunghv1\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\maven-plugin-api\3.1.0\maven-plugin-api-3.1.0.jar;C:\Users\dunghv1\.m2\repository\org\codehaus\plexus\plexus-java\1.1.2\plexus-java-1.1.2.jar;C:\Users\dunghv1\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\dunghv1\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M9\surefire-shared-utils-3.0.0-M9.jar;C:\Users\dunghv1\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\dunghv1\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\dunghv1"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\dunghv1\AppData\Local\Temp\surefire8820357379301227886\surefirebooter-20231129182205461_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dunghv1\AppData\Local\Temp\surefire6859577563452794595\surefirebooter-20231130174100321_3.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,16 +63,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="global shipping method" classname="Demo Guest place order with API" time="74.456">
-    <error message="No match found" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: No match found
-	at java.util.regex.Matcher.group(Matcher.java:536)
-	at utils.CommonUtils.getOrderUid(CommonUtils.java:95)
-	at stepdefinitions.OderStep.viewOrder(OderStep.java:40)
-	at ✽.Go To Order And View Order(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:31)
+  <testcase name="global shipping method" classname="Demo Guest place order with API" time="327.526">
+    <error message="java.util.LinkedHashMap cannot be cast to java.util.List" type="java.lang.ClassCastException"><![CDATA[java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at smartosc.base.scrennplay.rest.ReturnPage.getAttributeMetaData(ReturnPage.java:47)
+	at stepdefinitions.ReturnStep.createReturnRequest(ReturnStep.java:12)
+	at ✽.Create Return Request With Order Number(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:38)
 ]]></error>
     <system-out><![CDATA[
 @global-shipping-method
-Scenario Outline: global shipping method                     &amp#27;[90m# src/test/resources/features/GlobalShippingMethod.feature:43&amp#27;[0m
+Scenario Outline: global shipping method                     &amp#27;[90m# src/test/resources/features/GlobalShippingMethod.feature:44&amp#27;[0m
 &amp#27;[92m|-- 1: global shipping method ({country=de, email=dunghv1@smartosc.com, paymentMethod=cashondelivery, url=https://stg2.shop.lg.com/admin})&amp#27;[0m
 Set session id: SCENARIO - global shipping method
 Set session id: PATH_FEATURE - /D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature
@@ -85,7 +85,7 @@ Set session id: COUNTRY - de
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mGuest&amp#27;[0m&amp#27;[32m create empty cart &amp#27;[0m&amp#27;[32m&amp#27;[1mde&amp#27;[0m                           &amp#27;[90m# stepdefinitions.CartStepGSM.createEmptyCart(net.serenitybdd.screenplay.Actor,java.lang.String)&amp#27;[0m
 &amp#27;[92m|---- When Set Guest "dunghv1@smartosc.com" on cart&amp#27;[0m
 key - value: Email - dunghv1@smartosc.com
-key - value: CartID - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: CartID - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
 {
@@ -125,15 +125,15 @@ Get session id: COUNTRY - de
                     "html": ""
                 },
                 "image": {
-                    "url": "https://stg2.shop.lg.com/static/version1701250509/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/image.jpg",
+                    "url": "https://stg2.shop.lg.com/static/version1701326541/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/image.jpg",
                     "label": "49\" LG 4K NanoCell TV"
                 },
                 "small_image": {
-                    "url": "https://stg2.shop.lg.com/static/version1701250509/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/small_image.jpg",
+                    "url": "https://stg2.shop.lg.com/static/version1701326541/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/small_image.jpg",
                     "label": "49\" LG 4K NanoCell TV"
                 },
                 "thumbnail": {
-                    "url": "https://stg2.shop.lg.com/static/version1701250509/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/thumbnail.jpg",
+                    "url": "https://stg2.shop.lg.com/static/version1701326541/frontend/LgGlobal/de/de_DE/Magento_Catalog/images/product/placeholder/thumbnail.jpg",
                     "label": "49\" LG 4K NanoCell TV"
                 },
                 "swatch_image": null,
@@ -345,7 +345,7 @@ key - value: Count_Installation - 902
 key - value: Count_haulaway - 1258
 key - value: Product_id - 49NANO867NA.AEUD.EEDG.DE
 key - value: Rule_id - 1033
-key - value: CartID - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: CartID - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 key - value: Address_level_4 - null
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
@@ -354,7 +354,7 @@ Get session id: COUNTRY - de
         "addToCartPbp": {
             "items": [
                 {
-                    "id": "644806",
+                    "id": "646393",
                     "quantity": 1,
                     "is_ready_checkout": 1,
                     "product": {
@@ -425,7 +425,7 @@ key - value: postcode - T7P 0T6
 key - value: company - Company Name
 key - value: telephone - 9526452222
 key - value: region - MS
-key - value: Cart_id - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: Cart_id - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 key - value: lastname - Doe
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
@@ -513,7 +513,7 @@ Get session id: COUNTRY - de
     | firstname | lastname | company      | street             | city       | region | postcode | country_code | telephone  |
     | John      | Doe      | Company Name | [123xx ABC STreet] | Minnetonka | MS     | T7P 0T6  | DE           | 9526452222 |
 &amp#27;[92m|---- And Get Cart with Selected Shipping Rule&amp#27;[0m
-key - value: CartID - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: CartID - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
 {
@@ -523,7 +523,7 @@ Get session id: COUNTRY - de
             "available_global_shipping_rules": {
                 "items": [
                     {
-                        "item_id": 644806,
+                        "item_id": 646393,
                         "delivery_coverage": null,
                         "rules": [
                             {
@@ -698,7 +698,7 @@ Get session id: COUNTRY - de
                 {
                     "delivery_coverage": null,
                     "delivery_date": "",
-                    "item_id": 644806,
+                    "item_id": 646393,
                     "rule_id": 1033,
                     "rule_name": "Test all product",
                     "delivery_fee": "0",
@@ -856,7 +856,7 @@ Get session id: COUNTRY - de
             ],
             "items": [
                 {
-                    "id": "644806",
+                    "id": "646393",
                     "product": {
                         "name": "49\" LG 4K NanoCell TV",
                         "sku": "49NANO867NA.AEUD.EEDG.DE"
@@ -915,7 +915,7 @@ Get session id: COUNTRY - de
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mGet Cart with Selected Shipping Rule&amp#27;[0m                   &amp#27;[90m# stepdefinitions.CheckoutSteps.getCartwithSelectedShippingRule()&amp#27;[0m
 &amp#27;[92m|---- And Set Payment Method "cashondelivery"&amp#27;[0m
 key - value: code - cashondelivery
-key - value: CartID - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: CartID - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
 {
@@ -931,14 +931,14 @@ Get session id: COUNTRY - de
 }
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSet Payment Method &amp#27;[0m&amp#27;[32m&amp#27;[1m"cashondelivery"&amp#27;[0m                    &amp#27;[90m# stepdefinitions.CheckoutSteps.setPaymentMethod(java.lang.String)&amp#27;[0m
 &amp#27;[92m|---- And Place Oder&amp#27;[0m
-key - value: CartID - ua2u7dOFuXAoMvTrd82soZQbmYpZuyfR
+key - value: CartID - iSv2y8RFWvBTjzHBOjqCsTcfjc09MXQh
 Get session id: COUNTRY - de
 &amp#27;[92m|------ Guest should see a value that is equal to: <200>&amp#27;[0m
 {
     "data": {
         "placeOrder": {
             "order": {
-                "order_number": "11010004554"
+                "order_number": "11010004617"
             },
             "redirect_payment_gateway_url": null
         }
@@ -960,7 +960,7 @@ Get session id: COUNTRY - de
 &amp#27;[92m|------ Auto clicks on SaleCatalog&amp#27;[0m
 &amp#27;[92m|------ Auto clicks on Oder&amp#27;[0m
 &amp#27;[92m|------ Auto clears field OrederNumber&amp#27;[0m
-&amp#27;[92m|------ Auto enters '11010004554' into OrederNumber&amp#27;[0m
+&amp#27;[92m|------ Auto enters '11010004617' into OrederNumber&amp#27;[0m
 Sleep 1s
 Sleep 2s
 Sleep 3s
@@ -969,27 +969,412 @@ Sleep 1s
 Sleep 2s
 Sleep 3s
 &amp#27;[92m|------ Auto clicks on Order&amp#27;[0m
+orderUID 13081795
+Order UID MTMwODE3OTU=
 &amp#27;[92m|------ Auto clicks on Invoice&amp#27;[0m
 &amp#27;[92m|------ Auto clicks on SubmitInvoice&amp#27;[0m
 ScrollElementIntoMiddle: ItemID
 &amp#27;[92m|------ Auto should see ItemID that is displayed&amp#27;[0m
-  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mGo To Order And View Order&amp#27;[0m                            &amp#27;[90m# stepdefinitions.OderStep.viewOrder()&amp#27;[0m
-      &amp#27;[31mjava.lang.IllegalStateException: No match found
-	at java.util.regex.Matcher.group(Matcher.java:536)
-	at utils.CommonUtils.getOrderUid(CommonUtils.java:95)
-	at stepdefinitions.OderStep.viewOrder(OderStep.java:40)
-	at âœ½.Go To Order And View Order(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:31)
+ScrollElementIntoMiddle: ProductType
+&amp#27;[92m|------ Auto should see ProductType that is displayed&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mGo To Order And View Order&amp#27;[0m                            &amp#27;[90m# stepdefinitions.OderStep.viewOrder()&amp#27;[0m
+&amp#27;[92m|---- And Change Order Status to "Preparing for Delivery" By API&amp#27;[0m
+{"MessageHeader":{"DocumentType":"CXML_ORDRSP"},"MessageBody":{"ContentList":[{"TRANSIT_TRADE_UNIT_PRICE":"0.000000","NOTA_NO":null,"CARRIER_NAME":"PANTOS","BILL_TO_ADDRESS2_INFO":null,"CONSIGNEE_POSTAL_CODE":"180000","ORDER_CREATED_BY":"404581","SHIPPING_REMARK_INFO":null,"PHONE_NO":null,"SHIP_TO_POSTAL_CODE":"100001","SHIPMENT_PRIORITY_CODE":"Standard","RESIDENCE_TYPE_CODE":null,"TAX_AMOUNT":"313636.000000","SHIP_TO_COUNTY":null,"UNIT_SELLING_PRICE":"3450000.000000","CUSTOMER_CODE":"VN008500001H","SERVICE_CENTER_NAME":null,"PROMISED_SHIP_DATE":null,"BPM_APPROVAL_DATE":null,"ORDER_TYPE_NAME":"REGULAR_OMD_VH","HQ_ACCOUNTING_UNIT_CODE":"GLZ","ORDER_QUANTITY_UOM":"EA","DELIVERY_EXPECTED_YYYYMMDD":"20201027","DELIVERY_CAPACITY_FLAG":null,"SCHEDULE_SHIP_DATE":"2020-10-28 23:00:00.0","SALESPERSON_NO":"VH005735","TRANSPORT_PRO_NO":null,"TRANSFER_FLAG":"E","ZERO_INVO_FLAG":null,"SHIP_TO_STATE_CODE":"HN","RESULT_AFFILIATE_CODE":null,"SALES_DATE":"2020-10-27 16:25:04.0","CONSUMER_SSN":null,"INIT_PROMISED_SHIP_DATE":null,"AUTO_CANCEL_SCHEDULE_DATE":null,"GOODS_INS_SEQ":null,"RETURN_RECEIVING_DATE":"2020-10-26 16:56:07.0","COMPONENT_NO":null,"ORDER_CATEGORY_CODE":"ORDER","EMPLOYEE_NO":"VH005735","REINVOICE_REASON_CODE":null,"RETURN_TYPE_CODE":null,"ORIG_SYS_DOCUMENT_REF":"ORDER_11010004617","LINE_TYPE_CODE":"OMD_REG_L020","DROP_SHIP_FLAG":"N","COND_SHP_WITH_INSP_QTY":"0.00","LINE_CREATION_DATE":"2020-10-24 10:43:28.0","INSTALL_IN_BILL_TO_NAME":null,"CONSIGNEE_ADDR4_INFO":null,"B2B_SVC_FLAG":null,"SHIP_TO_ADDRESS1_INFO":"HN","HEADER_REQUEST":"2020-10-25 10:40:05.0","PAYMENT_TERMS_DESC":"Immediate","CONSIGNEE_COUNTRY_NAME":"VN","OTHER_RECEIVING_ISSUE_FLAG":"N","FULFILLED_FLAG":"Y","SALES_CHANNEL_CODE":"002_NON-CHANNEL","FULFILLED_AMOUNT":"3450000.000000","PURCHASE_ORDER_DATE":null,"EXCLUDE_CODE":null,"CONNECT_BILL_TO_NAME":null,"CUST_PO_DATE":"2020-10-24 00:00:00.0","ORDER_TYPE_ID":"124820","SALES_DEPARTMENT_NAME":"HCM SALES E-COMMERCE","SELLER_MOBILE_NO":null,"NSP_PRICE":"0.000000","PRODUCT_LEVEL3_CODE":"TVLE32","TRANSIT_TRADE_CHARGE_AMOUNT":"0.000000","CONSUMER_PURCHASE_DATE":null,"USED_PRODUCT_LINE_CODE":null,"ACTUAL_SHIPMENT_DATE":"2023-08-01 16:56:07.0","SHIP_TO_CUSTOMER_CODE":"VN008500-B2E-S","CUSTOMER_INVOICE_NO":null,"CHANGE_CODE":null,"BILL_TO_ADDRESS4_INFO":null,"FULFILLMENT_DATE":"2020-10-27 16:25:04.0","APPOINTMENT_TO_DATE":"2020-10-28 23:00:00.0","DEF_RTN_TYPE_CODE":null,"BILL_FROM_AFFILIATE_CODE":null,"RETURN_REASON_CODE":null,"INSTALL_CUSTOMER_CODE":null,"NOTA_DATE":null,"CHARGEBACK_NO":null,"CONSIGNEE_STATE_NAME":null,"CUSTOMER_RAD_HEADER":"2020\/10\/25 00:00:00","CONSIGNEE_PHONE_NO":"0826392988","ORDER_STATUS_CODE":"AWAITING_SHIPPING","ORIG_SYS_LINE_REF":"ORDER_17121709","CONSIGNEE_MOBILE_PHONE_NO":"0826392988","CONSIGNEE_PROVINCE_NAME":null,"LINE_SET_ID":null,"INSTALL_REQUEST_DATE":null,"CONSIGNEE_ADDR1_INFO":"6B\/51\/172 duong Nguyen Cong Hoa, quan Le Chan, TP ","ORDER_LINE_ID":"124820","ORDER_ALLOCATION_DATE":null,"BILL_TO_MDMS_CUSTOMER_CODE":"VN008500","MEMBERSHIP_NO":null,"BLNKT_SALES_AGR_LINE_NO":null,"REAL_SITE_NAME":null,"DISCOUNT_RATE":"0.0000","PROMISE_DATE":"2020-10-28 23:00:00.0","SMS_FLAG":null,"EXPECTED_ARRIVAL_DATE":null,"SHIP_TO_ADDRESS4_INFO":null,"UNIT_LIST_PRICE":"3450000.000000","TRANSIT_TRADE_FLAG":null,"BPM_REQUEST_NO":null,"SHIP_TO_CITY_NAME":"HO CHI MINH","ORDER_CONTEXT":"GSALES_OMD_REGULAR","MODEL_CATEGORY":"LCDbasic","LAST_UPDATED_BY":"88862","PAYMENT_TERM_ID":"1273","VERTICAL_ID":null,"SHIPMENT_NO":"1","LATEST_ACCEPTABLE_DATE":null,"RETURN_APPROVAL_DATE":null,"PROJECT_CODE":"VH20C00000000","SALES_CHANNEL_NAME":"Non-channel sale of South Area (group 002)","SHIPPING_HOLD_FLAG":null,"SHIPPABLE_FLAG":"Y","TAX_INCLUDE_AMT":"313636.000000","WAREHOUSE_TYPE_CODE":"S","AFFILIATE_CODE":"EAVH","LINK_TO_LINE_ID":null,"ORDER_SOURCE_DESC":"LG Online Brand Shop (New)","SVC_REFERENCE_LINE_ID":null,"HOME_DELIVERY_CAPACITY_RATE":"0.0000","ORDER_TYPE_CODE":"OMD_REG_H010","LINE_NO":"1","OFFERING_EXPIRE_DATE":null,"PACKING_INSTR":null,"ORDER_SOURCE_NAME":"OMD_LGOBS","CONSIGNEE_NAME":"Tan Hoang Trong","EDI_PARTNER_ID":null,"BIZ_ITEM_TYPE_CODE":"SET","APPOINTMENT_FROM_DATE":"2020-10-28 23:00:00.0","CARRIER_JOB_NO":1,"REAL_PURCHASE_DATE":null,"EXPENSE_DEPARTMENT_CODE":null,"FREIGHT_CHARGE_AMOUNT":"0.000000","PICK_NO":"AYA20102600052","RECEIPT_CUST_PHONE_NO":"0826392988","CURRENCY_CODE":"VND","LINE_CATEGORY_CODE":"ORDER","CHANNEL_CODE":null,"PRODUCT_LEVEL4_CODE":"TVLE32NX","DOMAIN_CODE":"OMD","ORDER_QTY":"1.00","COND_SHP_WITH_INSP_DATE":null,"CONTACT_FAX_NO":null,"AUTO_CHANGE_REASON":null,"CUSTOMER_PO_LINE_NO":null,"ITEM_TYPE":"Q","CANCEL_QTY":"0.00","ORIGINAL_ORDER_LINE_NO":null,"CUST_PO_LINE_ID":null,"LINE_TYPE_NAME":"REGULAR_M_OMD_VH_L","FREE_OF_CHARGE_FLAG":"N","SALES_ORDER_LINE_NO":"1.1","LOGISTICS_INTERFACE_FLAG":"N","CONNECT_BILL_TO_CODE":null,"SOLD_TO_ORG_ID":"13148433","TRANSFER_DATE":"2020-10-27 19:13:52","INSTALL_IN_BILL_TO_CODE":null,"FIXED_ARRIVAL_DATE":null,"CUSTOMER_MODEL_CODE":null,"PICKING_DATE":"2020-10-26 16:56:07.0","EXPENSE_ACCOUNT_CODE":null,"OFFERING_TYPE_NAME":null,"ORDERED_DATE":"2020-10-24 10:42:22.0","CONTACT_BIZ_NO":"...","SVC_REFERENCE_HEADER_ID":null,"MODE_OF_TRANSPORT":"TRUCK","MODE_DESC":"LED LCD TV 32 (HD)","CHANNEL_ORDER_NO":null,"ORG_ID":"2472781","COMM_BIZ_SUBMISSION_NO":null,"SUB_EDI_PARTNER_ID":null,"CUSTOMER_INTERFACE_FLAG":"X","CUSTOMER_RAD_LINE":"2020\/10\/25 00:00:00","QTY_INCLUDE_FLAG":"Y","TRANSIT_TRADE_PO_LINE_ID":null,"DIO_REQUEST_SHIPMENT_DATE":null,"PICK_RELEASE_DATE":"2020-10-26 15:23:02.0","DISCOUNT_SUBMISSION_NO":null,"CANCELLED_FLAG":"N","SALES_PRODUCT_MANAGER_ID":null,"RETURN_REASON_DESC":null,"ORIGINAL_ORDER_NO":null,"PROMISED_MAD":null,"PARENT_CHANNEL_MEANING":"VN SALES CHANNEL","BILL_TO_ADDRESS3_INFO":null,"TOP_MODEL_LINE_ID":null,"ORDER_SOURCE_ID":"1730","PROMISED_ARRIVAL_DATE":null,"DIGITAL_SALES_EXPERT_NAME":null,"COLLECTION_DATE":null,"SALES_MODEL_CODE":"32LM636BPTB.ATV","ITEM_ID":"42765534","TRANSIT_TRADE_TYPE_CODE":null,"BOOKED_FLAG":"Y","REQUEST_ARRIVAL_TO_DATE":null,"FUNCTIONAL_CURRENCY_CODE":"VND","INIT_PROMISED_ARRIVAL_DATE":null,"CUST_PO_NO":"ORDER_18000008719","STORE_CODE":null,"CONVERSION_TYPE_CODE":"2243","BILL_TO_CUSTOMER_CODE":"VN008500001B","MOVE_ORDER_LINE_ID":"210648493","SALES_DEPARTMENT_CODE":"20102","SHIP_TO_COUNTRY_CODE":"VN","TRANSIT_TRADE_IMPORT_AMOUNT":"0.000000","APPROVAL_STATUS_CODE":null,"HQ_CREATION_DATE":"2020-10-27 18:50:01.0","CUSTOMER_GROUP_CODE":null,"SHIP_TO_STATE_NAME":null,"PROMISING_POLICY_CODE":null,"INTERFACE_GROUP_ID":"21223","FLOORING_COMPANY_CODE":null,"BILL_TO_CITY_NAME":null,"ITEM_TYPE_CODE":"STANDARD","OFFERING_NO":null,"ORDERED_ITEM":"32LM636BPTB.ATV","SALESREP_ID":"103986524","INSTALL_EX_BILL_TO_CODE":null,"CONTACT_NAME":null,"SERVICE_CENTER_CODE":null,"ORGANIZATION_CODE":null,"INVOICE_REMARK_DESC":null,"ORDER_LINE_CONTEXT":"GSALES_OMD_REGULAR","PAYMENT_TERM":"N0000FSN1000","BIZ_REGISTER_NO":"...","RESULT_SALESPERSON_ID":"103986524","MDMS_CUSTOMER_CODE":"VN008500","BOOKED_DATE":"2020-10-24 10:43:33.0","ORDER_AMOUNT":"3450000.000000","INTEREST_AMT":"0.000000","REQUEST_ARRIVAL_FROM_DATE":"2020-10-25 10:40:05.0","FINAL_DESTINATION_CODE":null,"ORDER_HEADER_ID":"11010004035","BILL_TO_ADDRESS1_INFO":".","SUBSIDIARY_CODE":"LGEVH","SPLIT_FROM_LINE_ID":null,"DIGITAL_SALES_EXPERT_CODE":null,"CARRIER_CODE":"PANTOS","CONTACT_EMAIL_ADDR":null,"PICKING_QTY":"1.00","PARENT_CHANNEL_CODE":"VN_SALES_CHANNEL","COMMISSION_RATE1":"0.0000","COMMISSION_RATE2":"0.0000","WAREHOUSE_CODE":"AYA","MODEL_CODE":"32LM636BPTB.ATV","SALESREP_NAME":null,"FULFILLED_QTY":"1.00","PICK_RELEASE_QTY":"1.0000","SVC_SERIAL_NO":null,"SHIP_TO_ADDRESS3_INFO":null,"SHIP_TO_COUNTRY_NAME":"Viet Nam","BLNKT_SALES_AGR_NO":null,"BILL_TO_STATE_CODE":null,"PRODUCT_LEVEL1_CODE":"TV","FIRST_REFERENCE_LINE_ID":null,"SHIP_TO_ORG_ID":"4179240","CONSIGNEE_ADDR2_INFO":" Quan Le Chan - Hai Phong","HEADER_LAST_UPDATE_DATE":"2020-10-24 12:43:31.0","PRICE_TERMS_CODE":null,"COMM_BIZ_SUBMISSION_LINE_ID":null,"SHIP_FROM_SITE_ID":null,"HOLD_FLAG":"N","PRODUCT_LEVEL2_CODE":"TVLE","CONTAINER_NO":null,"ALLOCATION_ID":null,"LINE_STATUS_CODE2":"OPEN","USD_PRICE":"0.000000","SALES_ORDER_NO":"1000562577","BEFORE_MONTH_TWA_COST":"0.000000","BILL_TO_ID":"4177922","APPOINTMENT_NAME":null,"CREATED_BY":"-1","STANDARD_PRICE":"6900000.000000","SHIPPING_METHOD_CODE":"000001_PANTOS_T_DOM_SITE","TRANSIT_TRADE_PO_HEADER_ID":null,"OFFERING_TYPE_CODE":null,"HLDS_FLAG":"N","CREATION_DATE":"2020-10-27 16:49:33.0","PRICE_LIST_ID":"97227095","CHANGE_DATE":null,"LINE_LAST_UPDATE_DATE":"2020-10-27 16:29:57.0","ACCOUNTING_UNIT_CODE":"SAL","SALESPERSON_NAME":"HO, THI NGUYEN MINH. THI, HO NGUYEN MINH. HO NGUYEN MINH THI","CUSTOMER_DEBIT_NO":null,"RECEIPT_CUST_NAME":"Tan Hoang Trong","PO_TYPE_CODE":null,"INTERFACE_ID":"124820","INSTALL_TYPE_CODE":null,"CONSIGNEE_COUNTY_NAME":null,"SERVICE_NO":null,"BACK_ORDER_CHANGE_DATE":null,"LINE_TYPE_ID":"29101","OPEN_FLAG":"N","LOT_NO":null,"SHIP_TO_CUSTOMER_NAME":"B2E-Hanoi","LIST_PRICE":"3450000.000000","SHIP_FROM_ORG_ID":"267826","SHIPPED_QTY":"1.00","LINE_CREATED_BY":"404581","ONETIME_CUSTOMER_FLAG":"N","CUSTOMER_INTERFACE_DATE":"2020-10-27 16:49:33.0","MASTER_AMOUNT":"3450000.000000","CONSIGNEE_CITY_NAME":"Hai Phong","LC_NO":null,"PRICE_LIST_NAME":"VH-VND-SHIP-VN008500-B2E-S","CUSTOMER_RAD":"2020-10-25 00:00:00.0","DATA_CREATION_TYPE_CODE":"I","LINK_ORDER_LINE_ID":null,"PARTIAL_FLAG":"Y","ORIGINAL_LINE_ID":null,"LINE_STATUS_CODE":"AWAITING_SHIPPING","BILL_TO_POSTAL_CODE":null,"WEEE_CHARGE_AMOUNT":"0.000000","INCLUDE_TAX_AMOUNT":"3450000.000000","SALESREP_CODE":null,"SCAC_CODE":null,"PTO_TOP_MODEL_CODE":null,"WAREHOUSE_NAME":"VH_Hanoi","BILL_TO_CUSTOMER_NAME":"OBS","OPTION_NO":null,"FOC_TYPE_CODE":null,"CONVERSION_RATE":"0E-8","EXCLUDE_TAX_AMOUNT":"3136364.000000","SUBINVENTORY_CODE":"GOODSET","LAST_UPDATE_LOGIN":"1285828382","CUSTOMER_NAME":"OBS","EXPENSE_ACCOUNTING_UNIT_CODE":null,"APPOINTMENT_NO":null,"CONSIGNEE_ADDR3_INFO":"tan.hoang@lgepartner.com","SHIP_TO_ADDRESS2_INFO":null,"RECEIPT_CUST_CELLULAR_NO":"0826392988","HEADER_CREATION_DATE":"2020-10-24 12:43:26.0","REQUEST_SHIPPING_DATE":"2020-10-28 23:00:00.0","SHIP_FROM_AFFILIATE_CODE":null,"FREIGHT_TERMS_CODE":null,"INSTALL_EX_BILL_TO_NAME":null,"RETURN_LOSS_AMOUNT":"0.000000"}]}}
+&amp#27;[92m|------ Auto should see a value that is equal to: <200>&amp#27;[0m
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+Sleep 1s
+Sleep 2s
+Sleep 3s
+Sleep 4s
+Sleep 5s
+Sleep 6s
+Sleep 7s
+Sleep 8s
+Sleep 9s
+Sleep 10s
+Sleep 11s
+Sleep 12s
+Sleep 13s
+Sleep 14s
+Sleep 15s
+Sleep 16s
+Sleep 17s
+Sleep 18s
+Sleep 19s
+Sleep 20s
+Sleep 21s
+Sleep 22s
+Sleep 23s
+Sleep 24s
+Sleep 25s
+Sleep 26s
+Sleep 27s
+Sleep 28s
+Sleep 29s
+Sleep 30s
+Sleep 31s
+Sleep 32s
+Sleep 33s
+Sleep 34s
+Sleep 35s
+Sleep 36s
+Sleep 37s
+Sleep 38s
+Sleep 39s
+Sleep 40s
+Sleep 41s
+Sleep 42s
+Sleep 43s
+Sleep 44s
+Sleep 45s
+Sleep 46s
+Sleep 47s
+Sleep 48s
+Sleep 49s
+Sleep 50s
+Sleep 51s
+Sleep 52s
+Sleep 53s
+Sleep 54s
+Sleep 55s
+Sleep 56s
+Sleep 57s
+Sleep 58s
+Sleep 59s
+Sleep 60s
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mChange Order Status to &amp#27;[0m&amp#27;[32m&amp#27;[1m"Preparing for Delivery"&amp#27;[0m&amp#27;[32m By API&amp#27;[0m &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
+&amp#27;[92m|---- And Change Order Status to "Picking for Delivery" By API&amp#27;[0m
+{"MessageHeader":{"DocumentType":"CXML_ORDRSP"},"MessageBody":{"ContentList":[{"TRANSIT_TRADE_UNIT_PRICE":"0.000000","NOTA_NO":null,"CARRIER_NAME":"PANTOS","BILL_TO_ADDRESS2_INFO":null,"CONSIGNEE_POSTAL_CODE":"180000","ORDER_CREATED_BY":"404581","SHIPPING_REMARK_INFO":null,"PHONE_NO":null,"SHIP_TO_POSTAL_CODE":"100001","SHIPMENT_PRIORITY_CODE":"Standard","RESIDENCE_TYPE_CODE":null,"TAX_AMOUNT":"313636.000000","SHIP_TO_COUNTY":null,"UNIT_SELLING_PRICE":"3450000.000000","CUSTOMER_CODE":"VN008500001H","SERVICE_CENTER_NAME":null,"PROMISED_SHIP_DATE":null,"BPM_APPROVAL_DATE":null,"ORDER_TYPE_NAME":"REGULAR_OMD_VH","HQ_ACCOUNTING_UNIT_CODE":"GLZ","ORDER_QUANTITY_UOM":"EA","DELIVERY_EXPECTED_YYYYMMDD":"20201027","DELIVERY_CAPACITY_FLAG":null,"SCHEDULE_SHIP_DATE":"2020-10-28 23:00:00.0","SALESPERSON_NO":"VH005735","TRANSPORT_PRO_NO":null,"TRANSFER_FLAG":"E","ZERO_INVO_FLAG":null,"SHIP_TO_STATE_CODE":"HN","RESULT_AFFILIATE_CODE":null,"SALES_DATE":"2020-10-27 16:25:04.0","CONSUMER_SSN":null,"INIT_PROMISED_SHIP_DATE":null,"AUTO_CANCEL_SCHEDULE_DATE":null,"GOODS_INS_SEQ":null,"RETURN_RECEIVING_DATE":"2020-10-26 16:56:07.0","COMPONENT_NO":null,"ORDER_CATEGORY_CODE":"ORDER","EMPLOYEE_NO":"VH005735","REINVOICE_REASON_CODE":null,"RETURN_TYPE_CODE":null,"ORIG_SYS_DOCUMENT_REF":"ORDER_11010004617","LINE_TYPE_CODE":"OMD_REG_L020","DROP_SHIP_FLAG":"N","COND_SHP_WITH_INSP_QTY":"0.00","LINE_CREATION_DATE":"2020-10-24 10:43:28.0","INSTALL_IN_BILL_TO_NAME":null,"CONSIGNEE_ADDR4_INFO":null,"B2B_SVC_FLAG":null,"SHIP_TO_ADDRESS1_INFO":"HN","HEADER_REQUEST":"2020-10-25 10:40:05.0","PAYMENT_TERMS_DESC":"Immediate","CONSIGNEE_COUNTRY_NAME":"VN","OTHER_RECEIVING_ISSUE_FLAG":"N","FULFILLED_FLAG":"Y","SALES_CHANNEL_CODE":"002_NON-CHANNEL","FULFILLED_AMOUNT":"3450000.000000","PURCHASE_ORDER_DATE":null,"EXCLUDE_CODE":null,"CONNECT_BILL_TO_NAME":null,"CUST_PO_DATE":"2020-10-24 00:00:00.0","ORDER_TYPE_ID":"124820","SALES_DEPARTMENT_NAME":"HCM SALES E-COMMERCE","SELLER_MOBILE_NO":null,"NSP_PRICE":"0.000000","PRODUCT_LEVEL3_CODE":"TVLE32","TRANSIT_TRADE_CHARGE_AMOUNT":"0.000000","CONSUMER_PURCHASE_DATE":null,"USED_PRODUCT_LINE_CODE":null,"ACTUAL_SHIPMENT_DATE":"2023-08-01 16:56:07.0","SHIP_TO_CUSTOMER_CODE":"VN008500-B2E-S","CUSTOMER_INVOICE_NO":null,"CHANGE_CODE":null,"BILL_TO_ADDRESS4_INFO":null,"FULFILLMENT_DATE":"2020-10-27 16:25:04.0","APPOINTMENT_TO_DATE":"2020-10-28 23:00:00.0","DEF_RTN_TYPE_CODE":null,"BILL_FROM_AFFILIATE_CODE":null,"RETURN_REASON_CODE":null,"INSTALL_CUSTOMER_CODE":null,"NOTA_DATE":null,"CHARGEBACK_NO":null,"CONSIGNEE_STATE_NAME":null,"CUSTOMER_RAD_HEADER":"2020\/10\/25 00:00:00","CONSIGNEE_PHONE_NO":"0826392988","ORDER_STATUS_CODE":"AWAITING_SHIPPING","ORIG_SYS_LINE_REF":"ORDER_17121709","CONSIGNEE_MOBILE_PHONE_NO":"0826392988","CONSIGNEE_PROVINCE_NAME":null,"LINE_SET_ID":null,"INSTALL_REQUEST_DATE":null,"CONSIGNEE_ADDR1_INFO":"6B\/51\/172 duong Nguyen Cong Hoa, quan Le Chan, TP ","ORDER_LINE_ID":"124820","ORDER_ALLOCATION_DATE":null,"BILL_TO_MDMS_CUSTOMER_CODE":"VN008500","MEMBERSHIP_NO":null,"BLNKT_SALES_AGR_LINE_NO":null,"REAL_SITE_NAME":null,"DISCOUNT_RATE":"0.0000","PROMISE_DATE":"2020-10-28 23:00:00.0","SMS_FLAG":null,"EXPECTED_ARRIVAL_DATE":null,"SHIP_TO_ADDRESS4_INFO":null,"UNIT_LIST_PRICE":"3450000.000000","TRANSIT_TRADE_FLAG":null,"BPM_REQUEST_NO":null,"SHIP_TO_CITY_NAME":"HO CHI MINH","ORDER_CONTEXT":"GSALES_OMD_REGULAR","MODEL_CATEGORY":"LCDbasic","LAST_UPDATED_BY":"88862","PAYMENT_TERM_ID":"1273","VERTICAL_ID":null,"SHIPMENT_NO":"1","LATEST_ACCEPTABLE_DATE":null,"RETURN_APPROVAL_DATE":null,"PROJECT_CODE":"VH20C00000000","SALES_CHANNEL_NAME":"Non-channel sale of South Area (group 002)","SHIPPING_HOLD_FLAG":null,"SHIPPABLE_FLAG":"Y","TAX_INCLUDE_AMT":"313636.000000","WAREHOUSE_TYPE_CODE":"S","AFFILIATE_CODE":"EAVH","LINK_TO_LINE_ID":null,"ORDER_SOURCE_DESC":"LG Online Brand Shop (New)","SVC_REFERENCE_LINE_ID":null,"HOME_DELIVERY_CAPACITY_RATE":"0.0000","ORDER_TYPE_CODE":"OMD_REG_H010","LINE_NO":"1","OFFERING_EXPIRE_DATE":null,"PACKING_INSTR":null,"ORDER_SOURCE_NAME":"OMD_LGOBS","CONSIGNEE_NAME":"Tan Hoang Trong","EDI_PARTNER_ID":null,"BIZ_ITEM_TYPE_CODE":"SET","APPOINTMENT_FROM_DATE":"2020-10-28 23:00:00.0","CARRIER_JOB_NO":1,"REAL_PURCHASE_DATE":null,"EXPENSE_DEPARTMENT_CODE":null,"FREIGHT_CHARGE_AMOUNT":"0.000000","PICK_NO":"AYA20102600052","RECEIPT_CUST_PHONE_NO":"0826392988","CURRENCY_CODE":"VND","LINE_CATEGORY_CODE":"ORDER","CHANNEL_CODE":null,"PRODUCT_LEVEL4_CODE":"TVLE32NX","DOMAIN_CODE":"OMD","ORDER_QTY":"1.00","COND_SHP_WITH_INSP_DATE":null,"CONTACT_FAX_NO":null,"AUTO_CHANGE_REASON":null,"CUSTOMER_PO_LINE_NO":null,"ITEM_TYPE":"Q","CANCEL_QTY":"0.00","ORIGINAL_ORDER_LINE_NO":null,"CUST_PO_LINE_ID":null,"LINE_TYPE_NAME":"REGULAR_M_OMD_VH_L","FREE_OF_CHARGE_FLAG":"N","SALES_ORDER_LINE_NO":"1.1","LOGISTICS_INTERFACE_FLAG":"N","CONNECT_BILL_TO_CODE":null,"SOLD_TO_ORG_ID":"13148433","TRANSFER_DATE":"2020-10-27 19:13:52","INSTALL_IN_BILL_TO_CODE":null,"FIXED_ARRIVAL_DATE":null,"CUSTOMER_MODEL_CODE":null,"PICKING_DATE":"2020-10-26 16:56:07.0","EXPENSE_ACCOUNT_CODE":null,"OFFERING_TYPE_NAME":null,"ORDERED_DATE":"2020-10-24 10:42:22.0","CONTACT_BIZ_NO":"...","SVC_REFERENCE_HEADER_ID":null,"MODE_OF_TRANSPORT":"TRUCK","MODE_DESC":"LED LCD TV 32 (HD)","CHANNEL_ORDER_NO":null,"ORG_ID":"2472781","COMM_BIZ_SUBMISSION_NO":null,"SUB_EDI_PARTNER_ID":null,"CUSTOMER_INTERFACE_FLAG":"X","CUSTOMER_RAD_LINE":"2020\/10\/25 00:00:00","QTY_INCLUDE_FLAG":"Y","TRANSIT_TRADE_PO_LINE_ID":null,"DIO_REQUEST_SHIPMENT_DATE":null,"PICK_RELEASE_DATE":"2020-10-26 15:23:02.0","DISCOUNT_SUBMISSION_NO":null,"CANCELLED_FLAG":"N","SALES_PRODUCT_MANAGER_ID":null,"RETURN_REASON_DESC":null,"ORIGINAL_ORDER_NO":null,"PROMISED_MAD":null,"PARENT_CHANNEL_MEANING":"VN SALES CHANNEL","BILL_TO_ADDRESS3_INFO":null,"TOP_MODEL_LINE_ID":null,"ORDER_SOURCE_ID":"1730","PROMISED_ARRIVAL_DATE":null,"DIGITAL_SALES_EXPERT_NAME":null,"COLLECTION_DATE":null,"SALES_MODEL_CODE":"32LM636BPTB.ATV","ITEM_ID":"42765534","TRANSIT_TRADE_TYPE_CODE":null,"BOOKED_FLAG":"Y","REQUEST_ARRIVAL_TO_DATE":null,"FUNCTIONAL_CURRENCY_CODE":"VND","INIT_PROMISED_ARRIVAL_DATE":null,"CUST_PO_NO":"ORDER_18000008719","STORE_CODE":null,"CONVERSION_TYPE_CODE":"2243","BILL_TO_CUSTOMER_CODE":"VN008500001B","MOVE_ORDER_LINE_ID":"210648493","SALES_DEPARTMENT_CODE":"20102","SHIP_TO_COUNTRY_CODE":"VN","TRANSIT_TRADE_IMPORT_AMOUNT":"0.000000","APPROVAL_STATUS_CODE":null,"HQ_CREATION_DATE":"2020-10-27 18:50:01.0","CUSTOMER_GROUP_CODE":null,"SHIP_TO_STATE_NAME":null,"PROMISING_POLICY_CODE":null,"INTERFACE_GROUP_ID":"21223","FLOORING_COMPANY_CODE":null,"BILL_TO_CITY_NAME":null,"ITEM_TYPE_CODE":"STANDARD","OFFERING_NO":null,"ORDERED_ITEM":"32LM636BPTB.ATV","SALESREP_ID":"103986524","INSTALL_EX_BILL_TO_CODE":null,"CONTACT_NAME":null,"SERVICE_CENTER_CODE":null,"ORGANIZATION_CODE":null,"INVOICE_REMARK_DESC":null,"ORDER_LINE_CONTEXT":"GSALES_OMD_REGULAR","PAYMENT_TERM":"N0000FSN1000","BIZ_REGISTER_NO":"...","RESULT_SALESPERSON_ID":"103986524","MDMS_CUSTOMER_CODE":"VN008500","BOOKED_DATE":"2020-10-24 10:43:33.0","ORDER_AMOUNT":"3450000.000000","INTEREST_AMT":"0.000000","REQUEST_ARRIVAL_FROM_DATE":"2020-10-25 10:40:05.0","FINAL_DESTINATION_CODE":null,"ORDER_HEADER_ID":"11010004035","BILL_TO_ADDRESS1_INFO":".","SUBSIDIARY_CODE":"LGEVH","SPLIT_FROM_LINE_ID":null,"DIGITAL_SALES_EXPERT_CODE":null,"CARRIER_CODE":"PANTOS","CONTACT_EMAIL_ADDR":null,"PICKING_QTY":"1.00","PARENT_CHANNEL_CODE":"VN_SALES_CHANNEL","COMMISSION_RATE1":"0.0000","COMMISSION_RATE2":"0.0000","WAREHOUSE_CODE":"AYA","MODEL_CODE":"32LM636BPTB.ATV","SALESREP_NAME":null,"FULFILLED_QTY":"1.00","PICK_RELEASE_QTY":"1.0000","SVC_SERIAL_NO":null,"SHIP_TO_ADDRESS3_INFO":null,"SHIP_TO_COUNTRY_NAME":"Viet Nam","BLNKT_SALES_AGR_NO":null,"BILL_TO_STATE_CODE":null,"PRODUCT_LEVEL1_CODE":"TV","FIRST_REFERENCE_LINE_ID":null,"SHIP_TO_ORG_ID":"4179240","CONSIGNEE_ADDR2_INFO":" Quan Le Chan - Hai Phong","HEADER_LAST_UPDATE_DATE":"2020-10-24 12:43:31.0","PRICE_TERMS_CODE":null,"COMM_BIZ_SUBMISSION_LINE_ID":null,"SHIP_FROM_SITE_ID":null,"HOLD_FLAG":"N","PRODUCT_LEVEL2_CODE":"TVLE","CONTAINER_NO":null,"ALLOCATION_ID":null,"LINE_STATUS_CODE2":"PICK","USD_PRICE":"0.000000","SALES_ORDER_NO":"1000562577","BEFORE_MONTH_TWA_COST":"0.000000","BILL_TO_ID":"4177922","APPOINTMENT_NAME":null,"CREATED_BY":"-1","STANDARD_PRICE":"6900000.000000","SHIPPING_METHOD_CODE":"000001_PANTOS_T_DOM_SITE","TRANSIT_TRADE_PO_HEADER_ID":null,"OFFERING_TYPE_CODE":null,"HLDS_FLAG":"N","CREATION_DATE":"2020-10-27 16:49:33.0","PRICE_LIST_ID":"97227095","CHANGE_DATE":null,"LINE_LAST_UPDATE_DATE":"2020-10-27 16:29:57.0","ACCOUNTING_UNIT_CODE":"SAL","SALESPERSON_NAME":"HO, THI NGUYEN MINH. THI, HO NGUYEN MINH. HO NGUYEN MINH THI","CUSTOMER_DEBIT_NO":null,"RECEIPT_CUST_NAME":"Tan Hoang Trong","PO_TYPE_CODE":null,"INTERFACE_ID":"124820","INSTALL_TYPE_CODE":null,"CONSIGNEE_COUNTY_NAME":null,"SERVICE_NO":null,"BACK_ORDER_CHANGE_DATE":null,"LINE_TYPE_ID":"29101","OPEN_FLAG":"N","LOT_NO":null,"SHIP_TO_CUSTOMER_NAME":"B2E-Hanoi","LIST_PRICE":"3450000.000000","SHIP_FROM_ORG_ID":"267826","SHIPPED_QTY":"1.00","LINE_CREATED_BY":"404581","ONETIME_CUSTOMER_FLAG":"N","CUSTOMER_INTERFACE_DATE":"2020-10-27 16:49:33.0","MASTER_AMOUNT":"3450000.000000","CONSIGNEE_CITY_NAME":"Hai Phong","LC_NO":null,"PRICE_LIST_NAME":"VH-VND-SHIP-VN008500-B2E-S","CUSTOMER_RAD":"2020-10-25 00:00:00.0","DATA_CREATION_TYPE_CODE":"I","LINK_ORDER_LINE_ID":null,"PARTIAL_FLAG":"Y","ORIGINAL_LINE_ID":null,"LINE_STATUS_CODE":"AWAITING_SHIPPING","BILL_TO_POSTAL_CODE":null,"WEEE_CHARGE_AMOUNT":"0.000000","INCLUDE_TAX_AMOUNT":"3450000.000000","SALESREP_CODE":null,"SCAC_CODE":null,"PTO_TOP_MODEL_CODE":null,"WAREHOUSE_NAME":"VH_Hanoi","BILL_TO_CUSTOMER_NAME":"OBS","OPTION_NO":null,"FOC_TYPE_CODE":null,"CONVERSION_RATE":"0E-8","EXCLUDE_TAX_AMOUNT":"3136364.000000","SUBINVENTORY_CODE":"GOODSET","LAST_UPDATE_LOGIN":"1285828382","CUSTOMER_NAME":"OBS","EXPENSE_ACCOUNTING_UNIT_CODE":null,"APPOINTMENT_NO":null,"CONSIGNEE_ADDR3_INFO":"tan.hoang@lgepartner.com","SHIP_TO_ADDRESS2_INFO":null,"RECEIPT_CUST_CELLULAR_NO":"0826392988","HEADER_CREATION_DATE":"2020-10-24 12:43:26.0","REQUEST_SHIPPING_DATE":"2020-10-28 23:00:00.0","SHIP_FROM_AFFILIATE_CODE":null,"FREIGHT_TERMS_CODE":null,"INSTALL_EX_BILL_TO_NAME":null,"RETURN_LOSS_AMOUNT":"0.000000"}]}}
+&amp#27;[92m|------ Auto should see a value that is equal to: <200>&amp#27;[0m
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+Sleep 1s
+Sleep 2s
+Sleep 3s
+Sleep 4s
+Sleep 5s
+Sleep 6s
+Sleep 7s
+Sleep 8s
+Sleep 9s
+Sleep 10s
+Sleep 11s
+Sleep 12s
+Sleep 13s
+Sleep 14s
+Sleep 15s
+Sleep 16s
+Sleep 17s
+Sleep 18s
+Sleep 19s
+Sleep 20s
+Sleep 21s
+Sleep 22s
+Sleep 23s
+Sleep 24s
+Sleep 25s
+Sleep 26s
+Sleep 27s
+Sleep 28s
+Sleep 29s
+Sleep 30s
+Sleep 31s
+Sleep 32s
+Sleep 33s
+Sleep 34s
+Sleep 35s
+Sleep 36s
+Sleep 37s
+Sleep 38s
+Sleep 39s
+Sleep 40s
+Sleep 41s
+Sleep 42s
+Sleep 43s
+Sleep 44s
+Sleep 45s
+Sleep 46s
+Sleep 47s
+Sleep 48s
+Sleep 49s
+Sleep 50s
+Sleep 51s
+Sleep 52s
+Sleep 53s
+Sleep 54s
+Sleep 55s
+Sleep 56s
+Sleep 57s
+Sleep 58s
+Sleep 59s
+Sleep 60s
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mChange Order Status to &amp#27;[0m&amp#27;[32m&amp#27;[1m"Picking for Delivery"&amp#27;[0m&amp#27;[32m By API&amp#27;[0m   &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
+&amp#27;[92m|---- And Change Order Status to "On Delivery" By API&amp#27;[0m
+{"MessageHeader":{"DocumentType":"CXML_ORDRSP"},"MessageBody":{"ContentList":[{"TRANSIT_TRADE_UNIT_PRICE":"0.000000","NOTA_NO":null,"CARRIER_NAME":"PANTOS","BILL_TO_ADDRESS2_INFO":null,"CONSIGNEE_POSTAL_CODE":"180000","ORDER_CREATED_BY":"404581","SHIPPING_REMARK_INFO":null,"PHONE_NO":null,"SHIP_TO_POSTAL_CODE":"100001","SHIPMENT_PRIORITY_CODE":"Standard","RESIDENCE_TYPE_CODE":null,"TAX_AMOUNT":"313636.000000","SHIP_TO_COUNTY":null,"UNIT_SELLING_PRICE":"3450000.000000","CUSTOMER_CODE":"VN008500001H","SERVICE_CENTER_NAME":null,"PROMISED_SHIP_DATE":null,"BPM_APPROVAL_DATE":null,"ORDER_TYPE_NAME":"REGULAR_OMD_VH","HQ_ACCOUNTING_UNIT_CODE":"GLZ","ORDER_QUANTITY_UOM":"EA","DELIVERY_EXPECTED_YYYYMMDD":"20201027","DELIVERY_CAPACITY_FLAG":null,"SCHEDULE_SHIP_DATE":"2020-10-28 23:00:00.0","SALESPERSON_NO":"VH005735","TRANSPORT_PRO_NO":null,"TRANSFER_FLAG":"E","ZERO_INVO_FLAG":null,"SHIP_TO_STATE_CODE":"HN","RESULT_AFFILIATE_CODE":null,"SALES_DATE":"2020-10-27 16:25:04.0","CONSUMER_SSN":null,"INIT_PROMISED_SHIP_DATE":null,"AUTO_CANCEL_SCHEDULE_DATE":null,"GOODS_INS_SEQ":null,"RETURN_RECEIVING_DATE":"2020-10-26 16:56:07.0","COMPONENT_NO":null,"ORDER_CATEGORY_CODE":"ORDER","EMPLOYEE_NO":"VH005735","REINVOICE_REASON_CODE":null,"RETURN_TYPE_CODE":null,"ORIG_SYS_DOCUMENT_REF":"ORDER_11010004617","LINE_TYPE_CODE":"OMD_REG_L020","DROP_SHIP_FLAG":"N","COND_SHP_WITH_INSP_QTY":"0.00","LINE_CREATION_DATE":"2020-10-24 10:43:28.0","INSTALL_IN_BILL_TO_NAME":null,"CONSIGNEE_ADDR4_INFO":null,"B2B_SVC_FLAG":null,"SHIP_TO_ADDRESS1_INFO":"HN","HEADER_REQUEST":"2020-10-25 10:40:05.0","PAYMENT_TERMS_DESC":"Immediate","CONSIGNEE_COUNTRY_NAME":"VN","OTHER_RECEIVING_ISSUE_FLAG":"N","FULFILLED_FLAG":"Y","SALES_CHANNEL_CODE":"002_NON-CHANNEL","FULFILLED_AMOUNT":"3450000.000000","PURCHASE_ORDER_DATE":null,"EXCLUDE_CODE":null,"CONNECT_BILL_TO_NAME":null,"CUST_PO_DATE":"2020-10-24 00:00:00.0","ORDER_TYPE_ID":"124820","SALES_DEPARTMENT_NAME":"HCM SALES E-COMMERCE","SELLER_MOBILE_NO":null,"NSP_PRICE":"0.000000","PRODUCT_LEVEL3_CODE":"TVLE32","TRANSIT_TRADE_CHARGE_AMOUNT":"0.000000","CONSUMER_PURCHASE_DATE":null,"USED_PRODUCT_LINE_CODE":null,"ACTUAL_SHIPMENT_DATE":"2023-08-01 16:56:07.0","SHIP_TO_CUSTOMER_CODE":"VN008500-B2E-S","CUSTOMER_INVOICE_NO":null,"CHANGE_CODE":null,"BILL_TO_ADDRESS4_INFO":null,"FULFILLMENT_DATE":"2020-10-27 16:25:04.0","APPOINTMENT_TO_DATE":"2020-10-28 23:00:00.0","DEF_RTN_TYPE_CODE":null,"BILL_FROM_AFFILIATE_CODE":null,"RETURN_REASON_CODE":null,"INSTALL_CUSTOMER_CODE":null,"NOTA_DATE":null,"CHARGEBACK_NO":null,"CONSIGNEE_STATE_NAME":null,"CUSTOMER_RAD_HEADER":"2020\/10\/25 00:00:00","CONSIGNEE_PHONE_NO":"0826392988","ORDER_STATUS_CODE":"AWAITING_SHIPPING","ORIG_SYS_LINE_REF":"ORDER_17121709","CONSIGNEE_MOBILE_PHONE_NO":"0826392988","CONSIGNEE_PROVINCE_NAME":null,"LINE_SET_ID":null,"INSTALL_REQUEST_DATE":null,"CONSIGNEE_ADDR1_INFO":"6B\/51\/172 duong Nguyen Cong Hoa, quan Le Chan, TP ","ORDER_LINE_ID":"124820","ORDER_ALLOCATION_DATE":null,"BILL_TO_MDMS_CUSTOMER_CODE":"VN008500","MEMBERSHIP_NO":null,"BLNKT_SALES_AGR_LINE_NO":null,"REAL_SITE_NAME":null,"DISCOUNT_RATE":"0.0000","PROMISE_DATE":"2020-10-28 23:00:00.0","SMS_FLAG":null,"EXPECTED_ARRIVAL_DATE":null,"SHIP_TO_ADDRESS4_INFO":null,"UNIT_LIST_PRICE":"3450000.000000","TRANSIT_TRADE_FLAG":null,"BPM_REQUEST_NO":null,"SHIP_TO_CITY_NAME":"HO CHI MINH","ORDER_CONTEXT":"GSALES_OMD_REGULAR","MODEL_CATEGORY":"LCDbasic","LAST_UPDATED_BY":"88862","PAYMENT_TERM_ID":"1273","VERTICAL_ID":null,"SHIPMENT_NO":"1","LATEST_ACCEPTABLE_DATE":null,"RETURN_APPROVAL_DATE":null,"PROJECT_CODE":"VH20C00000000","SALES_CHANNEL_NAME":"Non-channel sale of South Area (group 002)","SHIPPING_HOLD_FLAG":null,"SHIPPABLE_FLAG":"Y","TAX_INCLUDE_AMT":"313636.000000","WAREHOUSE_TYPE_CODE":"S","AFFILIATE_CODE":"EAVH","LINK_TO_LINE_ID":null,"ORDER_SOURCE_DESC":"LG Online Brand Shop (New)","SVC_REFERENCE_LINE_ID":null,"HOME_DELIVERY_CAPACITY_RATE":"0.0000","ORDER_TYPE_CODE":"OMD_REG_H010","LINE_NO":"1","OFFERING_EXPIRE_DATE":null,"PACKING_INSTR":null,"ORDER_SOURCE_NAME":"OMD_LGOBS","CONSIGNEE_NAME":"Tan Hoang Trong","EDI_PARTNER_ID":null,"BIZ_ITEM_TYPE_CODE":"SET","APPOINTMENT_FROM_DATE":"2020-10-28 23:00:00.0","CARRIER_JOB_NO":1,"REAL_PURCHASE_DATE":null,"EXPENSE_DEPARTMENT_CODE":null,"FREIGHT_CHARGE_AMOUNT":"0.000000","PICK_NO":"AYA20102600052","RECEIPT_CUST_PHONE_NO":"0826392988","CURRENCY_CODE":"VND","LINE_CATEGORY_CODE":"ORDER","CHANNEL_CODE":null,"PRODUCT_LEVEL4_CODE":"TVLE32NX","DOMAIN_CODE":"OMD","ORDER_QTY":"1.00","COND_SHP_WITH_INSP_DATE":null,"CONTACT_FAX_NO":null,"AUTO_CHANGE_REASON":null,"CUSTOMER_PO_LINE_NO":null,"ITEM_TYPE":"Q","CANCEL_QTY":"0.00","ORIGINAL_ORDER_LINE_NO":null,"CUST_PO_LINE_ID":null,"LINE_TYPE_NAME":"REGULAR_M_OMD_VH_L","FREE_OF_CHARGE_FLAG":"N","SALES_ORDER_LINE_NO":"1.1","LOGISTICS_INTERFACE_FLAG":"N","CONNECT_BILL_TO_CODE":null,"SOLD_TO_ORG_ID":"13148433","TRANSFER_DATE":"2020-10-27 19:13:52","INSTALL_IN_BILL_TO_CODE":null,"FIXED_ARRIVAL_DATE":null,"CUSTOMER_MODEL_CODE":null,"PICKING_DATE":"2020-10-26 16:56:07.0","EXPENSE_ACCOUNT_CODE":null,"OFFERING_TYPE_NAME":null,"ORDERED_DATE":"2020-10-24 10:42:22.0","CONTACT_BIZ_NO":"...","SVC_REFERENCE_HEADER_ID":null,"MODE_OF_TRANSPORT":"TRUCK","MODE_DESC":"LED LCD TV 32 (HD)","CHANNEL_ORDER_NO":null,"ORG_ID":"2472781","COMM_BIZ_SUBMISSION_NO":null,"SUB_EDI_PARTNER_ID":null,"CUSTOMER_INTERFACE_FLAG":"X","CUSTOMER_RAD_LINE":"2020\/10\/25 00:00:00","QTY_INCLUDE_FLAG":"Y","TRANSIT_TRADE_PO_LINE_ID":null,"DIO_REQUEST_SHIPMENT_DATE":null,"PICK_RELEASE_DATE":"2020-10-26 15:23:02.0","DISCOUNT_SUBMISSION_NO":null,"CANCELLED_FLAG":"N","SALES_PRODUCT_MANAGER_ID":null,"RETURN_REASON_DESC":null,"ORIGINAL_ORDER_NO":null,"PROMISED_MAD":null,"PARENT_CHANNEL_MEANING":"VN SALES CHANNEL","BILL_TO_ADDRESS3_INFO":null,"TOP_MODEL_LINE_ID":null,"ORDER_SOURCE_ID":"1730","PROMISED_ARRIVAL_DATE":null,"DIGITAL_SALES_EXPERT_NAME":null,"COLLECTION_DATE":null,"SALES_MODEL_CODE":"32LM636BPTB.ATV","ITEM_ID":"42765534","TRANSIT_TRADE_TYPE_CODE":null,"BOOKED_FLAG":"Y","REQUEST_ARRIVAL_TO_DATE":null,"FUNCTIONAL_CURRENCY_CODE":"VND","INIT_PROMISED_ARRIVAL_DATE":null,"CUST_PO_NO":"ORDER_18000008719","STORE_CODE":null,"CONVERSION_TYPE_CODE":"2243","BILL_TO_CUSTOMER_CODE":"VN008500001B","MOVE_ORDER_LINE_ID":"210648493","SALES_DEPARTMENT_CODE":"20102","SHIP_TO_COUNTRY_CODE":"VN","TRANSIT_TRADE_IMPORT_AMOUNT":"0.000000","APPROVAL_STATUS_CODE":null,"HQ_CREATION_DATE":"2020-10-27 18:50:01.0","CUSTOMER_GROUP_CODE":null,"SHIP_TO_STATE_NAME":null,"PROMISING_POLICY_CODE":null,"INTERFACE_GROUP_ID":"21223","FLOORING_COMPANY_CODE":null,"BILL_TO_CITY_NAME":null,"ITEM_TYPE_CODE":"STANDARD","OFFERING_NO":null,"ORDERED_ITEM":"32LM636BPTB.ATV","SALESREP_ID":"103986524","INSTALL_EX_BILL_TO_CODE":null,"CONTACT_NAME":null,"SERVICE_CENTER_CODE":null,"ORGANIZATION_CODE":null,"INVOICE_REMARK_DESC":null,"ORDER_LINE_CONTEXT":"GSALES_OMD_REGULAR","PAYMENT_TERM":"N0000FSN1000","BIZ_REGISTER_NO":"...","RESULT_SALESPERSON_ID":"103986524","MDMS_CUSTOMER_CODE":"VN008500","BOOKED_DATE":"2020-10-24 10:43:33.0","ORDER_AMOUNT":"3450000.000000","INTEREST_AMT":"0.000000","REQUEST_ARRIVAL_FROM_DATE":"2020-10-25 10:40:05.0","FINAL_DESTINATION_CODE":null,"ORDER_HEADER_ID":"11010004035","BILL_TO_ADDRESS1_INFO":".","SUBSIDIARY_CODE":"LGEVH","SPLIT_FROM_LINE_ID":null,"DIGITAL_SALES_EXPERT_CODE":null,"CARRIER_CODE":"PANTOS","CONTACT_EMAIL_ADDR":null,"PICKING_QTY":"1.00","PARENT_CHANNEL_CODE":"VN_SALES_CHANNEL","COMMISSION_RATE1":"0.0000","COMMISSION_RATE2":"0.0000","WAREHOUSE_CODE":"AYA","MODEL_CODE":"32LM636BPTB.ATV","SALESREP_NAME":null,"FULFILLED_QTY":"1.00","PICK_RELEASE_QTY":"1.0000","SVC_SERIAL_NO":null,"SHIP_TO_ADDRESS3_INFO":null,"SHIP_TO_COUNTRY_NAME":"Viet Nam","BLNKT_SALES_AGR_NO":null,"BILL_TO_STATE_CODE":null,"PRODUCT_LEVEL1_CODE":"TV","FIRST_REFERENCE_LINE_ID":null,"SHIP_TO_ORG_ID":"4179240","CONSIGNEE_ADDR2_INFO":" Quan Le Chan - Hai Phong","HEADER_LAST_UPDATE_DATE":"2020-10-24 12:43:31.0","PRICE_TERMS_CODE":null,"COMM_BIZ_SUBMISSION_LINE_ID":null,"SHIP_FROM_SITE_ID":null,"HOLD_FLAG":"N","PRODUCT_LEVEL2_CODE":"TVLE","CONTAINER_NO":null,"ALLOCATION_ID":null,"LINE_STATUS_CODE2":"DELY","USD_PRICE":"0.000000","SALES_ORDER_NO":"1000562577","BEFORE_MONTH_TWA_COST":"0.000000","BILL_TO_ID":"4177922","APPOINTMENT_NAME":null,"CREATED_BY":"-1","STANDARD_PRICE":"6900000.000000","SHIPPING_METHOD_CODE":"000001_PANTOS_T_DOM_SITE","TRANSIT_TRADE_PO_HEADER_ID":null,"OFFERING_TYPE_CODE":null,"HLDS_FLAG":"N","CREATION_DATE":"2020-10-27 16:49:33.0","PRICE_LIST_ID":"97227095","CHANGE_DATE":null,"LINE_LAST_UPDATE_DATE":"2020-10-27 16:29:57.0","ACCOUNTING_UNIT_CODE":"SAL","SALESPERSON_NAME":"HO, THI NGUYEN MINH. THI, HO NGUYEN MINH. HO NGUYEN MINH THI","CUSTOMER_DEBIT_NO":null,"RECEIPT_CUST_NAME":"Tan Hoang Trong","PO_TYPE_CODE":null,"INTERFACE_ID":"124820","INSTALL_TYPE_CODE":null,"CONSIGNEE_COUNTY_NAME":null,"SERVICE_NO":null,"BACK_ORDER_CHANGE_DATE":null,"LINE_TYPE_ID":"29101","OPEN_FLAG":"N","LOT_NO":null,"SHIP_TO_CUSTOMER_NAME":"B2E-Hanoi","LIST_PRICE":"3450000.000000","SHIP_FROM_ORG_ID":"267826","SHIPPED_QTY":"1.00","LINE_CREATED_BY":"404581","ONETIME_CUSTOMER_FLAG":"N","CUSTOMER_INTERFACE_DATE":"2020-10-27 16:49:33.0","MASTER_AMOUNT":"3450000.000000","CONSIGNEE_CITY_NAME":"Hai Phong","LC_NO":null,"PRICE_LIST_NAME":"VH-VND-SHIP-VN008500-B2E-S","CUSTOMER_RAD":"2020-10-25 00:00:00.0","DATA_CREATION_TYPE_CODE":"I","LINK_ORDER_LINE_ID":null,"PARTIAL_FLAG":"Y","ORIGINAL_LINE_ID":null,"LINE_STATUS_CODE":"PRE-BILLING_ACCEPTANCE","BILL_TO_POSTAL_CODE":null,"WEEE_CHARGE_AMOUNT":"0.000000","INCLUDE_TAX_AMOUNT":"3450000.000000","SALESREP_CODE":null,"SCAC_CODE":null,"PTO_TOP_MODEL_CODE":null,"WAREHOUSE_NAME":"VH_Hanoi","BILL_TO_CUSTOMER_NAME":"OBS","OPTION_NO":null,"FOC_TYPE_CODE":null,"CONVERSION_RATE":"0E-8","EXCLUDE_TAX_AMOUNT":"3136364.000000","SUBINVENTORY_CODE":"GOODSET","LAST_UPDATE_LOGIN":"1285828382","CUSTOMER_NAME":"OBS","EXPENSE_ACCOUNTING_UNIT_CODE":null,"APPOINTMENT_NO":null,"CONSIGNEE_ADDR3_INFO":"tan.hoang@lgepartner.com","SHIP_TO_ADDRESS2_INFO":null,"RECEIPT_CUST_CELLULAR_NO":"0826392988","HEADER_CREATION_DATE":"2020-10-24 12:43:26.0","REQUEST_SHIPPING_DATE":"2020-10-28 23:00:00.0","SHIP_FROM_AFFILIATE_CODE":null,"FREIGHT_TERMS_CODE":null,"INSTALL_EX_BILL_TO_NAME":null,"RETURN_LOSS_AMOUNT":"0.000000"}]}}
+&amp#27;[92m|------ Auto should see a value that is equal to: <200>&amp#27;[0m
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+Sleep 1s
+Sleep 2s
+Sleep 3s
+Sleep 4s
+Sleep 5s
+Sleep 6s
+Sleep 7s
+Sleep 8s
+Sleep 9s
+Sleep 10s
+Sleep 11s
+Sleep 12s
+Sleep 13s
+Sleep 14s
+Sleep 15s
+Sleep 16s
+Sleep 17s
+Sleep 18s
+Sleep 19s
+Sleep 20s
+Sleep 21s
+Sleep 22s
+Sleep 23s
+Sleep 24s
+Sleep 25s
+Sleep 26s
+Sleep 27s
+Sleep 28s
+Sleep 29s
+Sleep 30s
+Sleep 31s
+Sleep 32s
+Sleep 33s
+Sleep 34s
+Sleep 35s
+Sleep 36s
+Sleep 37s
+Sleep 38s
+Sleep 39s
+Sleep 40s
+Sleep 41s
+Sleep 42s
+Sleep 43s
+Sleep 44s
+Sleep 45s
+Sleep 46s
+Sleep 47s
+Sleep 48s
+Sleep 49s
+Sleep 50s
+Sleep 51s
+Sleep 52s
+Sleep 53s
+Sleep 54s
+Sleep 55s
+Sleep 56s
+Sleep 57s
+Sleep 58s
+Sleep 59s
+Sleep 60s
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mChange Order Status to &amp#27;[0m&amp#27;[32m&amp#27;[1m"On Delivery"&amp#27;[0m&amp#27;[32m By API&amp#27;[0m            &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
+&amp#27;[92m|---- And Change Order Status to "Delivery Completed" By API&amp#27;[0m
+{"MessageHeader":{"DocumentType":"CXML_ORDRSP"},"MessageBody":{"ContentList":[{"TRANSIT_TRADE_UNIT_PRICE":"0.000000","NOTA_NO":null,"CARRIER_NAME":"PANTOS","BILL_TO_ADDRESS2_INFO":null,"CONSIGNEE_POSTAL_CODE":"180000","ORDER_CREATED_BY":"404581","SHIPPING_REMARK_INFO":null,"PHONE_NO":null,"SHIP_TO_POSTAL_CODE":"100001","SHIPMENT_PRIORITY_CODE":"Standard","RESIDENCE_TYPE_CODE":null,"TAX_AMOUNT":"313636.000000","SHIP_TO_COUNTY":null,"UNIT_SELLING_PRICE":"3450000.000000","CUSTOMER_CODE":"VN008500001H","SERVICE_CENTER_NAME":null,"PROMISED_SHIP_DATE":null,"BPM_APPROVAL_DATE":null,"ORDER_TYPE_NAME":"REGULAR_OMD_VH","HQ_ACCOUNTING_UNIT_CODE":"GLZ","ORDER_QUANTITY_UOM":"EA","DELIVERY_EXPECTED_YYYYMMDD":"20201027","DELIVERY_CAPACITY_FLAG":null,"SCHEDULE_SHIP_DATE":"2020-10-28 23:00:00.0","SALESPERSON_NO":"VH005735","TRANSPORT_PRO_NO":null,"TRANSFER_FLAG":"E","ZERO_INVO_FLAG":null,"SHIP_TO_STATE_CODE":"HN","RESULT_AFFILIATE_CODE":null,"SALES_DATE":"2020-10-27 16:25:04.0","CONSUMER_SSN":null,"INIT_PROMISED_SHIP_DATE":null,"AUTO_CANCEL_SCHEDULE_DATE":null,"GOODS_INS_SEQ":null,"RETURN_RECEIVING_DATE":"2020-10-26 16:56:07.0","COMPONENT_NO":null,"ORDER_CATEGORY_CODE":"ORDER","EMPLOYEE_NO":"VH005735","REINVOICE_REASON_CODE":null,"RETURN_TYPE_CODE":null,"ORIG_SYS_DOCUMENT_REF":"ORDER_11010004617","LINE_TYPE_CODE":"OMD_REG_L020","DROP_SHIP_FLAG":"N","COND_SHP_WITH_INSP_QTY":"0.00","LINE_CREATION_DATE":"2020-10-24 10:43:28.0","INSTALL_IN_BILL_TO_NAME":null,"CONSIGNEE_ADDR4_INFO":null,"B2B_SVC_FLAG":null,"SHIP_TO_ADDRESS1_INFO":"HN","HEADER_REQUEST":"2020-10-25 10:40:05.0","PAYMENT_TERMS_DESC":"Immediate","CONSIGNEE_COUNTRY_NAME":"VN","OTHER_RECEIVING_ISSUE_FLAG":"N","FULFILLED_FLAG":"Y","SALES_CHANNEL_CODE":"002_NON-CHANNEL","FULFILLED_AMOUNT":"3450000.000000","PURCHASE_ORDER_DATE":null,"EXCLUDE_CODE":null,"CONNECT_BILL_TO_NAME":null,"CUST_PO_DATE":"2020-10-24 00:00:00.0","ORDER_TYPE_ID":"124820","SALES_DEPARTMENT_NAME":"HCM SALES E-COMMERCE","SELLER_MOBILE_NO":null,"NSP_PRICE":"0.000000","PRODUCT_LEVEL3_CODE":"TVLE32","TRANSIT_TRADE_CHARGE_AMOUNT":"0.000000","CONSUMER_PURCHASE_DATE":null,"USED_PRODUCT_LINE_CODE":null,"ACTUAL_SHIPMENT_DATE":"2023-08-01 16:56:07.0","SHIP_TO_CUSTOMER_CODE":"VN008500-B2E-S","CUSTOMER_INVOICE_NO":null,"CHANGE_CODE":null,"BILL_TO_ADDRESS4_INFO":null,"FULFILLMENT_DATE":"2020-10-27 16:25:04.0","APPOINTMENT_TO_DATE":"2020-10-28 23:00:00.0","DEF_RTN_TYPE_CODE":null,"BILL_FROM_AFFILIATE_CODE":null,"RETURN_REASON_CODE":null,"INSTALL_CUSTOMER_CODE":null,"NOTA_DATE":null,"CHARGEBACK_NO":null,"CONSIGNEE_STATE_NAME":null,"CUSTOMER_RAD_HEADER":"2020\/10\/25 00:00:00","CONSIGNEE_PHONE_NO":"0826392988","ORDER_STATUS_CODE":"AWAITING_SHIPPING","ORIG_SYS_LINE_REF":"ORDER_17121709","CONSIGNEE_MOBILE_PHONE_NO":"0826392988","CONSIGNEE_PROVINCE_NAME":null,"LINE_SET_ID":null,"INSTALL_REQUEST_DATE":null,"CONSIGNEE_ADDR1_INFO":"6B\/51\/172 duong Nguyen Cong Hoa, quan Le Chan, TP ","ORDER_LINE_ID":"124820","ORDER_ALLOCATION_DATE":null,"BILL_TO_MDMS_CUSTOMER_CODE":"VN008500","MEMBERSHIP_NO":null,"BLNKT_SALES_AGR_LINE_NO":null,"REAL_SITE_NAME":null,"DISCOUNT_RATE":"0.0000","PROMISE_DATE":"2020-10-28 23:00:00.0","SMS_FLAG":null,"EXPECTED_ARRIVAL_DATE":null,"SHIP_TO_ADDRESS4_INFO":null,"UNIT_LIST_PRICE":"3450000.000000","TRANSIT_TRADE_FLAG":null,"BPM_REQUEST_NO":null,"SHIP_TO_CITY_NAME":"HO CHI MINH","ORDER_CONTEXT":"GSALES_OMD_REGULAR","MODEL_CATEGORY":"LCDbasic","LAST_UPDATED_BY":"88862","PAYMENT_TERM_ID":"1273","VERTICAL_ID":null,"SHIPMENT_NO":"1","LATEST_ACCEPTABLE_DATE":null,"RETURN_APPROVAL_DATE":null,"PROJECT_CODE":"VH20C00000000","SALES_CHANNEL_NAME":"Non-channel sale of South Area (group 002)","SHIPPING_HOLD_FLAG":null,"SHIPPABLE_FLAG":"Y","TAX_INCLUDE_AMT":"313636.000000","WAREHOUSE_TYPE_CODE":"S","AFFILIATE_CODE":"EAVH","LINK_TO_LINE_ID":null,"ORDER_SOURCE_DESC":"LG Online Brand Shop (New)","SVC_REFERENCE_LINE_ID":null,"HOME_DELIVERY_CAPACITY_RATE":"0.0000","ORDER_TYPE_CODE":"OMD_REG_H010","LINE_NO":"1","OFFERING_EXPIRE_DATE":null,"PACKING_INSTR":null,"ORDER_SOURCE_NAME":"OMD_LGOBS","CONSIGNEE_NAME":"Tan Hoang Trong","EDI_PARTNER_ID":null,"BIZ_ITEM_TYPE_CODE":"SET","APPOINTMENT_FROM_DATE":"2020-10-28 23:00:00.0","CARRIER_JOB_NO":1,"REAL_PURCHASE_DATE":null,"EXPENSE_DEPARTMENT_CODE":null,"FREIGHT_CHARGE_AMOUNT":"0.000000","PICK_NO":"AYA20102600052","RECEIPT_CUST_PHONE_NO":"0826392988","CURRENCY_CODE":"VND","LINE_CATEGORY_CODE":"ORDER","CHANNEL_CODE":null,"PRODUCT_LEVEL4_CODE":"TVLE32NX","DOMAIN_CODE":"OMD","ORDER_QTY":"1.00","COND_SHP_WITH_INSP_DATE":null,"CONTACT_FAX_NO":null,"AUTO_CHANGE_REASON":null,"CUSTOMER_PO_LINE_NO":null,"ITEM_TYPE":"Q","CANCEL_QTY":"0.00","ORIGINAL_ORDER_LINE_NO":null,"CUST_PO_LINE_ID":null,"LINE_TYPE_NAME":"REGULAR_M_OMD_VH_L","FREE_OF_CHARGE_FLAG":"N","SALES_ORDER_LINE_NO":"1.1","LOGISTICS_INTERFACE_FLAG":"N","CONNECT_BILL_TO_CODE":null,"SOLD_TO_ORG_ID":"13148433","TRANSFER_DATE":"2020-10-27 19:13:52","INSTALL_IN_BILL_TO_CODE":null,"FIXED_ARRIVAL_DATE":null,"CUSTOMER_MODEL_CODE":null,"PICKING_DATE":"2020-10-26 16:56:07.0","EXPENSE_ACCOUNT_CODE":null,"OFFERING_TYPE_NAME":null,"ORDERED_DATE":"2020-10-24 10:42:22.0","CONTACT_BIZ_NO":"...","SVC_REFERENCE_HEADER_ID":null,"MODE_OF_TRANSPORT":"TRUCK","MODE_DESC":"LED LCD TV 32 (HD)","CHANNEL_ORDER_NO":null,"ORG_ID":"2472781","COMM_BIZ_SUBMISSION_NO":null,"SUB_EDI_PARTNER_ID":null,"CUSTOMER_INTERFACE_FLAG":"X","CUSTOMER_RAD_LINE":"2020\/10\/25 00:00:00","QTY_INCLUDE_FLAG":"Y","TRANSIT_TRADE_PO_LINE_ID":null,"DIO_REQUEST_SHIPMENT_DATE":null,"PICK_RELEASE_DATE":"2020-10-26 15:23:02.0","DISCOUNT_SUBMISSION_NO":null,"CANCELLED_FLAG":"N","SALES_PRODUCT_MANAGER_ID":null,"RETURN_REASON_DESC":null,"ORIGINAL_ORDER_NO":null,"PROMISED_MAD":null,"PARENT_CHANNEL_MEANING":"VN SALES CHANNEL","BILL_TO_ADDRESS3_INFO":null,"TOP_MODEL_LINE_ID":null,"ORDER_SOURCE_ID":"1730","PROMISED_ARRIVAL_DATE":null,"DIGITAL_SALES_EXPERT_NAME":null,"COLLECTION_DATE":null,"SALES_MODEL_CODE":"32LM636BPTB.ATV","ITEM_ID":"42765534","TRANSIT_TRADE_TYPE_CODE":null,"BOOKED_FLAG":"Y","REQUEST_ARRIVAL_TO_DATE":null,"FUNCTIONAL_CURRENCY_CODE":"VND","INIT_PROMISED_ARRIVAL_DATE":null,"CUST_PO_NO":"ORDER_18000008719","STORE_CODE":null,"CONVERSION_TYPE_CODE":"2243","BILL_TO_CUSTOMER_CODE":"VN008500001B","MOVE_ORDER_LINE_ID":"210648493","SALES_DEPARTMENT_CODE":"20102","SHIP_TO_COUNTRY_CODE":"VN","TRANSIT_TRADE_IMPORT_AMOUNT":"0.000000","APPROVAL_STATUS_CODE":null,"HQ_CREATION_DATE":"2020-10-27 18:50:01.0","CUSTOMER_GROUP_CODE":null,"SHIP_TO_STATE_NAME":null,"PROMISING_POLICY_CODE":null,"INTERFACE_GROUP_ID":"21223","FLOORING_COMPANY_CODE":null,"BILL_TO_CITY_NAME":null,"ITEM_TYPE_CODE":"STANDARD","OFFERING_NO":null,"ORDERED_ITEM":"32LM636BPTB.ATV","SALESREP_ID":"103986524","INSTALL_EX_BILL_TO_CODE":null,"CONTACT_NAME":null,"SERVICE_CENTER_CODE":null,"ORGANIZATION_CODE":null,"INVOICE_REMARK_DESC":null,"ORDER_LINE_CONTEXT":"GSALES_OMD_REGULAR","PAYMENT_TERM":"N0000FSN1000","BIZ_REGISTER_NO":"...","RESULT_SALESPERSON_ID":"103986524","MDMS_CUSTOMER_CODE":"VN008500","BOOKED_DATE":"2020-10-24 10:43:33.0","ORDER_AMOUNT":"3450000.000000","INTEREST_AMT":"0.000000","REQUEST_ARRIVAL_FROM_DATE":"2020-10-25 10:40:05.0","FINAL_DESTINATION_CODE":null,"ORDER_HEADER_ID":"11010004035","BILL_TO_ADDRESS1_INFO":".","SUBSIDIARY_CODE":"LGEVH","SPLIT_FROM_LINE_ID":null,"DIGITAL_SALES_EXPERT_CODE":null,"CARRIER_CODE":"PANTOS","CONTACT_EMAIL_ADDR":null,"PICKING_QTY":"1.00","PARENT_CHANNEL_CODE":"VN_SALES_CHANNEL","COMMISSION_RATE1":"0.0000","COMMISSION_RATE2":"0.0000","WAREHOUSE_CODE":"AYA","MODEL_CODE":"32LM636BPTB.ATV","SALESREP_NAME":null,"FULFILLED_QTY":"1.00","PICK_RELEASE_QTY":"1.0000","SVC_SERIAL_NO":null,"SHIP_TO_ADDRESS3_INFO":null,"SHIP_TO_COUNTRY_NAME":"Viet Nam","BLNKT_SALES_AGR_NO":null,"BILL_TO_STATE_CODE":null,"PRODUCT_LEVEL1_CODE":"TV","FIRST_REFERENCE_LINE_ID":null,"SHIP_TO_ORG_ID":"4179240","CONSIGNEE_ADDR2_INFO":" Quan Le Chan - Hai Phong","HEADER_LAST_UPDATE_DATE":"2020-10-24 12:43:31.0","PRICE_TERMS_CODE":null,"COMM_BIZ_SUBMISSION_LINE_ID":null,"SHIP_FROM_SITE_ID":null,"HOLD_FLAG":"N","PRODUCT_LEVEL2_CODE":"TVLE","CONTAINER_NO":null,"ALLOCATION_ID":null,"LINE_STATUS_CODE2":"INVO","USD_PRICE":"0.000000","SALES_ORDER_NO":"1000562577","BEFORE_MONTH_TWA_COST":"0.000000","BILL_TO_ID":"4177922","APPOINTMENT_NAME":null,"CREATED_BY":"-1","STANDARD_PRICE":"6900000.000000","SHIPPING_METHOD_CODE":"000001_PANTOS_T_DOM_SITE","TRANSIT_TRADE_PO_HEADER_ID":null,"OFFERING_TYPE_CODE":null,"HLDS_FLAG":"N","CREATION_DATE":"2020-10-27 16:49:33.0","PRICE_LIST_ID":"97227095","CHANGE_DATE":null,"LINE_LAST_UPDATE_DATE":"2020-10-27 16:29:57.0","ACCOUNTING_UNIT_CODE":"SAL","SALESPERSON_NAME":"HO, THI NGUYEN MINH. THI, HO NGUYEN MINH. HO NGUYEN MINH THI","CUSTOMER_DEBIT_NO":null,"RECEIPT_CUST_NAME":"Tan Hoang Trong","PO_TYPE_CODE":null,"INTERFACE_ID":"124820","INSTALL_TYPE_CODE":null,"CONSIGNEE_COUNTY_NAME":null,"SERVICE_NO":null,"BACK_ORDER_CHANGE_DATE":null,"LINE_TYPE_ID":"29101","OPEN_FLAG":"N","LOT_NO":null,"SHIP_TO_CUSTOMER_NAME":"B2E-Hanoi","LIST_PRICE":"3450000.000000","SHIP_FROM_ORG_ID":"267826","SHIPPED_QTY":"1.00","LINE_CREATED_BY":"404581","ONETIME_CUSTOMER_FLAG":"N","CUSTOMER_INTERFACE_DATE":"2020-10-27 16:49:33.0","MASTER_AMOUNT":"3450000.000000","CONSIGNEE_CITY_NAME":"Hai Phong","LC_NO":null,"PRICE_LIST_NAME":"VH-VND-SHIP-VN008500-B2E-S","CUSTOMER_RAD":"2020-10-25 00:00:00.0","DATA_CREATION_TYPE_CODE":"I","LINK_ORDER_LINE_ID":null,"PARTIAL_FLAG":"Y","ORIGINAL_LINE_ID":null,"LINE_STATUS_CODE":"CLOSED","BILL_TO_POSTAL_CODE":null,"WEEE_CHARGE_AMOUNT":"0.000000","INCLUDE_TAX_AMOUNT":"3450000.000000","SALESREP_CODE":null,"SCAC_CODE":null,"PTO_TOP_MODEL_CODE":null,"WAREHOUSE_NAME":"VH_Hanoi","BILL_TO_CUSTOMER_NAME":"OBS","OPTION_NO":null,"FOC_TYPE_CODE":null,"CONVERSION_RATE":"0E-8","EXCLUDE_TAX_AMOUNT":"3136364.000000","SUBINVENTORY_CODE":"GOODSET","LAST_UPDATE_LOGIN":"1285828382","CUSTOMER_NAME":"OBS","EXPENSE_ACCOUNTING_UNIT_CODE":null,"APPOINTMENT_NO":null,"CONSIGNEE_ADDR3_INFO":"tan.hoang@lgepartner.com","SHIP_TO_ADDRESS2_INFO":null,"RECEIPT_CUST_CELLULAR_NO":"0826392988","HEADER_CREATION_DATE":"2020-10-24 12:43:26.0","REQUEST_SHIPPING_DATE":"2020-10-28 23:00:00.0","SHIP_FROM_AFFILIATE_CODE":null,"FREIGHT_TERMS_CODE":null,"INSTALL_EX_BILL_TO_NAME":null,"RETURN_LOSS_AMOUNT":"0.000000"}]}}
+&amp#27;[92m|------ Auto should see a value that is equal to: <200>&amp#27;[0m
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+{
+    "IFRESULT": "Y",
+    "IFFAILMSG": ""
+}
+Sleep 1s
+Sleep 2s
+Sleep 3s
+Sleep 4s
+Sleep 5s
+Sleep 6s
+Sleep 7s
+Sleep 8s
+Sleep 9s
+Sleep 10s
+Sleep 11s
+Sleep 12s
+Sleep 13s
+Sleep 14s
+Sleep 15s
+Sleep 16s
+Sleep 17s
+Sleep 18s
+Sleep 19s
+Sleep 20s
+Sleep 21s
+Sleep 22s
+Sleep 23s
+Sleep 24s
+Sleep 25s
+Sleep 26s
+Sleep 27s
+Sleep 28s
+Sleep 29s
+Sleep 30s
+Sleep 31s
+Sleep 32s
+Sleep 33s
+Sleep 34s
+Sleep 35s
+Sleep 36s
+Sleep 37s
+Sleep 38s
+Sleep 39s
+Sleep 40s
+Sleep 41s
+Sleep 42s
+Sleep 43s
+Sleep 44s
+Sleep 45s
+Sleep 46s
+Sleep 47s
+Sleep 48s
+Sleep 49s
+Sleep 50s
+Sleep 51s
+Sleep 52s
+Sleep 53s
+Sleep 54s
+Sleep 55s
+Sleep 56s
+Sleep 57s
+Sleep 58s
+Sleep 59s
+Sleep 60s
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mChange Order Status to &amp#27;[0m&amp#27;[32m&amp#27;[1m"Delivery Completed"&amp#27;[0m&amp#27;[32m By API&amp#27;[0m     &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
+&amp#27;[92m|---- When Create Return Request With Order Number&amp#27;[0m
+Get session id: COUNTRY - de
+&amp#27;[92m|------ Auto should see a value that is equal to: <200>&amp#27;[0m
+{
+    "data": {
+        "customAttributeMetadata": {
+            "items": [
+                {
+                    "attribute_code": "return_type",
+                    "attribute_type": "String",
+                    "entity_type": "rma_item",
+                    "input_type": "select",
+                    "attribute_options": [
+                        {
+                            "value": "909",
+                            "label": "DR"
+                        },
+                        {
+                            "value": "912",
+                            "label": "GR"
+                        },
+                        {
+                            "value": "252",
+                            "label": "OR"
+                        }
+                    ]
+                },
+                {
+                    "attribute_code": "reason_for_omd",
+                    "attribute_type": "Int",
+                    "entity_type": "rma_item",
+                    "input_type": "select",
+                    "attribute_options": [
+                        {
+                            "value": "214",
+                            "label": "Kundenretoure innerhalb von 14 Tagen. Falsches Produkt wurde geliefert (zurück zu LG)"
+                        },
+                        {
+                            "value": "915",
+                            "label": "Kundenretoure innerhalb von 14 Tagen. Sonstige Gründe (zurück zu LG Servicelager)"
+                        }
+                    ]
+                },
+                {
+                    "attribute_code": "reason_for_omv",
+                    "attribute_type": "Int",
+                    "entity_type": "rma_item",
+                    "input_type": "select",
+                    "attribute_options": [
+                        
+                    ]
+                },
+                {
+                    "attribute_code": "resolution",
+                    "attribute_type": "Int",
+                    "entity_type": "rma_item",
+                    "input_type": "select",
+                    "attribute_options": [
+                        {
+                            "value": "5",
+                            "label": "Refund"
+                        }
+                    ]
+                },
+                {
+                    "attribute_code": "condition",
+                    "attribute_type": "Int",
+                    "entity_type": "rma_item",
+                    "input_type": "select",
+                    "attribute_options": [
+                        {
+                            "value": "1090",
+                            "label": "BESCHÄDIGT"
+                        },
+                        {
+                            "value": "1093",
+                            "label": "NEU (original verpackt)"
+                        },
+                        {
+                            "value": "1096",
+                            "label": "NEU (original verpackt)"
+                        },
+                        {
+                            "value": "1099",
+                            "label": "Unopened"
+                        },
+                        {
+                            "value": "1102",
+                            "label": "BENUTZT"
+                        },
+                        {
+                            "value": "1105",
+                            "label": "Opened"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mCreate Return Request With Order Number&amp#27;[0m               &amp#27;[90m# stepdefinitions.ReturnStep.createReturnRequest()&amp#27;[0m
+      &amp#27;[31mjava.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at smartosc.base.scrennplay.rest.ReturnPage.getAttributeMetaData(ReturnPage.java:47)
+	at stepdefinitions.ReturnStep.createReturnRequest(ReturnStep.java:12)
+	at âœ½.Create Return Request With Order Number(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:38)
 &amp#27;[0m
-&amp#27;[92m|------ And Change Order Status to "Preparing for Delivery" By API&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mChange Order Status to &amp#27;[0m&amp#27;[36m&amp#27;[1m"Preparing for Delivery"&amp#27;[0m&amp#27;[36m By API&amp#27;[0m &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
-&amp#27;[92m|------ And Change Order Status to "Picking for Delivery" By API&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mChange Order Status to &amp#27;[0m&amp#27;[36m&amp#27;[1m"Picking for Delivery"&amp#27;[0m&amp#27;[36m By API&amp#27;[0m   &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
-&amp#27;[92m|------ And Change Order Status to "On Delivery" By API&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mChange Order Status to &amp#27;[0m&amp#27;[36m&amp#27;[1m"On Delivery"&amp#27;[0m&amp#27;[36m By API&amp#27;[0m            &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
-&amp#27;[92m|------ And Change Order Status to "Delivery Completed" By API&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mChange Order Status to &amp#27;[0m&amp#27;[36m&amp#27;[1m"Delivery Completed"&amp#27;[0m&amp#27;[36m By API&amp#27;[0m     &amp#27;[90m# stepdefinitions.OderStep.changeOrderStatusByApi(java.lang.String)&amp#27;[0m
-&amp#27;[92m|------ When Create Return Request With Order Number&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mCreate Return Request With Order Number&amp#27;[0m               &amp#27;[90m# stepdefinitions.ReturnStep.createReturnRequest()&amp#27;[0m
+&amp#27;[92m|------ And Change RMA Status To "Return Processing" by API&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mChange RMA Status To &amp#27;[0m&amp#27;[36m&amp#27;[1m"Return Processing"&amp#27;[0m&amp#27;[36m by API&amp#27;[0m        &amp#27;[90m# stepdefinitions.ReturnStep.changeRMAStatus(java.lang.String)&amp#27;[0m
 After run global shipping method
 ]]></system-out>
     <system-err><![CDATA[[main] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature
@@ -1027,23 +1412,19 @@ global shipping method(demo-guest-place-order-with-api;global-shipping-method)
 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119
 [main] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dunghv1\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 55608
+Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 54143
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 29, 2023 6:22:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 30, 2023 5:41:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Nov 29, 2023 6:22:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 30, 2023 5:41:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: a no-op implementation
-Nov 29, 2023 6:22:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 30, 2023 5:41:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 119.
-Nov 29, 2023 6:22:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Nov 30, 2023 5:41:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[main] INFO  - &amp#27;[91mSTEP ERROR: java.lang.IllegalStateException: No match found&amp#27;[0m
-[main] INFO  - &amp#27;[33m      -> STEP IGNORED&amp#27;[0m
-[main] INFO  - &amp#27;[33m      -> STEP IGNORED&amp#27;[0m
-[main] INFO  - &amp#27;[33m      -> STEP IGNORED&amp#27;[0m
-[main] INFO  - &amp#27;[33m      -> STEP IGNORED&amp#27;[0m
+[main] INFO  - &amp#27;[91mSTEP ERROR: java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List&amp#27;[0m
 [main] INFO  - &amp#27;[33m      -> STEP IGNORED&amp#27;[0m
 ]]></system-err>
   </testcase>

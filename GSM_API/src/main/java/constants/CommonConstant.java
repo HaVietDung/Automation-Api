@@ -36,4 +36,6 @@ public class CommonConstant {
     public static final String RESOLUTION  = "Resolution";
 
     public static final String ORDER_UID = "OrderUid";
+    public static final String RETURN_NUMBER = "ReturnNumber";
+    public static final String PRODUCT_TYPE = "ProductType";
 }

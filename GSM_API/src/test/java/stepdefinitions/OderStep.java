@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import com.ibm.icu.text.BidiTransform;
 import constants.CommonConstant;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
@@ -9,12 +8,10 @@ import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.webdriver.ThucydidesWebDriverSupport;
 import smartosc.base.scrennplay.actions.ActionCommon;
 import smartosc.base.scrennplay.component.OrderComponent;
-import smartosc.base.scrennplay.pageObject.OrderPage;
-import smartosc.base.scrennplay.rest.ReturnPage;
+import smartosc.base.scrennplay.rest.OrderPage;
 import utils.CommonUtils;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Base64;
 
 public class OderStep extends OrderPage{
     @Steps
@@ -31,15 +28,23 @@ public class OderStep extends OrderPage{
         ActionCommon.pause(3000);
         actionCommon.clickElement(OrderComponent.SEARCH_ORDER);
         ActionCommon.pause(3000);
+
         actionCommon.clickElement(OrderComponent.ORDER);
+        String currentURL = ThucydidesWebDriverSupport.getDriver().getCurrentUrl();
+        String orderUidString = CommonUtils.getOrderUid(currentURL);
+        String orderUid = Base64.getEncoder().encodeToString(orderUidString.getBytes());
+        Serenity.setSessionVariable(CommonConstant.ORDER_UID).to(orderUid);
+        System.out.println("Order UID " + orderUid);
+
         actionCommon.clickElement(OrderComponent.INVOICE);
         actionCommon.clickElement(OrderComponent.SUBMIT_INVOICE);
 
         String itemID = actionCommon.getText(OrderComponent.ITEM_ID);
         Serenity.setSessionVariable(CommonConstant.ITEM_ID).to(itemID);
-        String orderUid = CommonUtils.getOrderUid(CommonUtils.getCurrentURL());
-        Serenity.setSessionVariable(CommonConstant.ORDER_UID).to(orderUid);
-        System.out.println("Order UID " + orderUid);
+
+        String productType = actionCommon.getText(OrderComponent.PRODUCT_TYPE);
+        Serenity.setSessionVariable(CommonConstant.PRODUCT_TYPE).to(productType);
+
     }
 
     @And("Change Order Status to {string} By API")

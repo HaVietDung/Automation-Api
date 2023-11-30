@@ -6,6 +6,7 @@ Feature: Demo Guest place order with API
 #  DE.OLED55G29LA.DXG5QBK
 #  Auto7966073.OMD.ACCA.CA
 #  K0E 0B2
+
   @global-shipping-method
   Scenario Outline: global shipping method
     Given Guest create empty cart <country>
@@ -29,16 +30,28 @@ Feature: Demo Guest place order with API
     Given Auto open url <url>
     When Login Admin OBS
     When Go To Order And View Order
-    #orderID: 11010004104
     And Change Order Status to "Preparing for Delivery" By API
     And Change Order Status to "Picking for Delivery" By API
     And Change Order Status to "On Delivery" By API
     And Change Order Status to "Delivery Completed" By API
 
     When Create Return Request With Order Number
+    And Change RMA Status To "Return Processing" by API
 
 
     Examples:
       | country | email                | paymentMethod  | url                            |
       | de      | dunghv1@smartosc.com | cashondelivery | https://stg2.shop.lg.com/admin |
 
+
+  @Test
+  Scenario Outline: test
+#    Given Guest create empty cart <country>
+#    Given Auto open url <url>
+#    When Login Admin OBS
+#    When Get Current URL
+    When Create Return Request With Order Number
+
+    Examples:
+      |de|url|
+      |de|https://stg2.shop.lg.com/admin/sales/order_invoice/new/order_id/13081384/key/bff0bee44312fed88266e5d9fa49ba4bbd9df9282b51a27cdc32e1994b739baf/|

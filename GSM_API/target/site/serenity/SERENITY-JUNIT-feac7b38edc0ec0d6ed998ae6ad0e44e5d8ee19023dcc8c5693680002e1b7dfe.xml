@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Demo Guest place order with API" skipped="0" tests="1" time="0.29" timestamp="2023-11-30 01:47:36"><testcase name="Test"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+smartosc.base.scrennplay.rest.ReturnPage.getAttributeMetaData(ReturnPage.java:29)&#13;
+stepdefinitions.ReturnStep.createReturnRequest(ReturnStep.java:10)&#13;
+✽.Create Return Request With Order Number(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:52)&#13;
+</system-err></testcase></testsuite>
