@@ -24,7 +24,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class ReturnPage {
     public static final String GRAPHQL = CommonConstant.FilePath.DATA_TEST + File.separator;
-
+    public static String productType = Serenity.sessionVariableCalled(CommonConstant.PRODUCT_TYPE);
     public static void getAttributeMetaData() {
 
         theActorInTheSpotlight().whoCan(CallAnApi.at(Start.getBaseUri()));
@@ -44,22 +44,15 @@ public class ReturnPage {
         String condition = Base64.getEncoder().encodeToString(conditionString.getBytes());
         Serenity.setSessionVariable(CommonConstant.CONDITION).to(condition);
 
-        List<String> listReasonOMD = response.getBody().jsonPath().getList("data.customAttributeMetadata.items[1].attribute_options[0]");
-        if (listReasonOMD.size() > 0) {
+        System.out.println("Product Type: " + productType);
+        if (productType.contains("omd")){
             String reasonForOMDString = response.getBody().jsonPath().getString("data.customAttributeMetadata.items[1].attribute_options[0].value");
             String reasonForOMD = Base64.getEncoder().encodeToString(reasonForOMDString.getBytes());
             Serenity.setSessionVariable(CommonConstant.RETURN_FOR_OMD).to(reasonForOMD);
         } else {
-            System.out.println("Product OMV");
-        }
-
-        List<String> listReasonOMV = response.getBody().jsonPath().getList("data.customAttributeMetadata.items[2].attribute_options[0]");
-        if (listReasonOMV.size() > 0) {
             String resonForOMVString = response.getBody().jsonPath().getString("data.customAttributeMetadata.items[2].attribute_options[0].value");
             String reasonForOMV = Base64.getEncoder().encodeToString(resonForOMVString.getBytes());
             Serenity.setSessionVariable(CommonConstant.RETURN_FOR_OMV).to(reasonForOMV);
-        } else {
-            System.out.println("Product OMD");
         }
     }
 
@@ -106,6 +99,10 @@ public class ReturnPage {
         String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL + "Add new RMA RequestForOMD.graphql", input);
         Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);
         response.prettyPrint();
+
+        String returnNumber = response.getBody().jsonPath().getString("data.requestReturn.return.number");
+        Serenity.setSessionVariable(CommonConstant.RETURN_NUMBER).to(returnNumber);
+
     }
     public static JSONObject updateRMAStatus(String returnNumber, String itemId, String lineStatusCode, String lineStatusCode2){
         try {
@@ -117,10 +114,8 @@ public class ReturnPage {
             JSONArray ContentList = (JSONArray) MessageBody.get("ContentList");
             JSONObject Content = (JSONObject) ContentList.get(0);
 
-
-
-            Content.put("RETURN_NUMBER", returnNumber);
-            Content.put("ITEM_ID", itemId);
+            Content.put("ORIG_SYS_DOCUMENT_REF", returnNumber);
+            Content.put("ORIG_SYS_LINE_REF", itemId);
             Content.put("LINE_STATUS_CODE", lineStatusCode);
             Content.put("LINE_STATUS_CODE_2", lineStatusCode2);
 
@@ -133,6 +128,7 @@ public class ReturnPage {
     }
     public void changeRMAStatusTo(String lineStatusCode, String lineStatusCode2, String returnNumber){
         String  itemID = Serenity.sessionVariableCalled(CommonConstant.ITEM_ID);
+//        String itemID = "RETURN_17121898";
         JSONObject jsonObject =updateRMAStatus(returnNumber, itemID, lineStatusCode, lineStatusCode2);
         assert jsonObject != null;
         Serenity.recordReportData().withTitle("Request: ").andContents(jsonObject.toString());

@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Demo Guest place order with API","type":"feature","href":"bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e3 scenarios\u003c/span\u003e"]},{"text":"Test","type":"feature","href":"829f3f51c7bb07537bbbb8c2f1db19f172a4e0ff8e531bf3dd4ba1657a021dae.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Demo Guest place order with API","type":"feature","href":"bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-exclamation-triangle-fill error-icon \u0027 title\u003d\u0027ERROR\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e4 scenarios\u003c/span\u003e"]},{"text":"Test","type":"feature","href":"829f3f51c7bb07537bbbb8c2f1db19f172a4e0ff8e531bf3dd4ba1657a021dae.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-x-circle-fill failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -331,6 +331,22 @@
                                                                             style="display:none">SUCCESS</span>
                                                                                                                                     </td>
                                                             </tr>
+                                                            <tr class="scenario-result ERROR">
+                                                                    <td>
+                                                                            <a href="bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html">Demo Guest place order with API</a>
+                                                                    </td>
+                                                                <td>
+                                                                        <a href="feac7b38edc0ec0d6ed998ae6ad0e44e5d8ee19023dcc8c5693680002e1b7dfe.html">Test</a>
+                                                                        (1 example)
+                                                                </td>
+                                                                <td>1</td>
+                                                                <td>13:47:36</td>
+                                                                <td>291ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
+                                                                            style="display:none">ERROR</span>
+                                                                                                                                    </td>
+                                                            </tr>
                                                             <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html">Demo Guest place order with API</a>
@@ -339,15 +355,15 @@
                                                                         <a href="e565b01a4b8edf8c047477b1f3b2ddaf780d85a28884b2604db791b716787266.html">global shipping method</a>
                                                                         (1 example)
                                                                 </td>
-                                                                <td>15</td>
-                                                                <td>11:32:55</td>
-                                                                <td>9m 30s</td>
+                                                                <td>4</td>
+                                                                <td>14:03:00</td>
+                                                                <td>20s 349ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
                                                                                                                                     </td>
                                                             </tr>
-                                                            <tr class="scenario-result SUCCESS">
+                                                            <tr class="scenario-result FAILURE">
                                                                     <td>
                                                                             <a href="829f3f51c7bb07537bbbb8c2f1db19f172a4e0ff8e531bf3dd4ba1657a021dae.html">Test</a>
                                                                     </td>
@@ -356,11 +372,11 @@
                                                                         (1 example)
                                                                 </td>
                                                                 <td>2</td>
-                                                                <td>13:47:23</td>
-                                                                <td>23s 906ms</td>
+                                                                <td>13:38:43</td>
+                                                                <td>3s 018ms</td>
                                                                 <td>
-                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
-                                                                            style="display:none">SUCCESS</span>
+                                                                        <a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon ' title='FAILURE'></i></a> <span
+                                                                            style="display:none">FAILURE</span>
                                                                                                                                     </td>
                                                             </tr>
                                                         </tbody>
@@ -394,14 +410,14 @@
                                         <i class="bi bi-tag-fill"></i> Gms Levelcountry&nbsp;&nbsp;&nbsp;1
                                     </span>
                                     </a>
+                                    <a href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">
+                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Test&nbsp;&nbsp;&nbsp;2
+                                    </span>
+                                    </a>
                                     <a href="fb3580d7125966b5f5e436ab2ddd54b4767b70b67f278b7472d7a6597204ab1b.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
                                         <i class="bi bi-tag-fill"></i> Global-Shipping-Method&nbsp;&nbsp;&nbsp;1
-                                    </span>
-                                    </a>
-                                    <a href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Test&nbsp;&nbsp;&nbsp;1
                                     </span>
                                     </a>
                             </div>
@@ -449,7 +465,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests (automated)', value: 4}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Aborted tests (automated)', value: 0}, {meta: 'Aborted tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}],
+                data: [{meta: 'Passing tests (automated)', value: 3}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Aborted tests (automated)', value: 0}, {meta: 'Aborted tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)',pattern.draw('line', 'rgba(165, 199, 238, 0.5)'),pattern.draw('line-vertical', 'rgba(168, 168, 168, 0.5)'),pattern.draw('diagonal', 'rgba(238, 224, 152, 0.75)'),pattern.draw('diagonal-right-left', 'rgba(255, 153, 102, 0.5)'),pattern.draw('zigzag-vertical', 'rgba(255, 22, 49, 0.5)'),pattern.draw('zigzag', 'rgba(255, 97, 8, 0.5)'),pattern.draw('square', 'rgba(255, 104, 255, 0.5)')],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
                 borderWidth: 1,
@@ -500,7 +516,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = "60%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -545,7 +561,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [4,0,0,0,0,0,0,0],
+                    data: [3,0,0,0,0,1,1,0],
                     backgroundColor: ['rgba(153,204,51,0.5)',pattern.draw('line', 'rgba(165, 199, 238, 0.5)'),pattern.draw('line-vertical', 'rgba(168, 168, 168, 0.5)'),pattern.draw('diagonal', 'rgba(238, 224, 152, 0.75)'),pattern.draw('diagonal-right-left', 'rgba(255, 153, 102, 0.5)'),pattern.draw('zigzag-vertical', 'rgba(255, 22, 49, 0.5)'),pattern.draw('zigzag', 'rgba(255, 97, 8, 0.5)'),pattern.draw('square', 'rgba(255, 104, 255, 0.5)')],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
                     borderWidth: 1
@@ -628,7 +644,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','1','2','0','0','0','1','0'],
+                data: ['2','2','2','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

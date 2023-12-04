@@ -848,6 +848,11 @@ public class ActionCommon extends Start {
         Serenity.recordReportData().withTitle("Text of " + targetLocators.getName()).andContents(text);
         return text;
     }
+    public String getText(String xpath) {
+        Target targetLocators = Target.the(xpath).locatedBy(xpath);
+        String text = getText(targetLocators);
+        return text;
+    }
 
     public void compareDataPrice(String typeCompare, double key1, double expected, double compare) {
         if (compare == 0) {

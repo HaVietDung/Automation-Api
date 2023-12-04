@@ -26,7 +26,7 @@ Feature: Demo Guest place order with API
     And Get Cart with Selected Shipping Rule
     And Set Payment Method "<paymentMethod>"
     And Place Oder
-
+#
     Given Auto open url <url>
     When Login Admin OBS
     When Go To Order And View Order
@@ -36,22 +36,12 @@ Feature: Demo Guest place order with API
     And Change Order Status to "Delivery Completed" By API
 
     When Create Return Request With Order Number
+    And Update RMA Order From Return Request To Authorized
     And Change RMA Status To "Return Processing" by API
-
+    And Change RMA Status To "Return Completed" by API
 
     Examples:
       | country | email                | paymentMethod  | url                            |
       | de      | dunghv1@smartosc.com | cashondelivery | https://stg2.shop.lg.com/admin |
 
 
-  @Test
-  Scenario Outline: test
-#    Given Guest create empty cart <country>
-#    Given Auto open url <url>
-#    When Login Admin OBS
-#    When Get Current URL
-    When Create Return Request With Order Number
-
-    Examples:
-      |de|url|
-      |de|https://stg2.shop.lg.com/admin/sales/order_invoice/new/order_id/13081384/key/bff0bee44312fed88266e5d9fa49ba4bbd9df9282b51a27cdc32e1994b739baf/|

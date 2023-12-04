@@ -200,7 +200,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-11-2023 13:16:40</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-12-2023 14:37:41</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -757,50 +757,56 @@
                 result: 'SUCCESS',
                 link: "bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html"
             },
+            {
+                title: 'Test',
+                result: 'SUCCESS',
+                link: "829f3f51c7bb07537bbbb8c2f1db19f172a4e0ff8e531bf3dd4ba1657a021dae.html"
+            },
         ]
         const coverageData = {
             labels: [
                 'Demo Guest place order with API',
+                'Test',
             ],
             datasets: [
                 {
                     label: ['Passing Tests'],
-                    data: [1],
+                    data: [1,null],
                     backgroundColor: [ 'rgba(153,204,51,0.5)' ]
                 },
                 {
                     label: ['Pending Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('line', 'rgba(165, 199, 238, 0.5)') ]
                 },
                 {
                     label: ['Ignored Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('line-vertical', 'rgba(168, 168, 168, 0.5)') ]
                 },
                 {
                     label: ['Skipped Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('diagonal', 'rgba(238, 224, 152, 0.75)') ]
                 },
                 {
                     label: ['Aborted Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('diagonal-right-left', 'rgba(255, 153, 102, 0.5)') ]
                 },
                 {
                     label: ['Failed Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('zigzag-vertical', 'rgba(255, 22, 49, 0.5)') ]
                 },
                 {
                     label: ['Errors'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('zigzag', 'rgba(255, 97, 8, 0.5)') ]
                 },
                 {
                     label: ['Compromised Tests'],
-                    data: [null],
+                    data: [null,null],
                     backgroundColor: [ pattern.draw('square', 'rgba(255, 104, 255, 0.5)') ]
                 },
             ]

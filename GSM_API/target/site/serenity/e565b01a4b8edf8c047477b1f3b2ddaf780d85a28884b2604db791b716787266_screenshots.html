@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-11-2023 17:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 01-12-2023 14:03</span>
     <br style="clear:left"/>
 </div>
 
@@ -192,9 +192,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">global shipping method
+                                <span class="success-color">global shipping method
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -210,94 +210,31 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given Guest create empty cart &lt;country&gt;<br>When Set Guest "&lt;email&gt;" on cart<br>And Get Product<br><table class='embedded'><thead><th>product_id</th><th>postCode</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td></tr></tbody></table><br>And Add To Cart<br><table class='embedded'><thead><th>product_id</th><th>postCode</th></thead><tbody><tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td></tr></tbody></table><br>And Set Shipping Address And Billing<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></thead><tbody><tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>DE</td><td>9526452222</td></tr></tbody></table><br>And Get Cart with Selected Shipping Rule<br>And Set Payment Method "&lt;paymentMethod&gt;"<br>And Place Oder<br>Given Auto open url &lt;url&gt;<br>When Login Admin OBS<br>When Go To Order And View Order<br>And Change Order Status to "Preparing for Delivery" By API<br>And Change Order Status to "Picking for Delivery" By API<br>And Change Order Status to "On Delivery" By API<br>And Change Order Status to "Delivery Completed" By API<br>When Create Return Request With Order Number<br>And Change RMA Status To "Return Processing" by API</div>
+        <div class="scenario">Given Guest create empty cart &lt;country&gt;<br>Given Auto open url &lt;url&gt;<br>When Login Admin OBS<br>And Change RMA Status To "Return Processing" by API</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Class cast exception: java.util.LinkedHashMap cannot be cast to java.util.List</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.ClassCastException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>io.restassured.path.json.JsonPath.getList(JsonPath.java:375)<br />smartosc.base.scrennplay.rest.ReturnPage.getAttributeMetaData(ReturnPage.java:47)<br />stepdefinitions.ReturnStep.createReturnRequest(ReturnStep.java:12)<br />✽.Create Return Request With Order Number(file:///D:/Automation-Api/GSM_API/src/test/resources/features/GlobalShippingMethod.feature:38)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                <div class="panel-body">
-                    <a href="pagesource663786493538512286.html" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" 1: global shipping method ({country=de, email=dunghv1@smartosc.com, paymentMethod=cashondelivery, url=https://stg2.shop.lg.com/admin})" width="1920"/>
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Given Auto open url https://stg2.shop.lg.com/admin" width="1920"/>
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Auto open url by href:  https://stg2.shop.lg.com/admin" width="1920"/>
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Auto opens the https://stg2.shop.lg.com/admin" width="1920"/>
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Auto open url by href:  https://stg2.shop.lg.com/admin (completed)" width="1920"/>
-                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Given Auto open url https://stg2.shop.lg.com/admin (completed)" width="1920"/>
-                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" When Login Admin OBS" width="1920"/>
-                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Auto clears field UserName" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" 1: global shipping method ({country=de, email=dunghv1@smartosc.com, paymentMethod=cashondelivery, url=https://stg2.shop.lg.com/admin})" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Given Auto open url https://stg2.shop.lg.com/admin" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Auto open url by href:  https://stg2.shop.lg.com/admin" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Auto opens the https://stg2.shop.lg.com/admin" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Auto open url by href:  https://stg2.shop.lg.com/admin (completed)" width="1920"/>
+                <img src="8fd3d56965d143289c2a98ed3c6c7215194d3cc36e197439b641df81561ff048.png" title=" Given Auto open url https://stg2.shop.lg.com/admin (completed)" width="1920"/>
+                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" When Login Admin OBS" width="1920"/>
+                <img src="fb90132711b8fabdb999e9727d152ea82706a1e41ddfe2c739d5f3f8e30426a9.png" title=" Auto clears field UserName" width="1920"/>
                 <img src="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png" title=" Auto enters 'longnv3' into UserName" width="1920"/>
                 <img src="dcfcf2ea3481a260433b35112fadff9f6216872918df0a338a78d9d897f195a1.png" title=" Auto clears field Password" width="1920"/>
-                <img src="414331f4991d1ceffbd8cfc620514feaae601049db7ed453ace0b2c106fba5c9.png" title=" Auto enters 'admin@123' into Password" width="1920"/>
-                <img src="902681eb3c47e1da68d9583910a6e4b4ec5bd8ded50224b7315a62cb21087bd1.png" title=" Auto clicks on LoginBtn" width="1920"/>
-                <img src="902681eb3c47e1da68d9583910a6e4b4ec5bd8ded50224b7315a62cb21087bd1.png" title=" When Login Admin OBS (completed)" width="1920"/>
-                <img src="9c21e351fe59a1695dfab1661312293de6c92ebe9ee9f019100b5163c872ee53.png" title=" When Go To Order And View Order" width="1920"/>
-                <img src="9c21e351fe59a1695dfab1661312293de6c92ebe9ee9f019100b5163c872ee53.png" title=" Auto clicks on SaleCatalog" width="1920"/>
-                <img src="8fec51a0a5c57d0a90cf219a0417cce495d67d4f6c18a4e0e6661e6dd2bb1ad5.png" title=" Auto clicks on Oder" width="1920"/>
-                <img src="779cd4c6ccddf1ab272e11a257b4c7988cc840db1f7667dc000b565d54749ea7.png" title=" Auto clears field OrederNumber" width="1920"/>
-                <img src="5389aa29d4f4e7505330fb4f6d7b1ff87e03e3adb5c2ee089182cf4378eea34f.png" title=" Auto enters '11010004617' into OrederNumber" width="1920"/>
-                <img src="266480f96cd4d4b7f528599c5033ed42ab8d772bb41a9005dba3ab3a8d32b238.png" title=" Auto clicks on SearchOreder" width="1920"/>
-                <img src="6c7e8b742d5a2b16b32d90d162e6d1153cc609d88a8acc5bc5135bce64f41f6c.png" title=" Auto clicks on Order" width="1920"/>
-                <img src="698836a0ae1b00c1987750a0360543d2e00e7852b7244efb9aaad80c21e31a82.png" title=" Auto clicks on Invoice" width="1920"/>
-                <img src="03dc60ed532e76a78197e58c0bedf8bdd639ba8536bcb9e1ddcd8da4f1c180dd.png" title=" Auto clicks on SubmitInvoice" width="1920"/>
-                <img src="2db77b394ca4a64871dea0f1f78bcb4142d5498fd3cdac4149606e37b1263fb2.png" title=" Auto should see ItemID that is displayed" width="1920"/>
-                <img src="e92a1a894a024ac6eb477556c7682cc1220d0524449edae2758629988dcc3444.png" title=" Auto should see ProductType that is displayed" width="1920"/>
-                <img src="e92a1a894a024ac6eb477556c7682cc1220d0524449edae2758629988dcc3444.png" title=" When Go To Order And View Order (completed)" width="1920"/>
-                <img src="e92a1a894a024ac6eb477556c7682cc1220d0524449edae2758629988dcc3444.png" title=" And Change Order Status to &quot;Preparing for Delivery&quot; By API" width="1920"/>
-                <img src="e92a1a894a024ac6eb477556c7682cc1220d0524449edae2758629988dcc3444.png" title=" POST https://stg2.shop.lg.com/ecss/webmethod/call" width="1920"/>
-                <img src="e92a1a894a024ac6eb477556c7682cc1220d0524449edae2758629988dcc3444.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
-                <img src="a76ed87b2ea84c329097094b0cde52b77104a6fb83e9bf0bd3f71eac5158ff03.png" title=" And Change Order Status to &quot;Preparing for Delivery&quot; By API (completed)" width="1920"/>
-                <img src="769408a2d2f6258e627266a10a52bb4aa1436fa503099cf09c2df1d452ca6919.png" title=" And Change Order Status to &quot;Picking for Delivery&quot; By API" width="1920"/>
-                <img src="769408a2d2f6258e627266a10a52bb4aa1436fa503099cf09c2df1d452ca6919.png" title=" POST https://stg2.shop.lg.com/ecss/webmethod/call" width="1920"/>
-                <img src="769408a2d2f6258e627266a10a52bb4aa1436fa503099cf09c2df1d452ca6919.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
-                <img src="470536199f778abc954b3d905ecad424ce5e99e987da4d7dc9724118b6d48e99.png" title=" And Change Order Status to &quot;Picking for Delivery&quot; By API (completed)" width="1920"/>
-                <img src="b09bdb589daac8507aef8d02ca2e1333538e457b57afbe40fbbcf2a5f9115eca.png" title=" And Change Order Status to &quot;On Delivery&quot; By API" width="1920"/>
-                <img src="b09bdb589daac8507aef8d02ca2e1333538e457b57afbe40fbbcf2a5f9115eca.png" title=" POST https://stg2.shop.lg.com/ecss/webmethod/call" width="1920"/>
-                <img src="b09bdb589daac8507aef8d02ca2e1333538e457b57afbe40fbbcf2a5f9115eca.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
-                <img src="470536199f778abc954b3d905ecad424ce5e99e987da4d7dc9724118b6d48e99.png" title=" And Change Order Status to &quot;On Delivery&quot; By API (completed)" width="1920"/>
-                <img src="8d7e838a98526e7359595210c338106edce60a45efe94027bb465a8ebb8a6109.png" title=" And Change Order Status to &quot;Delivery Completed&quot; By API" width="1920"/>
-                <img src="8d7e838a98526e7359595210c338106edce60a45efe94027bb465a8ebb8a6109.png" title=" POST https://stg2.shop.lg.com/ecss/webmethod/call" width="1920"/>
-                <img src="8d7e838a98526e7359595210c338106edce60a45efe94027bb465a8ebb8a6109.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
-                <img src="d5cdbb0930ef666d41ec7291541a47734f4b9da9b6b92070467471bb75f76bef.png" title=" And Change Order Status to &quot;Delivery Completed&quot; By API (completed)" width="1920"/>
-                <img src="aba8cd021953739cd3f798d60ee2b623eb21c67425f050342d0e45aed4dd4036.png" title=" When Create Return Request With Order Number" width="1920"/>
-                <img src="aba8cd021953739cd3f798d60ee2b623eb21c67425f050342d0e45aed4dd4036.png" title=" POST https://stg2.shop.lg.com/graphql" width="1920"/>
-                <img src="aba8cd021953739cd3f798d60ee2b623eb21c67425f050342d0e45aed4dd4036.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
-                <img src="aba8cd021953739cd3f798d60ee2b623eb21c67425f050342d0e45aed4dd4036.png" title=" When Create Return Request With Order Number (completed): <span class='error-color'>ERROR</span>" width="1920"/>
+                <img src="5b49733d412214d33e90206ae4320fd50bb83cdfbbd662e4e826682bf7fc54a9.png" title=" Auto enters 'admin@123' into Password" width="1920"/>
+                <img src="8df3be3a5acc668efa49d0c2137c57959785c459269e0d7afbeebf6282ce5e7d.png" title=" Auto clicks on LoginBtn" width="1920"/>
+                <img src="8df3be3a5acc668efa49d0c2137c57959785c459269e0d7afbeebf6282ce5e7d.png" title=" When Login Admin OBS (completed)" width="1920"/>
+                <img src="ff62dcacb4dd5f30b2285d1771333e3ba744b07a9a739b64b052c9999fafecc7.png" title=" And Change RMA Status To &quot;Return Processing&quot; by API" width="1920"/>
+                <img src="ff62dcacb4dd5f30b2285d1771333e3ba744b07a9a739b64b052c9999fafecc7.png" title=" POST https://stg2.shop.lg.com/ecss/webmethod/call" width="1920"/>
+                <img src="ff62dcacb4dd5f30b2285d1771333e3ba744b07a9a739b64b052c9999fafecc7.png" title=" Auto should see a value that is equal to: &lt;200&gt;" width="1920"/>
+                <img src="ff62dcacb4dd5f30b2285d1771333e3ba744b07a9a739b64b052c9999fafecc7.png" title=" 1: global shipping method ({country=de, email=dunghv1@smartosc.com, paymentMethod=cashondelivery, url=https://stg2.shop.lg.com/admin})" width="1920"/>
+                <img src="ff62dcacb4dd5f30b2285d1771333e3ba744b07a9a739b64b052c9999fafecc7.png" title=" And Change RMA Status To &quot;Return Processing&quot; by API (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
             </div>
         </div>
 

@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Demo Guest place order with API","type":"feature","href":"bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e3 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Demo Guest place order with API","type":"feature","href":"bc27b993410f0375ebe41b2b778f28f044431202ba3a7dea897d2f230c03c464.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-exclamation-triangle-fill error-icon \u0027 title\u003d\u0027ERROR\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e4 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -240,7 +240,7 @@
                                                     <span class="badge tag-badge" style="background:default;">
                                                         <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink"
                                                                                           style="background:default;"
-                                                                                          href="376e1536bb68812a880e84ca7a0c6d104d541788793f22a36b4462a6a9aaa344.html">5 To 10 Minutes
+                                                                                          href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
                                                         (Duration)</a>
                                                     </span>
                                                 </p>
@@ -321,13 +321,44 @@
                                                                                 </table>
                                                                             </td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td style="width:95%;" class="toc-title">
+                                                                                <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+                                                                                       title="View scenario details">
+                                                                                        <i class="bi bi-chat-dots"></i> Scenario Outline: test
+                                                                                    </a>
+                                                                                        (1 example)
+                                                                                </span>
+                                                                            </td>
+                                                                            <td style="width:5%;">
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td class="icons-bar">
+                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                               href="feac7b38edc0ec0d6ed998ae6ad0e44e5d8ee19023dcc8c5693680002e1b7dfe.html"
+                                                                                               title="View test results">
+                                                                                                <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                                </a>
+
+
+                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                                                   href="feac7b38edc0ec0d6ed998ae6ad0e44e5d8ee19023dcc8c5693680002e1b7dfe.html"
+                                                                                                   title="View test results">
+                                                                                                    <i class="bi bi-eyeglasses"></i>
+                                                                                                </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
                                                         </table>
                                                     </div>
                                                     <!--- END OF TOC --->
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="9f535f5b-b25a-404c-a470-2e22ab733c34"></a>
+                                                        <a name="befe5d5c-2159-47c8-9e2c-f04d8e06a207"></a>
 
 
                                                             <div class="scenario-docs card" id="5c787a360fd9f2dae9aafa6b1441fcb0ec116ab493a77f7424895e01ab4725c1">
@@ -347,47 +378,9 @@
                                                                 </div>
                                                                 <div class="scenario-docs card-body">
                                                                         <p>Given Guest create empty cart {country}</p>
-                                                                        <p>When Set Guest &quot;{email}&quot; on cart</p>
-                                                                        <p><p>And Get Product</p>
-<table>
-<thead>
-<tr><th>product_id</th><th>postCode</th></tr>
-</thead>
-<tbody>
-<tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td></tr>
-</tbody>
-</table>
-</p>
-                                                                        <p><p>And Add To Cart</p>
-<table>
-<thead>
-<tr><th>product_id</th><th>postCode</th></tr>
-</thead>
-<tbody>
-<tr><td>49NANO867NA.AEUD.EEDG.DE</td><td></td></tr>
-</tbody>
-</table>
-</p>
-                                                                        <p><p>And Set Shipping Address And Billing</p>
-<table>
-<thead>
-<tr><th>firstname</th><th>lastname</th><th>company</th><th>street</th><th>city</th><th>region</th><th>postcode</th><th>country_code</th><th>telephone</th></tr>
-</thead>
-<tbody>
-<tr><td>John</td><td>Doe</td><td>Company Name</td><td>[123xx ABC STreet]</td><td>Minnetonka</td><td>MS</td><td>T7P 0T6</td><td>DE</td><td>9526452222</td></tr>
-</tbody>
-</table>
-</p>
-                                                                        <p>And Get Cart with Selected Shipping Rule</p>
-                                                                        <p>And Set Payment Method &quot;{paymentMethod}&quot;</p>
-                                                                        <p>And Place Oder</p>
                                                                         <p>Given Auto open url {url}</p>
                                                                         <p>When Login Admin OBS</p>
-                                                                        <p>When Go To Order And View Order</p>
-                                                                        <p>And Change Order Status to &quot;Preparing for Delivery&quot; By API</p>
-                                                                        <p>And Change Order Status to &quot;Picking for Delivery&quot; By API</p>
-                                                                        <p>And Change Order Status to &quot;On Delivery&quot; By API</p>
-                                                                        <p>And Change Order Status to &quot;Delivery Completed&quot; By API</p>
+                                                                        <p>And Change RMA Status To &quot;Return Processing&quot; by API</p>
                                                                     <div class="examples">
                                                                             <p><p>Examples:</p>
 <blockquote>
@@ -398,6 +391,40 @@
 </thead>
 <tbody>
 <tr><td>de</td><td>dunghv1@smartosc.com</td><td>cashondelivery</td><td>https://stg2.shop.lg.com/admin</td><td><a href='e565b01a4b8edf8c047477b1f3b2ddaf780d85a28884b2604db791b716787266.html#beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a></td></tr>
+</tbody>
+</table></div>
+</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="scenario-docs card" id="9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08">
+                                                                <div class="scenario-docs card-header error"
+                                                                     style="min-height:1.5em;">
+                                                                    <div>
+                                                            <span class="scenario-heading">
+                                                                <a href="feac7b38edc0ec0d6ed998ae6ad0e44e5d8ee19023dcc8c5693680002e1b7dfe.html"
+                                                                   title="View test results">Scenario Outline: test</a>
+                                                            </span>
+                                                                        <span class="scenario-result-icon">
+                                                                
+
+                                                                                <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                            </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>When Create Return Request With Order Number</p>
+                                                                    <div class="examples">
+                                                                            <p><p>Examples:</p>
+<blockquote>
+</blockquote>
+<div class='example-table-in-scenario'><table>
+<thead>
+<tr><th>de</th><th>url</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>de</td><td>https://stg2.shop.lg.com/admin/sales/order_invoice/new/order_id/13081384/key/bff0bee44312fed88266e5d9fa49ba4bbd9df9282b51a27cdc32e1994b739baf/</td><td> </td></tr>
 </tbody>
 </table></div>
 </p>
@@ -458,12 +485,25 @@
                                                                         <a href="e565b01a4b8edf8c047477b1f3b2ddaf780d85a28884b2604db791b716787266.html">global shipping method</a>
                                                                         (1 example)
                                                                 </td>
-                                                                <td>15</td>
-                                                                <td>11:32:55</td>
-                                                                <td>9m 30s</td>
+                                                                <td>4</td>
+                                                                <td>14:03:00</td>
+                                                                <td>20s 349ms</td>
                                                                 <td>
                                                                         <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
                                                                             style="display:none">SUCCESS</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                            <tr class="scenario-result ERROR">
+                                                                <td>
+                                                                        <a href="feac7b38edc0ec0d6ed998ae6ad0e44e5d8ee19023dcc8c5693680002e1b7dfe.html">test</a>
+                                                                        (1 example)
+                                                                </td>
+                                                                <td>1</td>
+                                                                <td>13:47:36</td>
+                                                                <td>291ms</td>
+                                                                <td>
+                                                                        <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
+                                                                            style="display:none">ERROR</span>
                                                                                                                                     </td>
                                                             </tr>
                                                         </tbody>
@@ -495,6 +535,11 @@
                                     <a href="01d98cb8d8758bc392625dadd258b3e695990936d9bd2a7015242545fc777908.html">
                                     <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
                                         <i class="bi bi-tag-fill"></i> Gms Levelcountry&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                                    <a href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">
+                                    <span class="tag-badge badge" style="background-color:#fe6c2d; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Test&nbsp;&nbsp;&nbsp;1
                                     </span>
                                     </a>
                                     <a href="fb3580d7125966b5f5e436ab2ddd54b4767b70b67f278b7472d7a6597204ab1b.html">
@@ -547,7 +592,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests (automated)', value: 3}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Aborted tests (automated)', value: 0}, {meta: 'Aborted tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}],
+                data: [{meta: 'Passing tests (automated)', value: 3}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Aborted tests (automated)', value: 0}, {meta: 'Aborted tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)',pattern.draw('line', 'rgba(165, 199, 238, 0.5)'),pattern.draw('line-vertical', 'rgba(168, 168, 168, 0.5)'),pattern.draw('diagonal', 'rgba(238, 224, 152, 0.75)'),pattern.draw('diagonal-right-left', 'rgba(255, 153, 102, 0.5)'),pattern.draw('zigzag-vertical', 'rgba(255, 22, 49, 0.5)'),pattern.draw('zigzag', 'rgba(255, 97, 8, 0.5)'),pattern.draw('square', 'rgba(255, 104, 255, 0.5)')],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
                 borderWidth: 1,
@@ -598,7 +643,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = "100%"
+                        var text = "75%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -643,7 +688,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [3,0,0,0,0,0,0,0],
+                    data: [3,0,0,0,0,0,1,0],
                     backgroundColor: ['rgba(153,204,51,0.5)',pattern.draw('line', 'rgba(165, 199, 238, 0.5)'),pattern.draw('line-vertical', 'rgba(168, 168, 168, 0.5)'),pattern.draw('diagonal', 'rgba(238, 224, 152, 0.75)'),pattern.draw('diagonal-right-left', 'rgba(255, 153, 102, 0.5)'),pattern.draw('zigzag-vertical', 'rgba(255, 22, 49, 0.5)'),pattern.draw('zigzag', 'rgba(255, 97, 8, 0.5)'),pattern.draw('square', 'rgba(255, 104, 255, 0.5)')],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)'],
                     borderWidth: 1
@@ -726,7 +771,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['0','1','1','0','0','0','1','0'],
+                data: ['1','1','2','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]
