@@ -102,7 +102,6 @@ public class ReturnPage {
 
         String returnNumber = response.getBody().jsonPath().getString("data.requestReturn.return.number");
         Serenity.setSessionVariable(CommonConstant.RETURN_NUMBER).to(returnNumber);
-
     }
     public static JSONObject updateRMAStatus(String returnNumber, String itemId, String lineStatusCode, String lineStatusCode2){
         try {

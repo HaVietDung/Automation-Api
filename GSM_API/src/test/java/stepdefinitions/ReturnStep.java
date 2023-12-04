@@ -15,10 +15,15 @@ public class ReturnStep extends ReturnPage{
     ActionCommon actionCommon;
 //    public static String orderNumber = Serenity.sessionVariableCalled(CommonConstant.ORDER_NUMBER);
     public static String returnNumber = Serenity.sessionVariableCalled(CommonConstant.RETURN_NUMBER);
+    public static String productType = Serenity.sessionVariableCalled(CommonConstant.PRODUCT_TYPE);
     @When("Create Return Request With Order Number")
         public void createReturnRequest(){
         ReturnPage.getAttributeMetaData();
-        ReturnPage.createReturnRequestForOMD();
+        if (productType.contains("omd")){
+            ReturnPage.createReturnRequestForOMD();
+        } else {
+            ReturnPage.createReturnRequestForOMV();
+        }
         }
 
         @And("Change RMA Status To {string} by API")

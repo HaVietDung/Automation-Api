@@ -120,7 +120,6 @@ public class PBPPage {
         input.put("Count_Installation", Serenity.sessionVariableCalled(CommonConstant.INSTALLATION));
         input.put("Count_haulaway", Serenity.sessionVariableCalled(CommonConstant.HAULAWAY));
 
-
         if (postCode == null) {
             String graphQL = CommonUtils.getBodyOfRequest(GRAPHQL_CART + "[GSM] Add  To Cart PBP with selected shipping rule no post code.graphql", input);
             Response response = RestAssuredCommon.getResponseGraphql(Start.getBaseUri(), graphQL);
